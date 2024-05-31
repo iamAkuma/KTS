@@ -1,11 +1,21 @@
+// App.js
 import React from 'react';
-import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home/Home';
+import Contact from './components/Contact/Contact';
+import Blog from './components/Blog/Blogs';
+import Courses from './components/Courses/Courses';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Navbar />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/courses" element={<Courses />} />
+      </Routes>
+    </Router>
   );
 }
 

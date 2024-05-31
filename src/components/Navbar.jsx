@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,7 +9,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light font-poppins">
             <Link className="navbar-brand" to="/">
-                <img src={logo} alt="Brand Logo" style={{ height: '50px' }} />
+                <img src={logo} alt="KTS Logo" style={{ height: '52px' }} />
             </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -18,12 +19,19 @@ const Navbar = () => {
                     <li className="nav-item">
                         <Link className="nav-link" to="/">Home</Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/alumni">Alumni</Link>
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" href="#Alumni" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Alumni
+                        </a>
+                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a className="dropdown-item" href="#2079-80">2079/80</a>
+                            <a className="dropdown-item" href="#2080-81">2080/81</a>
+                        </div>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/about">About</Link>
+                        <Link className="nav-link" to="/courses">Courses</Link>
                     </li>
+
                     <li className="nav-item">
                         <Link className="nav-link" to="/blog">Blog</Link>
                     </li>
@@ -34,10 +42,10 @@ const Navbar = () => {
             </div>
             {/* Social Media Icons */}
             <div className="social-icons">
-                <a href="https://facebook.com"><i className="fab fa-facebook fa-lg"></i></a>
-                <a href="https://instagram.com"><i className="fab fa-instagram fa-lg"></i></a>
-                <a href="https://linkedin.com"><i className="fab fa-linkedin fa-lg"></i></a>
-                <a href="https://youtube.com"><i className="fab fa-youtube fa-lg"></i></a>
+                <a href="https://www.facebook.com/kathmandutechnicalschool" target="_blank"><i className="fab fa-facebook fa-lg"></i></a>
+                <a href="https://www.instagram.com/kts.nepal" target="_blank"><i className="fab fa-instagram fa-lg"></i></a>
+                <a href="https://www.linkedin.com/company/kathmandu-technical-school/" target="_blank"><i className="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://www.youtube.com/@kathmandutechnicalschool6948" target="_blank"><i className="fab fa-youtube fa-lg"></i></a>
             </div>
         </nav>
     );

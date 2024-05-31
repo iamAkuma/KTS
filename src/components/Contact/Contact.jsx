@@ -6,7 +6,7 @@ const Contact = () => {
         <>
             <Navbar />
             <div>
-                Contact
+                <h1>Contact</h1>
             </div>
         </>
 
