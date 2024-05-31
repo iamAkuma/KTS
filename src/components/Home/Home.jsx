@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar'
+import Video from '../../vid/Homepage.mp4'
 
 const Home = () => {
     return (
@@ -7,12 +8,12 @@ const Home = () => {
             <Navbar />
             <div className="home">
                 {/* Video Section */}
-                <div className="video-container">
+                {/* <div className="video-container">
                     <video className="video" controls>
-                        <source src="path/to/video.mp4" type="video/mp4" />
+                        <source src={Video} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-                </div>
+                </div> */}
 
                 {/* Other content */}
                 <div className="other-content">
