@@ -5,10 +5,25 @@
 }
 
 .nav-item {
-  margin-right: 20px; /* Add more margin between navbar items */
+  margin-right: 50px;
+  font-weight: bold; /* Add more margin between navbar items */
 }
 
 /* Optional: Add margin to the right of the last navbar item to avoid spacing after it */
 .nav-item:last-child {
   margin-right: 0;
+}
+
+social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-right: 10px; /* Add gap between social media icons */
+  color: #2a3a91; /* Change the color of the icons */
+}
+
+.social-icons a i {
+  font-size: 24px; /* Adjust the size of the icons */
 }

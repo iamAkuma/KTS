@@ -31,6 +31,12 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
+            <div className="social-icons">
+                <a href="https://facebook.com"><i className="fab fa-facebook fa-lg"></i></a>
+                <a href="https://instagram.com"><i className="fab fa-instagram fa-lg"></i></a>
+                <a href="https://linkedin.com"><i className="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://youtube.com"><i className="fab fa-youtube fa-lg"></i></a>
+            </div>
         </nav>
     );
 }
