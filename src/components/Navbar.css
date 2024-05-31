@@ -26,6 +26,11 @@
   margin-right: 0;
 }
 
+/* Show dropdown menu on hover */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 social-icons {
   display: flex;
   align-items: center;
