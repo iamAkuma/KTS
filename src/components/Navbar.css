@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-item {
+  margin-right: 20px; /* Add more margin between navbar items */
+}
+
+/* Optional: Add margin to the right of the last navbar item to avoid spacing after it */
+.nav-item:last-child {
+  margin-right: 0;
+}
