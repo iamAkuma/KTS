@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar'
-import Video from '../../vid/Homepage.mp4'
+// import Video from '../../vid/Homepage.mp4'
 
 const Home = () => {
     return (

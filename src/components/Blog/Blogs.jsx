@@ -6,7 +6,7 @@ const Blogs = () => {
         <>
             <Navbar />
             <div>
-                <h1 className='text-center'>Blogs</h1>
+                <h1 className='text-center'>KTS Blogs</h1>
             </div>
         </>
     )
