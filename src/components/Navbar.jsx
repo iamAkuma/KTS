@@ -24,8 +24,8 @@ const Navbar = () => {
                             Alumni
                         </a>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a className="dropdown-item" href="#2079-80">2079/80</a>
-                            <a className="dropdown-item" href="#2080-81">2080/81</a>
+                            <Link className="dropdown-item" to="/2079-80">2079/80</Link>
+                            <Link className="dropdown-item" to="/2080-81">2080/81</Link>
                         </div>
                     </li>
                     <li className="nav-item">

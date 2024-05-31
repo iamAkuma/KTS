@@ -6,7 +6,9 @@ const one = () => {
     <>
       <Navbar />
       <div>
-        2079/80
+        <h1 className='text-center'>
+          2079/80
+        </h1>
       </div>
     </>
   )

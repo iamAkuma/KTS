@@ -6,7 +6,7 @@ const Courses = () => {
         <>
             <Navbar />
             <div>
-                <h1>Courses</h1>
+                <h1 className='text-center'>Courses</h1>
             </div>
         </>
 
