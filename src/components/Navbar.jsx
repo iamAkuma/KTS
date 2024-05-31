@@ -17,8 +17,14 @@ const Navbar = () => {
                     <li className="nav-item">
                         <a className="nav-link" href="#Home">Home</a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#Alumni">Alumni</a>
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Alumni
+                        </a>
+                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a className="dropdown-item" href="#">Option 1</a>
+                            <a className="dropdown-item" href="#">Option 2</a>
+                        </div>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="About">About</a>
