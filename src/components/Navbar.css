@@ -3,6 +3,18 @@
 .font-poppins {
   font-family: "Poppins", sans-serif;
 }
+.navbar {
+  padding-top: 20px; /* Increase the top padding of the navbar */
+  padding-bottom: 20px; /* Increase the bottom padding of the navbar */
+}
+
+.navbar-brand {
+  margin-left: 60px;
+}
+
+.navbar-brand img {
+  height: 80px; /* Adjust the height of the logo */
+}
 
 .nav-item {
   margin-right: 50px;
@@ -20,7 +32,7 @@ social-icons {
 }
 
 .social-icons a {
-  margin-right: 10px; /* Add gap between social media icons */
+  margin-right: 25px; /* Increase the gap between social media icons */
   color: #2a3a91; /* Change the color of the icons */
 }
 
