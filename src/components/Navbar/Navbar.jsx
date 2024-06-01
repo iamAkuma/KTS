@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css';
-import logo from '../img/KTS-logo.png';
+import logo from '../../img/KTS-logo.png';
 
 const Navbar = () => {
     return (

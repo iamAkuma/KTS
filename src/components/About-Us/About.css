@@ -1,0 +1,64 @@
+.about {
+  margin-left: 700px;
+  color: black;
+  font-weight: 400;
+}
+.about-us-container {
+  background-color: rgba(0, 0, 0, 0); /* transparent background */
+  color: rgb(118, 118, 127); /* text color */
+  font-family: "Poppins", sans-serif; /* font family */
+}
+
+.about-us-container .header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.about-us-container .header h2 {
+  font-weight: bold;
+  color: #76767f; /* color for the heading */
+  margin: 0;
+  margin-left: 20px; /* Adjust this to align the text parallel to the line */
+}
+
+.about-us-container .header .line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #2b3991; /* Line color */
+  max-width: 100%; /* Ensures the line doesn't exceed the container width */
+}
+
+.about-us-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-stretch: 100%;
+  font-variation-settings: normal;
+  font-feature-settings: normal;
+  text-transform: none;
+  text-decoration: none solid rgb(118, 118, 127);
+  text-align: justify;
+  text-indent: 0px;
+  word-spacing: medium;
+}
+
+.img-fluid {
+  margin-bottom: 20px;
+  max-width: 100%; /* Ensures the image is responsive */
+}
+
+.header .line {
+  width: 100%; /* Line is set to take the full width of its container */
+}
+
+@media (min-width: 768px) {
+  .header {
+    width: 50%; /* Ensures the header and line take up the same width as the image */
+  }
+}

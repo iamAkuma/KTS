@@ -1,11 +1,13 @@
 import React from 'react'
-import Navbar from '../Navbar'
+import Navbar from '../Navbar/Navbar'
+import About from '../About-Us/About'
 // import Video from '../../vid/Homepage.mp4'
 
 const Home = () => {
     return (
         <>
             <Navbar />
+            <About />
             <div className="home">
                 {/* Video Section */}
                 {/* <div className="video-container">
