@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
         <div className="whyChoose-container">
             <Container className="my-5">
                 <div className="whyChoose-line-wrapper">
-                    <h2 className="font-weight-bold">WHY CHOOSE US</h2>
+                    <h2 className="about-us-heading">WHY CHOOSE US</h2>
                     <div className="line"></div>
                 </div>
                 <Row>

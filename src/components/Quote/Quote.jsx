@@ -1,23 +1,18 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import './Quote.css';
 
 const Quote = () => {
     return (
-        <div className="container my-5">
-            <div className="row">
-                <div className="col-md-6">
-                    <blockquote className="blockquote">
-                        <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon" />
-                        <p>
-                            We strive to provide skills advancement course to youth that prepares them for
-                            employability in both national and global labor markets.
-                        </p>
-                        <FontAwesomeIcon icon={faQuoteRight} className="quote-icon" />
-                    </blockquote>
+        <div className="quote-section">
+            <div className="quote-container">
+                <div className="quote-icon-left">
+                    <span>&ldquo;</span>
                 </div>
-                <div className="col-md-6">
-                    {/* Add your image or other visual element here */}
+                <p className="quote-text">
+                    We strive to provide skills advancement course to youth that prepares them for employability in both national and global labor markets.
+                </p>
+                <div className="quote-icon-right">
+                    <span>&rdquo;</span>
                 </div>
             </div>
         </div>

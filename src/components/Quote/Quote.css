@@ -1,0 +1,42 @@
+.quote-section {
+  background-color: #2b3991; /* Blue background color */
+  color: white; /* White text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Height of the quote section */
+  padding: 20px; /* Padding around the section */
+}
+
+.quote-container {
+  max-width: 80%; /* Max width of the container */
+  text-align: center;
+  position: relative; /* Position relative to place the icons */
+  display: flex;
+  align-items: center;
+}
+
+.quote-text {
+  font-family: "Poppins", sans-serif; /* Font family */
+  font-size: 1.2rem; /* Font size */
+  font-weight: 400; /* Font weight */
+  margin: 0; /* Remove default margin */
+  color: white; /* Text color */
+}
+
+.quote-icon-left,
+.quote-icon-right {
+  font-size: 2rem; /* Font size of the quote icons */
+  color: #f7a721; /* Color of the quote icons */
+  margin: 0 10px; /* Margin around the quote icons */
+}
+
+.quote-icon-left {
+  position: absolute;
+  left: -30px; /* Adjust position to the left */
+}
+
+.quote-icon-right {
+  position: absolute;
+  right: -30px; /* Adjust position to the right */
+}

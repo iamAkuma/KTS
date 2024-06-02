@@ -4,6 +4,14 @@
   font-family: "Poppins", sans-serif; /* font family */
 }
 
+.about-us-heading {
+  font-family: "Poppins", sans-serif; /* Ensure the font family is correct */
+  font-weight: 800; /* Make the text very bold */
+  font-size: 3rem; /* Make the text size larger */
+  color: #000000; /* Optional: Set the text color */
+  margin: 0; /* Optional: Remove default margin */
+}
+
 .whyChoose-line-wrapper {
   display: flex;
   flex-direction: column;

@@ -36,7 +36,7 @@ function AboutUs() {
             <div className="row">
                 <div className="col-12">
                     <div className="image-line-wrapper">
-                        <h2 className="font-weight-bold">ABOUT US</h2>
+                        <h2 className="about-us-heading">ABOUT US</h2>
                         <div className="line"></div>
                     </div>
                 </div>
