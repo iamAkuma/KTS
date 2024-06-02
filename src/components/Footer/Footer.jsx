@@ -1,34 +1,36 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="bg-white text-black py-4">
+        <footer className="text-center py-5 mt-5">
+            <h1 className="display-6 fw-bold">Contact Us</h1>
             <div className="container">
-                <div className="row align-items-center">
-                    <div className="col-md-4">
-                        <div className="d-flex flex-column align-items-center">
-                            <h5>Contact Us</h5>
-                            <ul className="list-unstyled text-center">
-                                <li>+977 01 5912297</li>
-                                <li>info@ktsnepal.com</li>
-                                <li>Sukedhara, Kathmandu, Nepal</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-md-8">
-                        <div className="d-flex justify-content-center">
-                            <a href="/" className="text-black mr-4">Home</a>
-                            <a href="/alumni" className="text-black mr-4">Alumni</a>
-                            <a href="/courses" className="text-black mr-4">Courses</a>
-                            <a href="/blog" className="text-black mr-4">Blog</a>
-                            <a href="/contact" className="text-black">Contact</a>
-                        </div>
+                <div className="row justify-content-center">
+                    <div className="col-md-8 text-center">
+                        <p className="fs-5">
+                            <i className="fas fa-phone-alt me-3"></i> +977 01 5912297
+                        </p>
+                        <p className="fs-5">
+                            <i className="fas fa-envelope me-3"></i> info@ktsnepal.com
+                        </p>
+                        <p className="fs-5">
+                            <i className="fas fa-map-marker-alt me-3"></i> Sukedhara, Kathmandu,
+                            Nepal
+                        </p>
                     </div>
                 </div>
-                <div className="row mt-4">
-                    <div className="col text-center">
-                        <p className="mb-0">Copyright © {new Date().getFullYear()} Kathmandu Technical School</p>
-                    </div>
+            </div>
+            <nav className="d-flex justify-content-center mb-4">
+                <Link className="nav-link mx-3" to="/">Home</Link>
+                <Link className="nav-link mx-3" to="/alumni">Alumni</Link>
+                <Link className="nav-link mx-3" to="/courses">Courses</Link>
+                <Link className="nav-link mx-3" to="/blog">Blog</Link>
+                <Link className="nav-link mx-3" to="/contact">Contact</Link>
+            </nav>
+            <div>
+                <div className="col text-center">
+                    <p className="mb-0">Copyright © {new Date().getFullYear()} <b>Kathmandu Technical School</b></p>
                 </div>
             </div>
         </footer>
