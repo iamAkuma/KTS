@@ -16,7 +16,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="col-md-8">
-                        <div className="d-flex justify-content-end">
+                        <div className="d-flex justify-content-center">
                             <a href="/" className="text-black mr-4">Home</a>
                             <a href="/alumni" className="text-black mr-4">Alumni</a>
                             <a href="/courses" className="text-black mr-4">Courses</a>
