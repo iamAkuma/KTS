@@ -23,19 +23,19 @@ const WhyChooseUs = () => {
                 </Row>
                 <Row className="mt-5">
                     <Col md={6} className="text-center">
-                        <FontAwesomeIcon icon={faUserGraduate} size="1x" className="mb-3" />
+                        <FontAwesomeIcon icon={faUserGraduate} size="1x" className="mb-3" style={{ color: '#2b3991' }} />
                         <h5>Organizational Training</h5>
                     </Col>
                     <Col md={6} className="text-center">
-                        <FontAwesomeIcon icon={faToolbox} size="1x" className="mb-3" />
+                        <FontAwesomeIcon icon={faToolbox} size="1x" className="mb-3" style={{ color: '#2b3991' }} />
                         <h5>Job Placement</h5>
                     </Col>
                     <Col md={6} className="text-center">
-                        <FontAwesomeIcon icon={faGraduationCap} size="1x" className="mb-3" />
+                        <FontAwesomeIcon icon={faGraduationCap} size="1x" className="mb-3" style={{ color: '#2b3991' }} />
                         <h5>Vocational Training</h5>
                     </Col>
                     <Col md={6} className="text-center">
-                        <FontAwesomeIcon icon={faUserFriends} size="1x" className="mb-3" />
+                        <FontAwesomeIcon icon={faUserFriends} size="1x" className="mb-3" style={{ color: '#2b3991' }} />
                         <h5>Industry Expert Faculty</h5>
                     </Col>
                 </Row>
