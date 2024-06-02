@@ -1,34 +1,29 @@
-.about-us-container {
+.whyChoose-container {
   background-color: rgba(0, 0, 0, 0); /* transparent background */
   color: rgb(118, 118, 127); /* text color */
   font-family: "Poppins", sans-serif; /* font family */
 }
 
-.image-line-wrapper {
+.whyChoose-line-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.image-line-wrapper .line {
+.whyChoose-line-wrapper .line {
   width: 100%; /* Line is set to take the full width of its container */
   height: 2px;
   background-color: #2b3991; /* Line color */
   margin-bottom: 35px; /* Space between the line and the image */
 }
 
-.img-fluid {
-  margin-bottom: 20px;
-  max-width: 100%; /* Ensures the image is responsive */
-}
-
-.about-us-container h2 {
+.whyChoose-container h2 {
   font-weight: bold;
   color: black; /* color for the heading */
   margin-bottom: 20px;
 }
 
-.about-us-container p {
+.whyChoose-container p {
   font-size: 18px;
   line-height: 2;
   margin-bottom: 20px;
@@ -37,7 +32,7 @@
 }
 
 @media (min-width: 768px) {
-  .about-us-container .header {
+  .whyChoose-container .header {
     width: 100%; /* Ensures the header and line take up the same width as the image */
   }
 }
