@@ -21,6 +21,9 @@
   font-weight: bolder; /* Add more margin between navbar items */
 }
 
+.nav-item :hover {
+  color: #2a3a91;
+}
 /* Optional: Add margin to the right of the last navbar item to avoid spacing after it */
 .nav-item:last-child {
   margin-right: 0;
