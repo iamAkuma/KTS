@@ -23,12 +23,20 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0; /* Initial opacity set to 0 */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+  visibility: hidden; /* Initially hidden */
+}
+
+.video-container:hover .controls {
+  opacity: 1; /* Make controls visible when hovering over the container */
+  visibility: visible; /* Make controls visible */
 }
 
 .button {
   background-color: transparent; /* Semi-transparent background */
-  border: 2px solid #262a2b; /* White border */
-  color: #262a2b;
+  border: 1px solid #bab8b6; /* White border */
+  color: #bab8b6;
   width: 50px; /* Set width */
   height: 50px; /* Set height */
   font-size: 24px;
