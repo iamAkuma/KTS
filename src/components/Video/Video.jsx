@@ -31,6 +31,7 @@ const Videos = () => {
                 ref={videoRef}
                 autoPlay
                 muted
+                loop
                 onClick={handlePlayPause}
             >
                 <source src={Video} type="video/mp4" />
