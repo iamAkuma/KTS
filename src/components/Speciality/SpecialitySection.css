@@ -1,0 +1,11 @@
+.speciality-item {
+  margin-bottom: 20px;
+}
+
+.speciality-item h4 {
+  font-weight: bold;
+}
+
+.speciality-images img {
+  border: 5px solid #fbb040; /* Adjust the border color and size as needed */
+}
