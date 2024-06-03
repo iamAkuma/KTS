@@ -1,8 +1,41 @@
-.col-md-4.d-flex {
-  justify-content: center;
+.text-center {
+  text-align: center;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-nav-link {
+  color: #2b3991;
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.text-center {
-  text-align: center;
+.row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.col-md-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
