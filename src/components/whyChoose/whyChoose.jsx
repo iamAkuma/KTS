@@ -9,8 +9,8 @@ const WhyChooseUs = () => {
         <div className="whyChoose-container">
             <Container className="my-5">
                 <div className="whyChoose-line-wrapper">
-                    <h2 className="about-us-heading">WHY CHOOSE US</h2>
-                    <div className="line"></div>
+                    <h2 className="why-us-heading">WHY CHOOSE US</h2>
+                    {/* <div className="line"></div> */}
                 </div>
                 <Row>
                     <Col md={6} className="d-flex flex-column justify-content-center">

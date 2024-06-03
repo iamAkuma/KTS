@@ -8,7 +8,7 @@
   font-weight: 800; /* Make the text very bold */
   font-size: 3rem; /* Make the text size larger */
   color: #000000; /* Optional: Set the text color */
-  margin: 0; /* Optional: Remove default margin */
+  padding-left: 255px;
 }
 
 .image-line-wrapper {
