@@ -5,6 +5,7 @@ import Video from '../Video/Video'
 import WhyChoose from '../whyChoose/whyChoose'
 import Quote from '../Quote/Quote'
 import Footer from '../Footer/Footer'
+import Speciality from '../Speciality/Speciality'
 const Home = () => {
     return (
         <>
@@ -13,6 +14,7 @@ const Home = () => {
             <About />
             <WhyChoose />
             <Quote />
+            <Speciality />
             <Footer />
         </>
     )
