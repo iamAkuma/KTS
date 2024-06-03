@@ -2,7 +2,7 @@
   "name": "kts",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://iamakuma.github.io/kts",
+  "homepage": "https://iamakuma.github.io/KTS",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
@@ -11,6 +11,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.3.1",
