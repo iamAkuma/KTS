@@ -41,14 +41,16 @@ const Footer = () => {
                 <Link className="nav-link mx-3" to="/blog" style={{ color: '#2b3991', fontWeight: 'bold' }}>Blog</Link>
                 <Link className="nav-link mx-3" to="/contact" style={{ color: '#2b3991', fontWeight: 'bold' }}>Contact</Link>
             </nav>
-
-            <div>
-                <div class="col text-center">
-                    <p class="mb-0" style={{ position: "fixed", bottom: "10px", width: "100%" }}>  Copyright © {new Date().getFullYear()} <b><Link style={{ textDecoration: 'none', color: 'black' }} to="/">Kathmandu Technical School</Link></b>
-                    </p>
-                </div>
-
+            <div class="grid container">
+                <div class="content"> </div>
+                <footer class="footer">
+                    <div class="col text-center">
+                        <p class="mb-0">Copyright © {new Date().getFullYear()} <b><Link style={{ textDecoration: 'none', color: 'black' }} to="/">Kathmandu Technical School</Link></b></p>
+                    </div>
+                </footer>
             </div>
+
+
         </footer>
     );
 };
