@@ -10,7 +10,7 @@ import Two from './components/Alumni/two'
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/KTS">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
