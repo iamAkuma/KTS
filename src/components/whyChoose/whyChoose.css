@@ -13,6 +13,10 @@
   padding-right: 700px;
 }
 
+.icon-text-spacing {
+  margin-left: 15px; /* Adjust the value as needed for more or less space */
+}
+
 .whyChoose-line-wrapper {
   display: flex;
   flex-direction: column;

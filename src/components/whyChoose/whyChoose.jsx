@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserGraduate, faToolbox, faGraduationCap, faUserFriends } from '@fortawesome/free-solid-svg-icons';
+import { faUserGraduate, faToolbox, faUserFriends, faHammer } from '@fortawesome/free-solid-svg-icons';
 import './whyChoose.css';
 
 const WhyChooseUs = () => {
@@ -22,21 +22,23 @@ const WhyChooseUs = () => {
                     </Col>
                 </Row>
                 <Row className="mt-5">
-                    <Col md={6} className="text-center">
-                        <FontAwesomeIcon icon={faUserGraduate} size="1x" className="mb-3" style={{ color: '#2b3991' }} />
-                        <h5>Organizational Training</h5>
-                    </Col>
-                    <Col md={6} className="text-center">
-                        <FontAwesomeIcon icon={faToolbox} size="1x" className="mb-3" style={{ color: '#2b3991' }} />
-                        <h5>Job Placement</h5>
-                    </Col>
-                    <Col md={6} className="text-center">
-                        <FontAwesomeIcon icon={faGraduationCap} size="1x" className="mb-3" style={{ color: '#2b3991' }} />
-                        <h5>Vocational Training</h5>
-                    </Col>
-                    <Col md={6} className="text-center">
-                        <FontAwesomeIcon icon={faUserFriends} size="1x" className="mb-3" style={{ color: '#2b3991' }} />
-                        <h5>Industry Expert Faculty</h5>
+                    <Col md={12} className="d-flex flex-column align-items-start">
+                        <div className="mb-3 d-flex align-items-center">
+                            <FontAwesomeIcon icon={faUserGraduate} size="1x" style={{ color: '#2b3991' }} />
+                            <h5 className="icon-text-spacing">Organizational Training</h5>
+                        </div>
+                        <div className="mb-3 d-flex align-items-center">
+                            <FontAwesomeIcon icon={faToolbox} size="1x" style={{ color: '#2b3991' }} />
+                            <h5 className="icon-text-spacing">Job Placement</h5>
+                        </div>
+                        <div className="mb-3 d-flex align-items-center">
+                            <FontAwesomeIcon icon={faHammer} size="1x" style={{ color: '#2b3991' }} />
+                            <h5 className="icon-text-spacing">Vocational Training</h5>
+                        </div>
+                        <div className="mb-3 d-flex align-items-center">
+                            <FontAwesomeIcon icon={faUserFriends} size="1x" style={{ color: '#2b3991' }} />
+                            <h5 className="icon-text-spacing">Industry Expert Faculty</h5>
+                        </div>
                     </Col>
                 </Row>
             </Container>
