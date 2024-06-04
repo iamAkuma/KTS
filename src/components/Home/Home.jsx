@@ -6,6 +6,7 @@ import WhyChoose from '../whyChoose/whyChoose'
 import Quote from '../Quote/Quote'
 import Footer from '../Footer/Footer'
 import Speciality from '../Speciality/Speciality'
+import Logo from '../Logo-Vid/Logo'
 const Home = () => {
     return (
         <>
@@ -15,6 +16,7 @@ const Home = () => {
             <WhyChoose />
             <Quote />
             <Speciality />
+            <Logo />
             <Footer />
         </>
     )
