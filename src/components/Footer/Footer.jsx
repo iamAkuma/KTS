@@ -1,10 +1,31 @@
 /* eslint-disable react/style-prop-object */
 /* eslint-disable react/jsx-no-target-blank */
-import React from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { FaArrowUp } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
+    const [showArrow, setShowArrow] = useState(false);
+
+    const handleScroll = () => {
+        if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 100) {
+            setShowArrow(true);
+        } else {
+            setShowArrow(false);
+        }
+    };
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <footer className="footer text-center py-5 mt-5">
             <div className="container">
@@ -15,7 +36,8 @@ const Footer = () => {
                             <p className="fs-5">
                                 <div className="phone" style={{ textDecoration: 'none', color: 'black' }}>
                                     <i className="fas fa-phone-alt me-3" style={{ textDecoration: 'none', color: '2b3991' }}></i>
-                                    +977 01 5912297</div>
+                                    +977 01 5912297
+                                </div>
                             </p>
                             <p className="fs-5">
                                 <i className="fas fa-envelope me-3" style={{ textDecoration: 'none', color: '#2b3991' }}></i>
@@ -45,6 +67,12 @@ const Footer = () => {
                     </b></p>
                 </div>
             </div>
+            {showArrow && (
+                <div className="scroll-to-top" onClick={scrollToTop}>
+                    <FaArrowUp />
+                </div>
+            )}
+            <p className="scroll-to-top-text">Scroll to Top</p>
         </footer>
     );
 };
