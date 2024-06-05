@@ -34,7 +34,7 @@
   display: block;
 }
 
-social-icons {
+.social-icons {
   display: flex;
   align-items: center;
 }
