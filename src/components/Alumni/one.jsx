@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
+import Footer from '../Footer/Footer'
 
 const one = () => {
   return (
@@ -10,6 +11,7 @@ const one = () => {
           2079/80
         </h1>
       </div>
+      <Footer />
     </>
   )
 }
