@@ -121,3 +121,7 @@
   font-size: 12px; /* Adjust font size for text */
   text-align: center; /* Center text horizontally */
 }
+
+.contact-details .fs-5 {
+  margin-bottom: 15px; /* Adjust as needed for bottom gaps */
+}
