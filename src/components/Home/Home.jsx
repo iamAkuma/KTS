@@ -7,6 +7,8 @@ import Quote from '../Quote/Quote'
 import Footer from '../Footer/Footer'
 import Speciality from '../Speciality/Speciality'
 import Logo from '../Logo-Vid/Logo'
+
+
 const Home = () => {
     return (
         <>
