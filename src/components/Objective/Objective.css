@@ -1,44 +1,48 @@
+/* src/ObjectiveAndWhatWeDo.css */
 .container {
+  margin-top: 20px;
+}
+
+.objective-section,
+.what-we-do-section {
   position: relative;
-  width: 100vw;
-  height: 500px; /* Adjust height as needed */
-}
-
-.image-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-size: cover;
-  background-position: center;
+  color: white;
+  padding: 40px;
 }
 
-.text-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex; /* Enables flexbox for half-and-half layout */
-  flex-direction: row; /* Arranges elements side-by-side */
-  align-items: center; /* Vertically centers the text content */
+.objective-section {
+  background-image: url("../../img/garden.jpeg");
 }
 
-.text-container > * {
-  flex: 1; /* Makes each child element occupy half the width */
-  padding: 20px; /* Adds padding around the text */
-  color: white; /* Text color for better contrast */
-  text-align: center; /* Centers text within each half */
+.what-we-do-section {
+  background-image: url("../../img/classroom.jpg");
 }
 
-.text-container:before {
-  /* Creates a pseudo-element for the blue background */
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-color: rgba(0, 0, 255, 0.5); /* Transparent blue background */
+.overlay {
+  background-color: rgba(0, 0, 50, 0.7);
+  padding: 20px;
+}
+
+p {
+  color: white;
+}
+
+h2 {
+  color: #fca311;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li:before {
+  content: "•";
+  color: #fca311;
+  padding-right: 10px;
 }

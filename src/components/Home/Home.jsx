@@ -7,7 +7,7 @@ import Quote from '../Quote/Quote'
 import Footer from '../Footer/Footer'
 import Speciality from '../Speciality/Speciality'
 import Logo from '../Logo-Vid/Logo'
-
+import Objective from '../Objective/Objective'
 
 const Home = () => {
     return (
@@ -19,6 +19,7 @@ const Home = () => {
             <Quote />
             <Speciality />
             <Logo />
+            <Objective />
             <Footer />
         </>
     )
