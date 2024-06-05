@@ -1,26 +1,15 @@
-.text-center {
-  text-align: center;
-}
-
-.footer-link {
-  text-decoration: none;
-  color: black;
-}
-
-.footer-nav-link {
-  color: #2b3991;
-  font-weight: bold;
-}
-
+/* Base styles for the footer */
 .footer {
   margin-top: 20px;
   position: relative;
+  background-color: #f2f2f2; /* Optional background color */
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px; /* Adjust padding as needed */
 }
 
 .row {
@@ -39,8 +28,54 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px; /* Adjust margin as needed */
 }
 
+.fs-5 {
+  font-size: 1rem; /* Adjust font size if needed */
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.phone,
+.fas.fa-envelope,
+.fas.fa-map-marker-alt {
+  color: #2b3991; /* Color for contact icons */
+}
+
+.phone a,
+.fas.fa-envelope a {
+  color: black; /* Text color for contact details */
+}
+
+/* Styles for navigation links */
+.nav-link {
+  color: #2b3991; /* Text color for navigation links */
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease-in-out; /* Add hover effect */
+}
+
+.nav-link:hover {
+  color: #000; /* Change color on hover */
+}
+
+/* Styles for copyright and link at the bottom */
+.text-center p {
+  margin-bottom: 0;
+}
+
+.footer-link {
+  text-decoration: none; /* Remove underline */
+  color: #2b3991; /* Text color for footer link */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out; /* Add hover effect */
+}
+
+.footer-link:hover {
+  color: black; /* Change color on hover */
+}
+
+/* Styles for "Scroll to Top" button */
 .scroll-to-top {
   position: fixed;
   bottom: 20px;
@@ -77,22 +112,12 @@
 }
 
 .scroll-to-top svg {
-  width: 24px;
-  height: 24px;
-}
-
-.scroll-to-top p {
-  margin: 0;
-  padding: 5px 0 0 0;
-  font-size: 12px;
-  color: white;
+  width: 40px;
+  height: 40px;
 }
 
 .scroll-to-top-text {
-  position: fixed;
-  bottom: 35px; /* Adjust as needed */
-  right: 35px; /* Adjust as needed */
-  color: white;
-  font-size: 12px;
-  text-align: center;
+  margin-top: 5px; /* Adjust spacing between icon and text */
+  font-size: 12px; /* Adjust font size for text */
+  text-align: center; /* Center text horizontally */
 }

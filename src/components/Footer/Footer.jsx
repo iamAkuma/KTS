@@ -1,6 +1,5 @@
 /* eslint-disable react/style-prop-object */
 /* eslint-disable react/jsx-no-target-blank */
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowUp } from 'react-icons/fa';
@@ -35,8 +34,7 @@ const Footer = () => {
                         <div className="contact-details">
                             <p className="fs-5">
                                 <div className="phone" style={{ textDecoration: 'none', color: 'black' }}>
-                                    <i className="fas fa-phone-alt me-3" style={{ textDecoration: 'none', color: '2b3991' }}></i>
-                                    +977 01 5912297
+                                    <i className="fas fa-phone-alt me-3" style={{ textDecoration: 'none', color: '#2b3991' }}></i> +977 01 5912297
                                 </div>
                             </p>
                             <p className="fs-5">
@@ -55,24 +53,38 @@ const Footer = () => {
                     </div>
                 </div>
                 <nav className="d-flex justify-content-center mb-4">
-                    <Link className="nav-link mx-3 footer-nav-link" to="/">Home</Link>
-                    <Link className="nav-link mx-3 footer-nav-link" to="/alumni">Alumni</Link>
-                    <Link className="nav-link mx-3 footer-nav-link" to="/courses">Courses</Link>
-                    <Link className="nav-link mx-3 footer-nav-link" to="/blog">Blog</Link>
-                    <Link className="nav-link mx-3 footer-nav-link" to="/contact">Contact</Link>
+                    <Link className="nav-link mx-3 footer-nav-link" to="/">
+                        Home
+                    </Link>
+                    <Link className="nav-link mx-3 footer-nav-link" to="/alumni">
+                        Alumni
+                    </Link>
+                    <Link className="nav-link mx-3 footer-nav-link" to="/courses">
+                        Courses
+                    </Link>
+                    <Link className="nav-link mx-3 footer-nav-link" to="/blog">
+                        Blog
+                    </Link>
+                    <Link className="nav-link mx-3 footer-nav-link" to="/contact">
+                        Contact
+                    </Link>
                 </nav>
                 <div className="text-center">
-                    <p className="mb-0">Copyright © {new Date().getFullYear()} <b>
-                        <Link className="footer-link" to="/">Kathmandu Technical School</Link>
-                    </b></p>
+                    <p className="mb-0">
+                        Copyright © {new Date().getFullYear()}<b>
+                            <Link className="footer-link" to="/">
+                                Kathmandu Technical School
+                            </Link>
+                        </b>
+                    </p>
                 </div>
             </div>
             {showArrow && (
                 <div className="scroll-to-top" onClick={scrollToTop}>
                     <FaArrowUp />
+                    {/* <div className="scroll-to-top-text">Scroll to Top</div> */}
                 </div>
             )}
-            <p className="scroll-to-top-text">Scroll to Top</p>
         </footer>
     );
 };
