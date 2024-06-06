@@ -1,0 +1,31 @@
+h1 {
+  font-weight: 900;
+}
+
+.card {
+  background-color: #1a237e; /* Dark blue background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  border-radius: 15px; /* Rounded corners */
+  margin-bottom: 20px; /* Space between cards */
+}
+
+.icon {
+  font-size: 2rem; /* Icon size */
+  color: #ffc107; /* Yellow color for icons */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Title size */
+  margin-bottom: 1rem; /* Space below the title */
+}
+
+.card-text {
+  font-size: 1rem; /* Text size */
+}
+
+.divider {
+  border-top: 2px solid #ffc107; /* Yellow color for divider */
+  width: 50%; /* Set width of divider */
+  margin: 0.5rem auto; /* Center the divider */
+}

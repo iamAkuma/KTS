@@ -8,6 +8,8 @@ import Footer from '../Footer/Footer'
 import Speciality from '../Speciality/Speciality'
 import Logo from '../Logo-Vid/Logo'
 import Objective from '../Objective/Objective'
+import Empower from '../Empower/Empower'
+
 
 const Home = () => {
     return (
@@ -20,6 +22,7 @@ const Home = () => {
             <Speciality />
             <Logo />
             <Objective />
+            <Empower />
             <Footer />
         </>
     )
