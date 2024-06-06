@@ -3,32 +3,40 @@
   color: white; /* White text */
   border: none; /* Remove border */
   border-radius: 15px; /* Rounded corners */
-  margin-bottom: 20px; /* Space between cards */
+  margin-bottom: 10px; /* Space between cards */
+  min-height: 450px; /* Set a minimum height */
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
-.card :hover {
-  background-color: #243673;
+
+.card:hover {
+  background-color: #243673; /* Darker blue on hover */
 }
+
 .icon {
   font-size: 2rem; /* Icon size */
   color: #ffc107; /* Yellow color for icons */
+  transition: transform 0.3s ease; /* Smooth transition for transform */
 }
-.icon :hover {
-  transform-style: inherit;
+
+.icon:hover {
+  transform: translateY(-5px); /* Float animation */
 }
 
 .card-title {
-  font-size: 1.25rem; /* Title size */
+  font-size: 1.5rem; /* Larger title size */
+  font-weight: bold; /* Bold font */
+  text-align: center; /* Center-aligned */
   margin-bottom: 1rem; /* Space below the title */
 }
 
 .card-text {
   font-size: 1rem; /* Text size */
   color: white;
-  align-items: center;
+  text-align: center; /* Center-aligned */
 }
 
 .divider {
-  border-top: 2px solid #ffbf00; /* Yellow color for divider */
+  border-top: 3px solid #fea92c; /* Yellow color for divider */
   width: 50%; /* Set width of divider */
   margin: 0.5rem auto; /* Center the divider */
 }

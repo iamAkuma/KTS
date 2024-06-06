@@ -4,8 +4,8 @@ import './Empower.css';
 const MissionVision = () => {
     return (
         <div className="container text-center my-5">
-            <h1 className="mb-2" style={{ fontWeight: 'bolder' }}>EMPOWERING YOUTH</h1>
-            <h1 className="mb-5" style={{ fontWeight: 'bolder' }}>EMPOWERING NATION</h1>
+            <h1 className="mb-2">EMPOWERING YOUTH</h1>
+            <h1 className="mb-5">EMPOWERING NATION</h1>
 
             <div className="row">
                 <div className="col-md-3 col-sm-6 mb-4">
@@ -14,7 +14,7 @@ const MissionVision = () => {
                             <div className="icon mb-3">
                                 <i className="fas fa-rocket"></i>
                             </div>
-                            <h5 className="card-title">Our Mission</h5>
+                            <h1 className="card-title">Our Mission</h1>
                             <hr className="divider" />
                             <p className="card-text">
                                 To train and nurture socially responsible, technically competent, and future-ready generation of youth through industry and job-specific training, courses, and opportunities led by industry leaders.
@@ -26,7 +26,7 @@ const MissionVision = () => {
                     <div className="card p-3 h-100">
                         <div className="card-body">
                             <div className="icon mb-3">
-                                <i className="fas fa-bullseye"></i>
+                                <i className="fas fa-eye"></i>
                             </div>
                             <h5 className="card-title">Our Vision</h5>
                             <hr className="divider" />
