@@ -9,7 +9,7 @@ import Speciality from '../Speciality/Speciality'
 import Logo from '../Logo-Vid/Logo'
 import Objective from '../Objective/Objective'
 import Empower from '../Empower/Empower'
-
+import Cards from '../Cards/Cards'
 
 const Home = () => {
     return (
@@ -23,6 +23,7 @@ const Home = () => {
             <Logo />
             <Objective />
             <Empower />
+            <Cards />
             <Footer />
         </>
     )
