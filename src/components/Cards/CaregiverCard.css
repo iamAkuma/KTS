@@ -1,5 +1,4 @@
 /* src/components/CaregiverCard.css */
-
 .card-head {
   color: white;
 }
@@ -16,12 +15,12 @@
   display: flex;
   justify-content: center;
   gap: 1rem; /* Adjust gap between cards */
+  margin-bottom: 2rem; /* Add margin at the bottom to separate rows */
 }
 
 .caregiver-card {
   max-width: 450px; /* Increase the max-width for wider cards */
   width: 100%; /* Ensure the card takes full width up to the max-width */
-  height: 400px;
   text-align: center;
 }
 
@@ -53,12 +52,14 @@
 .caregiver-card .image-container {
   position: relative;
   text-align: center;
-  padding: 0; /* Remove any padding */
+  height: 250px; /* Set a fixed height for the image container */
+  overflow: hidden; /* Hide overflow to maintain fixed height */
 }
 
 .caregiver-card .image-container img {
   width: 100%;
-  height: auto; /* Ensure the image maintains its aspect ratio */
+  height: 100%; /* Ensure the image fills the container */
+  object-fit: cover; /* Cover the container without stretching */
 }
 
 .caregiver-card .image-container .btn {
@@ -69,4 +70,36 @@
   background-color: #243673 !important;
   border: none;
   padding: 10px 20px; /* Adjust padding as needed */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f39c12;
+  border-radius: 50%;
+  width: 60px; /* Adjust width to match the first card */
+  height: 60px; /* Adjust height to match the first card */
+  margin-top: 10px; /* Add some margin to position the icon */
+}
+
+.icon-container:hover {
+  animation: float 0.5s ease-in-out infinite; /* Apply float animation on hover */
+}
+
+.icon-container i {
+  color: #fff;
+  font-size: 2rem; /* Adjust icon size to match the first card */
 }
