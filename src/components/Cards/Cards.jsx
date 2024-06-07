@@ -1,6 +1,6 @@
 // src/components/CaregiverCard.js
 import React from 'react';
-import './CaregiverCard.css'; // Import custom CSS for the component
+import './Cards.css'; // Import custom CSS for the component
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faHandHoldingHeart, faHandsHelping, faCocktail } from '@fortawesome/free-solid-svg-icons';
 
