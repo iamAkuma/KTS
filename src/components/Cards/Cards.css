@@ -28,6 +28,7 @@
   margin-bottom: 2rem; /* Add margin at the bottom to separate rows */
   margin-right: 1rem; /* Add margin on the right to create horizontal gap */
   border-radius: 15px; /* Make the tab corners round */
+  border: 1px solid #243673; /* Add border around the card */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow for better visual separation */
 }
 
