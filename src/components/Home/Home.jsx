@@ -10,8 +10,7 @@ import Logo from '../Logo-Vid/Logo'
 import Objective from '../Objective/Objective'
 import Empower from '../Empower/Empower'
 import Cards from '../Cards/Cards'
-// import Contact from '../Contact-Us/Contact-Us'
-
+import ContactForm from '../ContactForm/ContactForm'
 const Home = () => {
     return (
         <>
@@ -25,7 +24,7 @@ const Home = () => {
             <Objective />
             <Empower />
             <Cards />
-            {/* <Contact /> */}
+            <ContactForm />
             <Footer />
         </>
     )

@@ -3,7 +3,7 @@ import './ContactForm.css';
 
 const ContactForm = () => {
     return (
-        <div className="contact-form-container container-fluid bg-primary text-white">
+        <div className="contact-form-container container-fluid text-white">
             <div className="row">
                 <div className="col-md-6 contact-info">
                     <h2>Contact Us</h2>
@@ -31,6 +31,11 @@ const ContactForm = () => {
                             <label htmlFor="course">Which course are you interested in?</label>
                             <select className="form-control" id="course" required>
                                 <option>Caregiver / Aged Care</option>
+                                <option>Barista</option>
+                                <option>Bartender</option>
+                                <option>Commercial Cook/Baker</option>
+                                <option>Waiter/Waitress</option>
+                                <option>Housekeeping Cleaner</option>
                             </select>
                         </div>
                         <button type="submit" className="btn btn-warning">Submit</button>
