@@ -13,9 +13,9 @@ const ContactForm = () => {
         <div className="contact-form-container container-fluid text-white">
             <div className="row">
                 <div className="col-md-4 contact-info">
-                    <h2>Contact Us</h2>
+                    <h2>CONTACT US</h2>
                     <div className="contact-detail">
-                        <div>
+                        <div className='address'>
                             <p>Address</p>
                             <p>Sukedhara, Kathmandu, Nepal</p>
                         </div>

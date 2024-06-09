@@ -19,6 +19,7 @@
   color: white;
   font-size: 1.8rem;
   margin-bottom: 20px;
+  font-weight: bolder;
 }
 
 .contact-detail {
@@ -28,15 +29,12 @@
 }
 
 .contact-detail p {
+  color: white;
   margin: 0;
 }
 
 .contact-detail div p:first-child {
   color: #f0ad4e; /* Orange color for labels */
-}
-
-p {
-  color: white;
 }
 
 form h2 {
@@ -51,6 +49,12 @@ form h2 {
   margin-bottom: 5px;
 }
 
+.form-group label::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+  font-size: 1.1rem;
+}
 .form-group input {
   margin-bottom: 20px;
   padding: 8px; /* Adjust the padding to make the input box smaller */
