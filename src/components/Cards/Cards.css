@@ -46,6 +46,7 @@
   border-top-left-radius: 15px; /* Round the top-left corner */
   border-top-right-radius: 15px; /* Round the top-right corner */
   padding: 1rem 0; /* Add padding for better spacing */
+  border: 1px solid #243673; /* Add border around the card */
 }
 
 .caregiver-tab .icon-container {

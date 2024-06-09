@@ -1,0 +1,35 @@
+.contact-form-container {
+  padding: 50px 20px;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-info h2,
+.contact-info p,
+.contact-info i {
+  color: white;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+form h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  color: white;
+}
+
+.btn-warning {
+  background-color: #f0ad4e;
+  border: none;
+}
