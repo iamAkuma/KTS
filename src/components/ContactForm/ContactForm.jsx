@@ -1,6 +1,7 @@
 import React from 'react';
 import './ContactForm.css';
 
+
 const ContactForm = () => {
     return (
         <div className="contact-form-container container-fluid text-white">
@@ -8,27 +9,27 @@ const ContactForm = () => {
                 <div className="col-md-5 contact-info">
                     <h2>Contact Us</h2>
                     <div className="contact-detail">
-                        <i className="fas fa-map-marker-alt"></i>
                         <div>
                             <p>Address</p>
                             <p>Sukedhara, Kathmandu, Nepal</p>
                         </div>
                     </div>
+                    <hr />
                     <div className="contact-detail">
-                        <i className="fas fa-phone"></i>
                         <div>
                             <p>Phone</p>
                             <p>+977 9762782465</p>
                             <p>+977 9801482465</p>
                         </div>
                     </div>
+                    <hr />
                     <div className="contact-detail">
-                        <i className="fas fa-envelope"></i>
                         <div>
                             <p>Email</p>
                             <p>info@ktsnepal.com</p>
                         </div>
                     </div>
+                    <hr />
                 </div>
                 <div className="col-md-7">
                     <h2>Send Us a Message</h2>
@@ -56,7 +57,7 @@ const ContactForm = () => {
                                 <option>Housekeeping Cleaner</option>
                             </select>
                         </div>
-                        <button type="submit" className="btn btn-warning">Submit</button>
+                        <button type="submit" className="btn">Submit</button>
                     </form>
                 </div>
             </div>

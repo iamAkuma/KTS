@@ -1,7 +1,6 @@
 .contact-form-container {
   padding: 50px 20px;
   background-color: #2b3991;
-  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,6 +35,10 @@
   font-weight: bold;
 }
 
+p {
+  color: white;
+}
+
 form h2 {
   color: white;
   margin-bottom: 30px;
@@ -55,7 +58,7 @@ form h2 {
   font-size: 1rem;
 }
 
-.btn-warning {
+.btn {
   background-color: #f0ad4e;
   border: none;
   font-size: 1.1rem;
