@@ -4,6 +4,11 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.msg {
+  color: white;
+  margin-bottom: 15px;
+}
+
 .contact-info {
   margin-bottom: 30px;
   padding-right: 40px;
@@ -11,6 +16,7 @@
 }
 
 .contact-info h2 {
+  color: white;
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
@@ -21,18 +27,12 @@
   margin-bottom: 20px;
 }
 
-.contact-detail i {
-  margin-right: 15px;
-  font-size: 1.5rem;
-}
-
 .contact-detail p {
   margin: 0;
 }
 
 .contact-detail div p:first-child {
   color: #f0ad4e; /* Orange color for labels */
-  font-weight: bold;
 }
 
 p {
@@ -54,12 +54,15 @@ form h2 {
 .form-group input,
 .form-group select {
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 8px; /* Adjust the padding to make the input box smaller */
   font-size: 1rem;
+  border-radius: 3px; /* Remove rounded corners */
+  width: 80%;
 }
 
 .btn {
-  background-color: #f0ad4e;
+  background-color: #f39b33;
+  color: white;
   border: none;
   font-size: 1.1rem;
   padding: 10px 20px;

@@ -1,7 +1,6 @@
 import React from 'react';
 import './ContactForm.css';
 
-
 const ContactForm = () => {
     return (
         <div className="contact-form-container container-fluid text-white">
@@ -32,7 +31,7 @@ const ContactForm = () => {
                     <hr />
                 </div>
                 <div className="col-md-7">
-                    <h2>Send Us a Message</h2>
+                    <h2 className='msg'>Send Us a Message</h2>
                     <form>
                         <div className="form-group">
                             <label htmlFor="fullName">Full Name</label>
