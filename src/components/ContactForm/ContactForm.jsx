@@ -2,10 +2,17 @@ import React from 'react';
 import './ContactForm.css';
 
 const ContactForm = () => {
+    const handleTelephoneChange = (e) => {
+        const input = e.target;
+        if (input.value.length > 10) {
+            input.value = input.value.slice(0, 10);
+        }
+    };
+
     return (
         <div className="contact-form-container container-fluid text-white">
             <div className="row">
-                <div className="col-md-5 contact-info">
+                <div className="col-md-4 contact-info">
                     <h2>Contact Us</h2>
                     <div className="contact-detail">
                         <div>
@@ -43,7 +50,14 @@ const ContactForm = () => {
                         </div>
                         <div className="form-group">
                             <label htmlFor="telephone">Telephone</label>
-                            <input type="tel" className="form-control" id="telephone" required />
+                            <input
+                                type="number"
+                                className="form-control"
+                                id="telephone"
+                                maxLength="10"
+                                onInput={handleTelephoneChange}
+                                required
+                            />
                         </div>
                         <div className="form-group">
                             <label htmlFor="course">Which course are you interested in?</label>

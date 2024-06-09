@@ -85,6 +85,21 @@ form h2 {
   padding: 10px 20px;
 }
 
+/* Prevent the background color from changing on hover, focus, and active states */
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: #f39b33;
+  color: white; /* Ensure text color remains white */
+  border: none; /* Remove any borders */
+  outline: none; /* Remove the default focus outline */
+}
+
+.btn:active {
+  background-color: #f39b33 !important;
+  box-shadow: none; /* Remove any shadow that might appear when clicking */
+}
+
 .form-group select {
   width: 50%;
 }
