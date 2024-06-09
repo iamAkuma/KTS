@@ -5,14 +5,32 @@ const ContactForm = () => {
     return (
         <div className="contact-form-container container-fluid text-white">
             <div className="row">
-                <div className="col-md-6 contact-info">
+                <div className="col-md-5 contact-info">
                     <h2>Contact Us</h2>
-                    <p><i className="fas fa-map-marker-alt"></i> Sukedhara, Kathmandu, Nepal</p>
-                    <p><i className="fas fa-phone"></i> +977 9762782465</p>
-                    <p><i className="fas fa-phone"></i> +977 9801482465</p>
-                    <p><i className="fas fa-envelope"></i> info@ktsnepal.com</p>
+                    <div className="contact-detail">
+                        <i className="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>Address</p>
+                            <p>Sukedhara, Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                    <div className="contact-detail">
+                        <i className="fas fa-phone"></i>
+                        <div>
+                            <p>Phone</p>
+                            <p>+977 9762782465</p>
+                            <p>+977 9801482465</p>
+                        </div>
+                    </div>
+                    <div className="contact-detail">
+                        <i className="fas fa-envelope"></i>
+                        <div>
+                            <p>Email</p>
+                            <p>info@ktsnepal.com</p>
+                        </div>
+                    </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-7">
                     <h2>Send Us a Message</h2>
                     <form>
                         <div className="form-group">
