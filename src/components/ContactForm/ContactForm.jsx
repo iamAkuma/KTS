@@ -47,14 +47,16 @@ const ContactForm = () => {
                         </div>
                         <div className="form-group">
                             <label htmlFor="course">Which course are you interested in?</label>
-                            <select className="form-control" id="course" required>
-                                <option>Caregiver / Aged Care</option>
-                                <option>Barista</option>
-                                <option>Bartender</option>
-                                <option>Commercial Cook/Baker</option>
-                                <option>Waiter/Waitress</option>
-                                <option>Housekeeping Cleaner</option>
-                            </select>
+                            <div className="select-wrapper">
+                                <select className="form-control-select" id="course" required>
+                                    <option>Caregiver / Aged Care</option>
+                                    <option>Barista</option>
+                                    <option>Bartender</option>
+                                    <option>Commercial Cook/Baker</option>
+                                    <option>Waiter/Waitress</option>
+                                    <option>Housekeeping Cleaner</option>
+                                </select>
+                            </div>
                         </div>
                         <button type="submit" className="btn">Submit</button>
                     </form>
