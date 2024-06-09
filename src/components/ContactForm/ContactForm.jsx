@@ -48,7 +48,7 @@ const ContactForm = () => {
                         <div className="form-group">
                             <label htmlFor="course">Which course are you interested in?</label>
                             <div className="select-wrapper">
-                                <select className="form-control-select" id="course" required>
+                                <select className="form-control" id="course" required>
                                     <option>Caregiver / Aged Care</option>
                                     <option>Barista</option>
                                     <option>Bartender</option>
