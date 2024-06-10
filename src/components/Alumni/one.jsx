@@ -52,7 +52,7 @@ const One = () => {
     <>
       <Navbar />
       <div>
-        <h1 className='text-center'>
+        <h1 className='one-header'>
           2079/80
         </h1>
         {/* Image section */}
