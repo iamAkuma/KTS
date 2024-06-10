@@ -1,0 +1,12 @@
+.image-container {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+  align-items: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.image {
+  width: 100px; /* Adjust image width as needed */
+  height: 100px; /* Set height to match width to maintain aspect ratio */
+  margin-right: 10px; /* Adjust gap between images */
+}
