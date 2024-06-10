@@ -1,17 +1,17 @@
-.image-container {
+.pic-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; /* Adjust as needed */
   margin-top: 20px; /* Adjust margin as needed */
 }
 
-.image-wrapper {
+.pic-wrapper {
   width: 25%; /* Set width to display four images per row */
   text-align: center;
   margin-bottom: 20px; /* Adjust margin between rows */
 }
 
-.image-container {
+.pic-container {
   display: flex;
   justify-content: space-between; /* Adjust as needed */
   align-items: center;
@@ -19,9 +19,9 @@
   padding: 15px 15px;
 }
 
-.image {
-  width: 250px; /* Adjust image width as needed */
-  height: 250px; /* Set height to match width to maintain aspect ratio */
+.pic {
+  width: 200px; /* Adjust image width as needed */
+  height: 200px; /* Set height to match width to maintain aspect ratio */
   margin-right: 10px; /* Adjust gap between images */
 }
 

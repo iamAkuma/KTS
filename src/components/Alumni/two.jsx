@@ -196,11 +196,11 @@ const One = () => {
                     2080/81
                 </h1>
                 {/* Image section */}
-                <div className="image-container">
+                <div className="pic-container">
                     {/* Map over the images array */}
                     {images.map((image, index) => (
-                        <div className="image-wrapper" key={index}>
-                            <img src={image.src} alt={image.alt} className="image" />
+                        <div className="pic-wrapper" key={index}>
+                            <img src={image.src} alt={image.alt} className="pic" />
                             <p className="name">{image.name}</p>
                         </div>
                     ))}
@@ -208,6 +208,7 @@ const One = () => {
             </div>
             <Footer />
         </>
+
     );
 };
 

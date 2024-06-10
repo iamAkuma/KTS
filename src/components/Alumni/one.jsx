@@ -5,7 +5,7 @@ import './one.css';
 
 const Two = () => {
   // Array of image details
-  const images = [
+  const pictures = [
     {
       src: require('../../img/Amita-Raut.jpg'),
       alt: 'Amita Raut',
@@ -56,12 +56,12 @@ const Two = () => {
           2079/80
         </h1>
         {/* Image section */}
-        <div className="image-container">
+        <div className="pic-container">
           {/* Map over the images array */}
-          {images.map((image, index) => (
-            <div className="image-wrapper" key={index}>
-              <img src={image.src} alt={image.alt} className="image" />
-              <p className="name">{image.name}</p>
+          {pictures.map((picture, index) => (
+            <div className="pic-wrapper" key={index}>
+              <img src={picture.src} alt={picture.alt} className="pic" />
+              <p className="name">{picture.name}</p>
             </div>
           ))}
         </div>
