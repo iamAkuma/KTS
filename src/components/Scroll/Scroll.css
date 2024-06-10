@@ -1,9 +1,17 @@
+/* Clearfix for timeline container */
+.timeline::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .timeline {
   position: relative;
   padding: 20px 0;
   list-style: none;
   width: 80%;
   margin: 0 auto; /* Center the timeline and provide space on sides */
+  margin-bottom: 60px; /* Add extra space at the bottom */
 }
 
 .timeline::before {
@@ -12,7 +20,7 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #f2f2f7;
+  background: #e9ecef;
   left: 50%;
   margin-left: -1px;
 }
@@ -30,6 +38,7 @@
   width: 40px;
   height: 40px;
   margin-left: -20px;
+  background: #2b3991; /* Updated background color */
   border-radius: 50%;
   text-align: center;
   z-index: 100;
@@ -42,18 +51,18 @@
 
 .timeline-content {
   padding: 20px;
-  background: #f2f2f7;
+  background: #f8f9fa;
   border-radius: 8px;
   position: relative;
   width: 40%; /* Reduced width for better spacing */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 10px 0;
   border: 1px solid #ddd;
-  font-family: Poppins, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .timeline-content h4 {
-  font-weight: 900;
+  font-weight: bolder;
   margin: 0 0 10px;
   color: #2b3991;
 }
