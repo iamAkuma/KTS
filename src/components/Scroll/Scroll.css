@@ -2,6 +2,8 @@
   position: relative;
   padding: 20px 0;
   list-style: none;
+  width: 80%;
+  margin: 0 auto; /* Center the timeline and provide space on sides */
 }
 
 .timeline::before {
@@ -16,65 +18,78 @@
 }
 
 .timeline-item {
-  margin-bottom: 20px;
+  margin-bottom: 40px; /* Increased space between items */
   position: relative;
-}
-
-.timeline-item::before {
-  content: "";
-  display: table;
-}
-
-.timeline-item::after {
-  content: "";
-  display: table;
   clear: both;
 }
 
 .timeline-icon {
   position: absolute;
+  top: 0;
   left: 50%;
   width: 40px;
   height: 40px;
   margin-left: -20px;
-  background: #fff;
+  background: #2b3991; /* Updated background color */
   border-radius: 50%;
-  border: 2px solid #e9ecef;
-  z-index: 100;
   text-align: center;
+  z-index: 100;
 }
 
 .timeline-icon .fa {
-  margin-top: 8px;
-  color: #007bff;
+  margin-top: 10px;
+  color: #fff;
 }
 
 .timeline-content {
-  padding: 10px 20px;
+  padding: 20px;
   background: #f8f9fa;
-  border-radius: 4px;
+  border-radius: 8px;
   position: relative;
-  width: 45%;
-  text-align: left;
+  width: 40%; /* Reduced width for better spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.timeline-content h4 {
+  margin: 0 0 10px;
+  color: #2b3991;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #555;
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
-  left: 0;
+  float: left;
+  margin-right: 60px; /* Increased margin for better spacing */
 }
 
 .timeline-item:nth-child(even) .timeline-content {
-  left: 55%;
+  float: right;
+  margin-left: 60px; /* Increased margin for better spacing */
 }
 
-.timeline-item:nth-child(odd) .timeline-icon {
-  left: calc(50% - 22px);
+.timeline-content::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
 }
 
-.timeline-item:nth-child(even) .timeline-icon {
-  left: calc(50% - 22px);
+.timeline-item:nth-child(odd) .timeline-content::before {
+  left: 100%;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #f8f9fa;
 }
 
-.date {
-  font-size: 0.85em;
-  color: #6c757d;
+.timeline-item:nth-child(even) .timeline-content::before {
+  right: 100%;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #f8f9fa transparent transparent;
 }
