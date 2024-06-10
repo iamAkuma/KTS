@@ -4,9 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 const events = [
-    { title: 'Event 1', description: 'Description for event 1', date: '2024-01-01' },
-    { title: 'Event 2', description: 'Description for event 2', date: '2024-02-01' },
-    { title: 'Event 3', description: 'Description for event 3', date: '2024-03-01' },
+    { title: 'Holistic Approach', description: 'We take a comprehensive approach to teaching where our educators address the emotional, social, ethical, and academic needs of students in an enabling learning environment.' },
+    { title: 'Result Oriented', description: 'We provide relevant training which is contextualized and purposely tailored to the learner or community needs and goals. Our courses ensure skills, competency, and employability.' },
+    { title: 'Inclusivity', description: 'We provide real learning opportunities for groups who have traditionally been excluded. KTS provides an environment where all students feel an extended sense of belonging.' },
+    { title: 'Employer Engaged', description: 'We actively involve potential employers who mentor and directly engage our students through hands-on activities and mentorship in real work environments.' },
+    { title: 'Market Oriented', description: 'Our courses are based on and driven by real-time and future market needs. Every season we introduce courses that are market-, jobs-, and industry-oriented.' }
     // Add more events as needed
 ];
 
@@ -21,7 +23,6 @@ const Scroll = () => {
                     <div className="timeline-content">
                         <h4>{event.title}</h4>
                         <p>{event.description}</p>
-                        <span className="date">{event.date}</span>
                     </div>
                 </div>
             ))}
