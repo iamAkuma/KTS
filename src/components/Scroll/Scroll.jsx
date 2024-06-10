@@ -14,20 +14,25 @@ const events = [
 
 const Scroll = () => {
     return (
-        <div className="timeline">
-            <h1>OUR APPROACH</h1>
-            <h5>Skill is the new Currency</h5>
-            {events.map((event, index) => (
-                <div key={index} className="timeline-item">
-                    <div className="timeline-icon">
-                        <FontAwesomeIcon icon={faCheckCircle} />
+        <div className="scrolling">
+            <h1 className='app'>OUR APPROACH</h1>
+            <h5 className='skill'>Skill is the new Currency</h5>
+            <br />
+
+            <div className="timeline">
+
+                {events.map((event, index) => (
+                    <div key={index} className="timeline-item">
+                        <div className="timeline-icon">
+                            <FontAwesomeIcon icon={faCheckCircle} />
+                        </div>
+                        <div className="timeline-content">
+                            <h4>{event.title}</h4>
+                            <p>{event.description}</p>
+                        </div>
                     </div>
-                    <div className="timeline-content">
-                        <h4>{event.title}</h4>
-                        <p>{event.description}</p>
-                    </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 };
