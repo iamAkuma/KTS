@@ -3,10 +3,17 @@
   justify-content: space-between; /* Adjust as needed */
   align-items: center;
   margin-top: 20px; /* Adjust margin as needed */
+  padding: 15px 15px;
 }
 
 .image {
-  width: 100px; /* Adjust image width as needed */
-  height: 100px; /* Set height to match width to maintain aspect ratio */
+  width: 300px; /* Adjust image width as needed */
+  height: 300px; /* Set height to match width to maintain aspect ratio */
   margin-right: 10px; /* Adjust gap between images */
+}
+
+.name {
+  color: black;
+  text-align: center;
+  margin-top: 5px; /* Adjust as needed */
 }
