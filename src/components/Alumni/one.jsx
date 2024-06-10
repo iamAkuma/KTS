@@ -3,7 +3,7 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import './one.css';
 
-const One = () => {
+const Two = () => {
   // Array of image details
   const images = [
     {
@@ -71,4 +71,4 @@ const One = () => {
   );
 };
 
-export default One;
+export default Two;

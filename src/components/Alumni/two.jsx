@@ -132,6 +132,11 @@ const One = () => {
             name: 'Radha Rimal'
         },
         {
+            src: require('../../img/Reetu-Baram.JPG'),
+            alt: 'Reetu Baram',
+            name: 'Reetu Baram'
+        },
+        {
             src: require('../../img/Rohit-Panta-199x300.jpeg'),
             alt: 'Rohit Panta',
             name: 'Rohit Panta'
