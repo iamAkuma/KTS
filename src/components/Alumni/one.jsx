@@ -25,6 +25,26 @@ const One = () => {
       src: require('../../img/Durga-Manandhar-1024x995.jpg'),
       alt: 'Durga Manandhar',
       name: 'Durga Manandhar'
+    },
+    {
+      src: require('../../img/Reyzina-Pujari.jpeg'),
+      alt: 'Reyzina Pujari',
+      name: 'Reyzina Pujari'
+    },
+    {
+      src: require('../../img/Ritu-Sinha-842x1024.jpeg'),
+      alt: 'Ritu Kumari Sinha',
+      name: 'Ritu Kumari Sinha'
+    },
+    {
+      src: require('../../img/Saraswati-Gurung-874x1024.jpg'),
+      alt: 'Saraswati Gurung',
+      name: 'Saraswati Gurung'
+    },
+    {
+      src: require('../../img/Sujana-Adhikari.jpeg'),
+      alt: 'Sujana Adhikari',
+      name: 'Sujana Adhikari'
     }
   ];
 
