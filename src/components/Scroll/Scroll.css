@@ -12,7 +12,7 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #e9ecef;
+  background: #f2f2f7;
   left: 50%;
   margin-left: -1px;
 }
@@ -42,17 +42,18 @@
 
 .timeline-content {
   padding: 20px;
-  background: #f8f9fa;
+  background: #f2f2f7;
   border-radius: 8px;
   position: relative;
   width: 40%; /* Reduced width for better spacing */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 10px 0;
   border: 1px solid #ddd;
-  font-family: Arial, sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 .timeline-content h4 {
+  font-weight: 900;
   margin: 0 0 10px;
   color: #2b3991;
 }

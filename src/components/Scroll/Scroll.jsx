@@ -15,6 +15,8 @@ const events = [
 const Scroll = () => {
     return (
         <div className="timeline">
+            <h1>OUR APPROACH</h1>
+            <h5>Skill is the new Currency</h5>
             {events.map((event, index) => (
                 <div key={index} className="timeline-item">
                     <div className="timeline-icon">
