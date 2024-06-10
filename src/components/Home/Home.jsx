@@ -11,6 +11,8 @@ import Objective from '../Objective/Objective'
 import Empower from '../Empower/Empower'
 import Cards from '../Cards/Cards'
 import ContactForm from '../ContactForm/ContactForm'
+import Scroll from '../Scroll/Scroll'
+
 const Home = () => {
     return (
         <>
@@ -24,6 +26,7 @@ const Home = () => {
             <Objective />
             <Empower />
             <Cards />
+            <Scroll />
             <ContactForm />
             <Footer />
         </>
