@@ -38,7 +38,6 @@
   width: 40px;
   height: 40px;
   margin-left: -20px;
-  background: #2b3991; /* Updated background color */
   border-radius: 50%;
   text-align: center;
   z-index: 100;
@@ -60,6 +59,7 @@
   border: 1px solid #ddd;
   font-family: Poppins;
 }
+
 .scrolling .app {
   display: flex;
   justify-content: center;
