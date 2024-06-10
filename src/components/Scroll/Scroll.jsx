@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Scroll.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faBullseye, faUniversalAccess, faHandshake, faChartLine } from '@fortawesome/free-solid-svg-icons';
@@ -12,8 +12,27 @@ const events = [
 ];
 
 const Scroll = () => {
+    const [scrollColor, setScrollColor] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const position = window.scrollY;
+            if (position > 100) {
+                setScrollColor(true);
+            } else {
+                setScrollColor(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <div className="scrolling">
+        <div className={`scrolling ${scrollColor ? 'scrolled' : ''}`}>
             <h1 className='app'>OUR APPROACH</h1>
             <h5 className='skill'>Skill is the new currency</h5>
             <br />
@@ -22,7 +41,7 @@ const Scroll = () => {
                 {events.map((event, index) => (
                     <div key={index} className="timeline-item">
                         <div className="timeline-icon">
-                            <FontAwesomeIcon icon={event.icon} color="white" size="1.5x" />
+                            <FontAwesomeIcon icon={event.icon} color="white" size="2x" />
                         </div>
                         <div className="timeline-content">
                             <h4>{event.title}</h4>
