@@ -35,17 +35,26 @@
   position: absolute;
   top: 0;
   left: 50%;
-  width: 40px;
-  height: 40px;
-  margin-left: -20px;
+  width: 60px; /* Increase the width */
+  height: 60px; /* Increase the height */
+  margin-left: -30px;
+  background: #2b3991; /* Circle background color */
   border-radius: 50%;
   text-align: center;
   z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.timeline-icon:hover {
+  background: #fea92c; /* Hover background color */
 }
 
 .timeline-icon .fa {
-  margin-top: 10px;
-  color: #fff;
+  color: white;
+  font-size: 35px;
 }
 
 .timeline-content {

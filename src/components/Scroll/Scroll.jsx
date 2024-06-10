@@ -15,14 +15,14 @@ const Scroll = () => {
     return (
         <div className="scrolling">
             <h1 className='app'>OUR APPROACH</h1>
-            <h5 className='skill'>Skill is the new Currency</h5>
+            <h5 className='skill'>Skill is the new currency</h5>
             <br />
 
             <div className="timeline">
                 {events.map((event, index) => (
                     <div key={index} className="timeline-item">
                         <div className="timeline-icon">
-                            <FontAwesomeIcon icon={event.icon} />
+                            <FontAwesomeIcon icon={event.icon} color="white" size="1.5x" />
                         </div>
                         <div className="timeline-content">
                             <h4>{event.title}</h4>
