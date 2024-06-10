@@ -20,8 +20,8 @@
 }
 
 .image {
-  width: 300px; /* Adjust image width as needed */
-  height: 300px; /* Set height to match width to maintain aspect ratio */
+  width: 250px; /* Adjust image width as needed */
+  height: 250px; /* Set height to match width to maintain aspect ratio */
   margin-right: 10px; /* Adjust gap between images */
 }
 
