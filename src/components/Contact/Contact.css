@@ -22,6 +22,12 @@
 .register-form label {
   margin-bottom: 15px;
   font-size: 1em;
+  position: relative;
+}
+
+.register-form label.required::before {
+  content: " * ";
+  color: red;
 }
 
 .register-form input,
@@ -36,6 +42,7 @@
 .radio-group {
   display: flex;
   flex-direction: column;
+  margin-top: 5px;
 }
 
 .radio-group label {

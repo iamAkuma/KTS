@@ -18,11 +18,11 @@ const Contact = () => {
                         Name of the Program (Optional)
                         <select>
                             <option value="">Select One</option>
-                            <option value="">Caregiver</option>
-                            <option value="">Hotel & Lodge Assistant</option>
-                            <option value="">Co-operative Management Training</option>
-                            <option value="">Computer Hardware & Network Technician</option>
-                            <option value="">Others</option>
+                            <option value="Caregiver">Caregiver</option>
+                            <option value="Hotel & Lodge Assistant">Hotel & Lodge Assistant</option>
+                            <option value="Co-operative Management Training">Co-operative Management Training</option>
+                            <option value="Computer Hardware & Network Technician">Computer Hardware & Network Technician</option>
+                            <option value="Others">Others</option>
                             {/* Add more options here */}
                         </select>
                     </label>
@@ -30,12 +30,12 @@ const Contact = () => {
                         Organization's Name (Optional)
                         <input type="text" />
                     </label>
-                    <label>
-                        Participant's Name *
+                    <label className="required">
+                        Participant's Name
                         <input type="text" required />
                     </label>
-                    <label>
-                        Date of Birth *
+                    <label className="required">
+                        Date of Birth
                         <input type="date" required />
                     </label>
                     <label>
@@ -46,8 +46,8 @@ const Contact = () => {
                         Designation (Optional)
                         <input type="text" />
                     </label>
-                    <label>
-                        Qualification *
+                    <label className="required">
+                        Qualification
                         <input type="text" required />
                     </label>
                     <label>
@@ -64,7 +64,7 @@ const Contact = () => {
                     </label>
                     <label>
                         Email Address (Optional)
-                        <input type="text" />
+                        <input type="email" />
                     </label>
                     <label>
                         Organizational Activities (Optional)
@@ -99,8 +99,8 @@ const Contact = () => {
                         Present Area of Responsibilities (Optional)
                         <textarea rows="4"></textarea>
                     </label>
-                    <label>
-                        Payment of Program Fees *
+                    <label className="required">
+                        Payment of Program Fees
                         <div className='radio-group'>
                             <label>
                                 <input type="radio" name="payment" value="Online Transfer" required />

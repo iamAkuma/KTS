@@ -6,7 +6,7 @@ const OurSpeciality = () => {
         <div className="container my-5">
             <div className="row align-items-center">
                 <div className="col-md-6">
-                    <h1 className="text-center mb-5">OUR SPECIALITY</h1>
+                    <h1 className="text-center-header mb-5">OUR SPECIALITY</h1>
                     <div className="d-flex align-items-center mb-2">
                         <h3>Learn Skills</h3>
                     </div>
