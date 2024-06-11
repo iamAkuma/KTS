@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './Scroll.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faBullseye, faUniversalAccess, faHandshake, faChartLine } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCaretRight, faCaretLeft } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faCaretRight, faCaretLeft);
 
 const events = [
     { title: 'Holistic Approach', description: 'We take a comprehensive approach to teaching where our educators address the emotional, social, ethical, and academic needs of students in an enabling learning environment.', icon: faCheckCircle },

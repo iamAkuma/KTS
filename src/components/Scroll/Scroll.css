@@ -103,10 +103,9 @@
 }
 
 .timeline-content::before {
-  background-color: #2b3991;
   content: "";
   position: absolute;
-  top: 20px; /* Adjusted to align with the top */
+  top: 20px; /* Adjust this to align the arrow vertically */
   width: 0;
   height: 0;
   border-style: solid;
@@ -114,12 +113,12 @@
 
 .timeline-item:nth-child(odd) .timeline-content::before {
   right: -20px; /* Adjusted position */
-  border-width: 10px 10px 0 10px;
-  border-color: #f8f9fa transparent transparent transparent;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #2b3991 transparent transparent;
 }
 
 .timeline-item:nth-child(even) .timeline-content::before {
   left: -20px; /* Adjusted position */
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #f8f9fa transparent transparent;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #2b3991;
 }
