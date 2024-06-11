@@ -103,22 +103,23 @@
 }
 
 .timeline-content::before {
+  background-color: #2b3991;
   content: "";
   position: absolute;
-  top: 20px;
+  top: 20px; /* Adjusted to align with the top */
   width: 0;
   height: 0;
   border-style: solid;
 }
 
 .timeline-item:nth-child(odd) .timeline-content::before {
-  left: 100%;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #f8f9fa;
+  right: -20px; /* Adjusted position */
+  border-width: 10px 10px 0 10px;
+  border-color: #f8f9fa transparent transparent transparent;
 }
 
 .timeline-item:nth-child(even) .timeline-content::before {
-  right: 100%;
+  left: -20px; /* Adjusted position */
   border-width: 10px 10px 10px 0;
   border-color: transparent #f8f9fa transparent transparent;
 }
