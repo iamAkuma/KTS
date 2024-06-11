@@ -48,14 +48,14 @@
 }
 
 /* Styles for navigation links */
-.nav-link {
+.navi-link {
   color: #2b3991; /* Text color for navigation links */
   font-weight: bold;
   text-decoration: none; /* Remove underline */
   transition: color 0.3s ease-in-out; /* Add hover effect */
 }
 
-.nav-link:hover {
+.navi-link:hover {
   color: #000; /* Change color on hover */
 }
 

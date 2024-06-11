@@ -54,11 +54,11 @@ const Footer = () => {
                     </div>
                 </div>
                 <nav className="d-flex justify-content-center mb-4">
-                    <Link className="nav-link mx-3 footer-nav-link" to="/">Home</Link>
-                    <Link className="nav-link mx-3 footer-nav-link" to="/alumni">Alumni</Link>
-                    <Link className="nav-link mx-3 footer-nav-link" to="/courses">Courses</Link>
-                    <Link className="nav-link mx-3 footer-nav-link" to="/blog">Blog</Link>
-                    <Link className="nav-link mx-3 footer-nav-link" to="/contact">Contact</Link>
+                    <Link className="navi-link mx-3 footer-navi-link" to="/">Home</Link>
+                    <Link className="navi-link mx-3 footer-navi-link" to="/alumni">Alumni</Link>
+                    <Link className="navi-link mx-3 footer-navi-link" to="/courses">Courses</Link>
+                    <Link className="navi-link mx-3 footer-navi-link" to="/blog">Blog</Link>
+                    <Link className="navi-link mx-3 footer-navi-link" to="/contact">Contact</Link>
                 </nav>
                 <div className="text-center">
                     <p className="mb-0">Copyright © {new Date().getFullYear()} <b>
