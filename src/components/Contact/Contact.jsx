@@ -18,6 +18,11 @@ const Contact = () => {
                         Name of the Program (Optional)
                         <select>
                             <option value="">Select One</option>
+                            <option value="">Caregiver</option>
+                            <option value="">Hotel & Lodge Assistant</option>
+                            <option value="">Co-operative Management Training</option>
+                            <option value="">Computer Hardware & Network Technician</option>
+                            <option value="">Others</option>
                             {/* Add more options here */}
                         </select>
                     </label>
