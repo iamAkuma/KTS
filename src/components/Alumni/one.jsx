@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
+import { Helmet } from 'react-helmet';
 import './one.css';
 
 const Two = () => {
@@ -51,6 +52,9 @@ const Two = () => {
     return (
         <>
             <Navbar />
+            <Helmet>
+                <title>2079/80 - Kathmandu Technical School</title>
+            </Helmet>
             <div>
                 <h1 className='one-header'>
                     2079/80

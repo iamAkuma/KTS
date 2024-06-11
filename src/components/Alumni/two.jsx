@@ -2,6 +2,8 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import './two.css';
+import { Helmet } from 'react-helmet';
+
 
 const One = () => {
     // Array of image details
@@ -191,6 +193,12 @@ const One = () => {
     return (
         <>
             <Navbar />
+
+            <Helmet>
+                <title>
+                    2080/81 - Kathmandu Technical School
+                </title>
+            </Helmet>
             <div>
                 <h1 className='one-header'>
                     2080/81
