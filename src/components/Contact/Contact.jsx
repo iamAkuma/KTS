@@ -62,7 +62,37 @@ const Contact = () => {
                         Telephone Number (Residence) (Optional)
                         <input type="tel" />
                     </label>
+                    <label>
+                        Email Address (Optional)
+                        <input type="text" />
+                    </label>
+                    <label>
+                        Organizational Activities (Optional)
+                        <input type="text" />
+                    </label>
+                    <label>
+                        Nature of Organization (Optional)
+                        <div className='radio-group'>
+                            <label>
+                                <input type="radio" name="nature" value="Public" />
+                                Public
+                            </label>
+                            <label>
+                                <input type="radio" name="nature" value="Private" />
+                                Private
+                            </label>
+                            <label>
+                                <input type="radio" name="nature" value="NGO/INGO" />
+                                NGO/INGO
+                            </label>
+                            <label>
+                                <input type="radio" name="nature" value="Other" />
+                                Other
+                            </label>
+                        </div>
+                    </label>
                     <button type="submit">Submit</button>
+
                 </form>
             </div>
             <Footer />

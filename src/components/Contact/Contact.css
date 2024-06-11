@@ -10,7 +10,6 @@
 .text-header {
   font-size: 2em;
   margin-bottom: 20px;
-  color: white;
 }
 
 .register-form {
@@ -27,26 +26,39 @@
 
 .register-form input,
 .register-form select,
+.register-form textarea,
 .register-form button {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.radio-group input[type="radio"] {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #fff;
+  color: #4a3aff;
   border: none;
-  border-radius: 5px;
+  padding: 10px;
   font-size: 1em;
-}
-
-.register-form input[type="file"] {
-  padding: 3px;
-}
-
-.register-form button {
-  background-color: #0000ff;
-  color: white;
   cursor: pointer;
-  margin-top: 20px;
 }
 
-.register-form button:hover {
-  background-color: #0000cc;
+button[type="submit"]:hover {
+  background-color: #e0e0e0;
 }
