@@ -91,6 +91,52 @@ const Contact = () => {
                             </label>
                         </div>
                     </label>
+                    <label>
+                        How Many Years Have You Been in the Present Job (Optional)
+                        <input type="text" />
+                    </label>
+                    <label>
+                        Present Area of Responsibilities (Optional)
+                        <textarea rows="4"></textarea>
+                    </label>
+                    <label>
+                        Payment of Program Fees *
+                        <div className='radio-group'>
+                            <label>
+                                <input type="radio" name="payment" value="Online Transfer" required />
+                                Online Transfer
+                            </label>
+                            <label>
+                                <input type="radio" name="payment" value="Cheque No." required />
+                                Cheque No.
+                            </label>
+                            <label>
+                                <input type="radio" name="payment" value="Cash" required />
+                                Cash
+                            </label>
+                        </div>
+                    </label>
+                    <label>
+                        Name of Sponsor (Optional)
+                        <input type="text" />
+                    </label>
+                    <label>
+                        Designation of Sponsor (Optional)
+                        <input type="text" />
+                    </label>
+                    <label>
+                        Signature of Sponsor (Optional)
+                        <input type="file" />
+                    </label>
+                    <label>
+                        Date (Optional)
+                        <input type="date" />
+                    </label>
+                    <label>
+                        Upload Legal Documents (Optional)
+                        <input type="file" multiple />
+                    </label>
+
                     <button type="submit">Submit</button>
 
                 </form>
