@@ -1,7 +1,23 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 import './ContactForm.css';
 
 const ContactForm = () => {
+    const handleFormSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_xyplnzm', 'template_myd22wa', e.target, 'zhX0LYJ5Mw8E_BjfL')
+            .then((result) => {
+                console.log(result.text);
+                alert('Message sent successfully!');
+            }, (error) => {
+                console.log(error.text);
+                alert('Failed to send message, please try again.');
+            });
+
+        e.target.reset();
+    };
+
     const handleTelephoneChange = (e) => {
         const input = e.target;
         if (input.value.length > 10) {
@@ -39,14 +55,14 @@ const ContactForm = () => {
                 </div>
                 <div className="col-md-7">
                     <h2 className='msg'>Send Us a Message</h2>
-                    <form>
+                    <form onSubmit={handleFormSubmit}>
                         <div className="form-group">
                             <label htmlFor="fullName">Full Name</label>
-                            <input type="text" className="form-control" id="fullName" required />
+                            <input type="text" className="form-control" id="fullName" name="fullName" required />
                         </div>
                         <div className="form-group">
                             <label htmlFor="email">Email</label>
-                            <input type="email" className="form-control" id="email" required />
+                            <input type="email" className="form-control" id="email" name="email" required />
                         </div>
                         <div className="form-group">
                             <label htmlFor="telephone">Telephone</label>
@@ -54,6 +70,7 @@ const ContactForm = () => {
                                 type="number"
                                 className="form-control"
                                 id="telephone"
+                                name="telephone"
                                 maxLength="10"
                                 onInput={handleTelephoneChange}
                                 required
@@ -62,7 +79,7 @@ const ContactForm = () => {
                         <div className="form-group">
                             <label htmlFor="course">Which course are you interested in?</label>
                             <div className="select-wrapper">
-                                <select className="form-control" id="course" required>
+                                <select className="form-control" id="course" name="course" required>
                                     <option>Caregiver / Aged Care</option>
                                     <option>Barista</option>
                                     <option>Bartender</option>
