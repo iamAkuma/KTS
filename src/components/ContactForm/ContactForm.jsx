@@ -25,7 +25,8 @@ const ContactForm = () => {
 
         setIsSubmitting(true);
 
-        emailjs.sendForm('service_xyplnzm',
+        emailjs.sendForm(
+            'service_xyplnzm',
             'template_myd22wa',
             e.target,
             'zhX0LYJ5Mw8E_BjfL')
