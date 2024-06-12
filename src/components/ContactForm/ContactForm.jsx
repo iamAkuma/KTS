@@ -40,6 +40,10 @@ const ContactForm = () => {
             });
 
         e.target.reset();
+
+        if (submissionCount === 2) {
+            toast.error('You have reached the submission limit. Please try again later.');
+        }
     };
 
     const handleTelephoneChange = (e) => {
@@ -51,6 +55,7 @@ const ContactForm = () => {
 
     return (
         <div className="contact-form-container container-fluid text-white">
+            <ToastContainer />
             <div className="row">
                 <div className="col-md-4 contact-info">
                     <h2>CONTACT US</h2>
@@ -119,7 +124,6 @@ const ContactForm = () => {
                     </form>
                 </div>
             </div>
-            <ToastContainer autoClose={2000} />
         </div>
     );
 };
