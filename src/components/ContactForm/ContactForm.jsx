@@ -1,18 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './ContactForm.css';
 
 const ContactForm = () => {
+    const [successMessage, setSuccessMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
+
     const handleFormSubmit = (e) => {
         e.preventDefault();
 
         emailjs.sendForm('service_xyplnzm', 'template_myd22wa', e.target, 'zhX0LYJ5Mw8E_BjfL')
             .then((result) => {
                 console.log(result.text);
-                alert('Message sent successfully!');
+                setSuccessMessage('Message sent successfully!');
+                toast.success('Message sent successfully!');
+                setTimeout(() => {
+                    setSuccessMessage('');
+                }, 2000);
             }, (error) => {
                 console.log(error.text);
-                alert('Failed to send message, please try again.');
+                setErrorMessage('Failed to send message, please try again.');
+                toast.error('Failed to send message, please try again.');
+                setTimeout(() => {
+                    setErrorMessage('');
+                }, 2000);
             });
 
         e.target.reset();
@@ -90,6 +103,20 @@ const ContactForm = () => {
                             </div>
                         </div>
                         <button type="submit" className="btn">Submit</button>
+                        <div>
+                            <ToastContainer /> {/* ToastContainer component to render toast messages */}
+                            {successMessage && (
+                                <div className="alert alert-success" role="alert">
+                                    {successMessage}
+                                </div>
+                            )}
+                            {errorMessage && (
+                                <div className="alert alert-danger" role="alert">
+                                    {errorMessage}
+                                </div>
+                            )}
+                        </div>
+
                     </form>
                 </div>
             </div>
