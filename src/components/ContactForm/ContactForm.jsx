@@ -18,13 +18,12 @@ const ContactForm = () => {
         e.preventDefault();
 
         if (isSubmitting) return;
-        if (submissionCount >= 3) {
-            toast.error('Submission Limit reached after this.');
+        if (submissionCount >= 4) {
+            toast.error('Form Submission Limit reached.');
             return;
         }
 
         setIsSubmitting(true);
-        setSubmissionCount(submissionCount + 1);
 
         emailjs.sendForm('service_xyplnzm',
             'template_myd22wa',
@@ -33,6 +32,7 @@ const ContactForm = () => {
             .then((result) => {
                 console.log(result.text);
                 toast.success('Message sent successfully!');
+                setSubmissionCount(submissionCount + 1);
             })
             .catch((error) => {
                 console.log(error.text);
@@ -44,8 +44,8 @@ const ContactForm = () => {
 
         e.target.reset();
 
-        if (submissionCount === 4) {
-            toast.error('You have reached the submission limit after this.');
+        if (submissionCount === 3) {
+            toast.error('You have reached the form submission limit.');
         }
     };
 
@@ -121,7 +121,7 @@ const ContactForm = () => {
                                 </select>
                             </div>
                         </div>
-                        <button type="submit" className="btn" disabled={isSubmitting || submissionCount >= 3}>
+                        <button type="submit" className="btn" disabled={isSubmitting || submissionCount >= 4}>
                             {isSubmitting ? 'Submitting...' : 'Submit'}
                         </button>
                     </form>
