@@ -23,6 +23,7 @@
   width: 200px; /* Adjust image width as needed */
   height: 200px; /* Set height to match width to maintain aspect ratio */
   margin-right: 10px; /* Adjust gap between images */
+  object-fit: cover;
 }
 
 .name {
@@ -36,4 +37,22 @@
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+}
+
+.pic-binod {
+  object-fit: cover;
+  height: 200px;
+  width: auto;
+}
+
+.pic-pasang {
+  object-fit: cover;
+  height: 200px;
+  width: auto;
+}
+
+.pic-nisha {
+  object-fit: cover;
+  height: 200px;
+  width: auto;
 }
