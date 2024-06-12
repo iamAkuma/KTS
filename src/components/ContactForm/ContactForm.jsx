@@ -5,39 +5,26 @@ import 'react-toastify/dist/ReactToastify.css';
 import './ContactForm.css';
 
 const ContactForm = () => {
-    const [successMessage, setSuccessMessage] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submissionCount, setSubmissionCount] = useState(0);
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
 
-        if (isSubmitting) return; // Prevent multiple submissions
-        if (submissionCount >= 3) {
-            setErrorMessage('You have reached the submission limit. Please try again later.');
-            return;
-        }
-
+        if (isSubmitting) return;
         setIsSubmitting(true);
-        setSubmissionCount(submissionCount + 1);
 
-        setTimeout(() => {
-            emailjs.sendForm('service_xyplnzm', 'template_myd22wa', e.target, 'zhX0LYJ5Mw8E_BjfL')
-                .then((result) => {
-                    console.log(result.text);
-                    setSuccessMessage('Message sent successfully!');
-                    toast.success('Message sent successfully!');
-                })
-                .catch((error) => {
-                    console.log(error.text);
-                    setErrorMessage('Failed to send message, please try again.');
-                    toast.error('Failed to send message, please try again.');
-                })
-                .finally(() => {
-                    setIsSubmitting(false);
-                });
-        }, 2000); // Simulate a delay of 2 seconds before submission
+        emailjs.sendForm('service_xyplnzm', 'template_myd22wa', e.target, 'zhX0LYJ5Mw8E_BjfL')
+            .then((result) => {
+                console.log(result.text);
+                toast.success('Message sent successfully!');
+            })
+            .catch((error) => {
+                console.log(error.text);
+                toast.error('Failed to send message, please try again.');
+            })
+            .finally(() => {
+                setIsSubmitting(false);
+            });
 
         e.target.reset();
     };
@@ -51,17 +38,7 @@ const ContactForm = () => {
 
     return (
         <div className="contact-form-container container-fluid text-white">
-            <ToastContainer /> {/* ToastContainer component to render toast messages */}
-            {successMessage && (
-                <div className="alert alert-success" role="alert">
-                    {successMessage}
-                </div>
-            )}
-            {errorMessage && (
-                <div className="alert alert-danger" role="alert">
-                    {errorMessage}
-                </div>
-            )}
+            <ToastContainer autoClose={2000} /> {/* ToastContainer component with autoClose prop set to 2000ms (2 seconds) */}
             <div className="row">
                 <div className="col-md-4 contact-info">
                     <h2>CONTACT US</h2>
