@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -6,12 +6,25 @@ import './ContactForm.css';
 
 const ContactForm = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submissionCount, setSubmissionCount] = useState(
+        parseInt(localStorage.getItem('submissionCount')) || 0
+    );
+
+    useEffect(() => {
+        localStorage.setItem('submissionCount', submissionCount.toString());
+    }, [submissionCount]);
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
 
         if (isSubmitting) return;
+        if (submissionCount >= 3) {
+            toast.error('You have reached the submission limit. Please try again later.', { autoClose: 2000 });
+            return;
+        }
+
         setIsSubmitting(true);
+        setSubmissionCount(submissionCount + 1);
 
         emailjs.sendForm('service_xyplnzm', 'template_myd22wa', e.target, 'zhX0LYJ5Mw8E_BjfL')
             .then((result) => {
@@ -38,7 +51,7 @@ const ContactForm = () => {
 
     return (
         <div className="contact-form-container container-fluid text-white">
-            <ToastContainer autoClose={2000} /> {/* ToastContainer component with autoClose prop set to 2000ms (2 seconds) */}
+            <ToastContainer autoClose={2000} />
             <div className="row">
                 <div className="col-md-4 contact-info">
                     <h2>CONTACT US</h2>
@@ -101,7 +114,7 @@ const ContactForm = () => {
                                 </select>
                             </div>
                         </div>
-                        <button type="submit" className="btn" disabled={isSubmitting}>
+                        <button type="submit" className="btn" disabled={isSubmitting || submissionCount >= 3}>
                             {isSubmitting ? 'Submitting...' : 'Submit'}
                         </button>
                     </form>
