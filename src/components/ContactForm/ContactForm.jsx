@@ -26,7 +26,10 @@ const ContactForm = () => {
         setIsSubmitting(true);
         setSubmissionCount(submissionCount + 1);
 
-        emailjs.sendForm('service_xyplnzm', 'template_myd22wa', e.target, 'zhX0LYJ5Mw8E_BjfL')
+        emailjs.sendForm('service_xyplnzm',
+            'template_myd22wa',
+            e.target,
+            'zhX0LYJ5Mw8E_BjfL')
             .then((result) => {
                 console.log(result.text);
                 toast.success('Message sent successfully!');
