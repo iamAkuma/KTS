@@ -7,26 +7,37 @@ import './ContactForm.css';
 const ContactForm = () => {
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submissionCount, setSubmissionCount] = useState(0);
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_xyplnzm', 'template_myd22wa', e.target, 'zhX0LYJ5Mw8E_BjfL')
-            .then((result) => {
-                console.log(result.text);
-                setSuccessMessage('Message sent successfully!');
-                toast.success('Message sent successfully!');
-                setTimeout(() => {
-                    setSuccessMessage('');
-                }, 2000);
-            }, (error) => {
-                console.log(error.text);
-                setErrorMessage('Failed to send message, please try again.');
-                toast.error('Failed to send message, please try again.');
-                setTimeout(() => {
-                    setErrorMessage('');
-                }, 2000);
-            });
+        if (isSubmitting) return; // Prevent multiple submissions
+        if (submissionCount >= 3) {
+            setErrorMessage('You have reached the submission limit. Please try again later.');
+            return;
+        }
+
+        setIsSubmitting(true);
+        setSubmissionCount(submissionCount + 1);
+
+        setTimeout(() => {
+            emailjs.sendForm('service_xyplnzm', 'template_myd22wa', e.target, 'zhX0LYJ5Mw8E_BjfL')
+                .then((result) => {
+                    console.log(result.text);
+                    setSuccessMessage('Message sent successfully!');
+                    toast.success('Message sent successfully!');
+                })
+                .catch((error) => {
+                    console.log(error.text);
+                    setErrorMessage('Failed to send message, please try again.');
+                    toast.error('Failed to send message, please try again.');
+                })
+                .finally(() => {
+                    setIsSubmitting(false);
+                });
+        }, 2000); // Simulate a delay of 2 seconds before submission
 
         e.target.reset();
     };
@@ -40,6 +51,17 @@ const ContactForm = () => {
 
     return (
         <div className="contact-form-container container-fluid text-white">
+            <ToastContainer /> {/* ToastContainer component to render toast messages */}
+            {successMessage && (
+                <div className="alert alert-success" role="alert">
+                    {successMessage}
+                </div>
+            )}
+            {errorMessage && (
+                <div className="alert alert-danger" role="alert">
+                    {errorMessage}
+                </div>
+            )}
             <div className="row">
                 <div className="col-md-4 contact-info">
                     <h2>CONTACT US</h2>
@@ -102,21 +124,9 @@ const ContactForm = () => {
                                 </select>
                             </div>
                         </div>
-                        <button type="submit" className="btn">Submit</button>
-                        <div>
-                            <ToastContainer /> {/* ToastContainer component to render toast messages */}
-                            {successMessage && (
-                                <div className="alert alert-success" role="alert">
-                                    {successMessage}
-                                </div>
-                            )}
-                            {errorMessage && (
-                                <div className="alert alert-danger" role="alert">
-                                    {errorMessage}
-                                </div>
-                            )}
-                        </div>
-
+                        <button type="submit" className="btn" disabled={isSubmitting}>
+                            {isSubmitting ? 'Submitting...' : 'Submit'}
+                        </button>
                     </form>
                 </div>
             </div>
