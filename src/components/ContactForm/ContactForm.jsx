@@ -19,7 +19,7 @@ const ContactForm = () => {
 
         if (isSubmitting) return;
         if (submissionCount >= 3) {
-            toast.error('You have reached the submission limit. Please try again later.');
+            toast.error('Submission Limit reached after this.');
             return;
         }
 
@@ -44,8 +44,8 @@ const ContactForm = () => {
 
         e.target.reset();
 
-        if (submissionCount === 2) {
-            toast.error('You have reached the submission limit. Please try again later.');
+        if (submissionCount === 4) {
+            toast.error('You have reached the submission limit after this.');
         }
     };
 
