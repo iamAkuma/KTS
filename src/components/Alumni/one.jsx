@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer';
 import { Helmet } from 'react-helmet';
 import './one.css';
 
-const Two = () => {
+const One = () => {
     // Array of image details
     const pictures = [
         {
@@ -75,4 +75,4 @@ const Two = () => {
     );
 };
 
-export default Two;
+export default One;

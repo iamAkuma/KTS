@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer';
 import './two.css';
 import { Helmet } from 'react-helmet';
 
-const One = () => {
+const Two = () => {
     return (
         <>
             <Navbar />
@@ -14,6 +14,7 @@ const One = () => {
             <div>
                 <h1 className='one-header'>2080/81</h1>
                 <div className="pic-container">
+                    {/* Existing names and images */}
                     <div className="pic-wrapper babita-shrestha">
                         <img src={require('../../img/Babita-Shrestha.jpeg')} alt="Babita Shrestha" className="pic" />
                         <p className="name">Babita Shrestha</p>
@@ -94,10 +95,6 @@ const One = () => {
                         <img src={require('../../img/Parbati-Kumal-267x300.jpg')} alt="Parbati Kumal" className="pic" />
                         <p className="name">Parbati Kumal</p>
                     </div>
-                    <div className="pic-wrapper radhika-kumari-rai">
-                        <img src={require('../../img/Radhika-Kumari-Rai-300x300.jpg')} alt="Radhika Kumari Rai" className="pic" />
-                        <p className="name">Radhika Kumari Rai</p>
-                    </div>
                     <div className="pic-wrapper pasang-lhamu-sherpa">
                         <img src={require('../../img/Pasang-Lhamu-Sherpa-228x300.jpeg')} alt="Pasang Lhamu Sherpa" className="pic-pasang" />
                         <p className="name">Pasang Lhamu Sherpa</p>
@@ -132,31 +129,109 @@ const One = () => {
                     </div>
                     <div className="pic-wrapper sabina-bhandari">
                         <img src={require('../../img/Sabina-Bhandari-300x300.jpg')} alt="Sabina Bhandari" className="pic" />
-                        <p className="name">Sabina Bhandari</p>
+                        <p class="name">Sabina Bhandari</p>
                     </div>
                     <div className="pic-wrapper salina-kumal">
                         <img src={require('../../img/Salina-Kumal-292x300.jpeg')} alt="Salina Kumal" className="pic" />
-                        <p className="name">Salina Kumal</p>
+                        <p class="name">Salina Kumal</p>
                     </div>
                     <div className="pic-wrapper sanju-shrestha">
                         <img src={require('../../img/Sanju-Shrestha-300x300.jpg')} alt="Sanju Shrestha" className="pic" />
-                        <p className="name">Sanju Shrestha</p>
+                        <p class="name">Sanju Shrestha</p>
                     </div>
                     <div className="pic-wrapper santosh-dhimal">
                         <img src={require('../../img/Santosh-Dhimal-199x300.jpg')} alt="Santosh Dhimal" className="pic" />
-                        <p className="name">Santosh Dhimal</p>
+                        <p class="name">Santosh Dhimal</p>
                     </div>
                     <div className="pic-wrapper sarita-subedi">
                         <img src={require('../../img/Sarita-Subedi-298x300.jpeg')} alt="Sarita Subedi" className="pic" />
-                        <p className="name">Sarita Subedi</p>
+                        <p class="name">Sarita Subedi</p>
                     </div>
                     <div className="pic-wrapper shamuel-maharjan">
                         <img src={require('../../img/Shamuel-Maharjan-199x300.jpeg')} alt="Shamuel Maharjan" className="pic" />
-                        <p className="name">Shamuel Maharjan</p>
+                        <p class="name">Shamuel Maharjan</p>
                     </div>
                     <div className="pic-wrapper sheetal-dura">
                         <img src={require('../../img/Sheetal-Dura-287x300.jpg')} alt="Sheetal Dura" className="pic" />
-                        <p className="name">Sheetal Dura</p>
+                        <p class="name">Sheetal Dura</p>
+                    </div>
+
+                    {/* New names and images */}
+                    <div className="pic-wrapper doma">
+                        <img src={require('../../img/Alumni-New/Doma.JPG')} alt="Doma" className="pic" />
+                        <p className="name">Doma</p>
+                    </div>
+                    <div className="pic-wrapper ganga-gharti-magar">
+                        <img src={require('../../img/Alumni-New/Ganga Gharti Magar.JPG')} alt="Ganga Gharti Magar" className="pic" />
+                        <p className="name">Ganga Gharti Magar</p>
+                    </div>
+                    <div className="pic-wrapper goma-gurung">
+                        <img src={require('../../img/Alumni-New/Goma Gurung.jpg')} alt="Goma Gurung" className="pic" />
+                        <p className="name">Goma Gurung</p>
+                    </div>
+                    <div className="pic-wrapper jasmita-sunar-rasaili">
+                        <img src={require('../../img/Alumni-New/Jasmita Sunar Rasaili .jpeg')} alt="Jasmita Sunar Rasaili" className="pic" />
+                        <p className="name">Jasmita Sunar Rasaili</p>
+                    </div>
+                    <div className="pic-wrapper manisha-b-k">
+                        <img src={require('../../img/Alumni-New/Manisha B.K.JPG')} alt="Manisha B.K" className="pic" />
+                        <p className="name">Manisha B.K</p>
+                    </div>
+                    <div className="pic-wrapper manita-thapa">
+                        <img src={require('../../img/Alumni-New/Manita Thapa.jpeg')} alt="Manita Thapa" className="pic" />
+                        <p className="name">Manita Thapa</p>
+                    </div>
+                    <div className="pic-wrapper mira-devkota">
+                        <img src={require('../../img/Alumni-New/Mira Devkota.JPG')} alt="Mira Devkota" className="pic" />
+                        <p className="name">Mira Devkota</p>
+                    </div>
+                    <div className="pic-wrapper namrata-gurung">
+                        <img src={require('../../img/Alumni-New/Namrata Gurung.JPG')} alt="Namrata Gurung" className="pic" />
+                        <p className="name">Namrata Gurung</p>
+                    </div>
+                    <div className="pic-wrapper neha-tamang">
+                        <img src={require('../../img/Alumni-New/Neha Tamang.JPG')} alt="Neha Tamang" className="pic" />
+                        <p className="name">Neha Tamang</p>
+                    </div>
+                    <div className="pic-wrapper pallavi-singh-magaiya">
+                        <img src={require('../../img/Alumni-New/Pallavi-Singh-Magaiya.jpg')} alt="Pallavi Singh Magaiya" className="pic" />
+                        <p className="name">Pallavi Singh Magaiya</p>
+                    </div>
+                    <div className="pic-wrapper ram-maya-lama">
+                        <img src={require('../../img/Alumni-New/Ram Maya Lama.jpeg')} alt="Ram Maya Lama" className="pic" />
+                        <p className="name">Ram Maya Lama</p>
+                    </div>
+                    <div className="pic-wrapper rashmi-gurung">
+                        <img src={require('../../img/Alumni-New/Rashmi-Gurung.JPG')} alt="Rashmi Gurung" className="pic" />
+                        <p className="name">Rashmi Gurung</p>
+                    </div>
+                    <div className="pic-wrapper santosh-dhimal">
+                        <img src={require('../../img/Alumni-New/Santosh Dhimal.JPG')} alt="Santosh Dhimal" className="pic" />
+                        <p className="name">Santosh Dhimal</p>
+                    </div>
+                    <div className="pic-wrapper sarita-rai">
+                        <img src={require('../../img/Alumni-New/Sarita Rai.JPG')} alt="Sarita Rai" className="pic" />
+                        <p className="name">Sarita Rai</p>
+                    </div>
+                    <div className="pic-wrapper shanti-tamang">
+                        <img src={require('../../img/Alumni-New/Shanti Tamang.JPG')} alt="Shanti Tamang" className="pic" />
+                        <p className="name">Shanti Tamang</p>
+                    </div>
+                    <div className="pic-wrapper sujata-bista">
+                        <img src={require('../../img/Alumni-New/Sujata Bista .jpeg')} alt="Sujata Bista" className="pic" />
+                        <p className="name">Sujata Bista</p>
+                    </div>
+                    <div className="pic-wrapper sushma-thakuri">
+                        <img src={require('../../img/Alumni-New/Sushma Thakuri.jpeg')} alt="Sushma Thakuri" className="pic" />
+                        <p className="name">Sushma Thakuri</p>
+                    </div>
+                    <div className="pic-wrapper tara-chauhan">
+                        <img src={require('../../img/Alumni-New/Tara Chauhan.JPG')} alt="Tara Chauhan" className="pic" />
+                        <p className="name">Tara Chauhan</p>
+                    </div>
+                    <div className="pic-wrapper tsering-jordan-tamang">
+                        <img src={require('../../img/Alumni-New/Tsering Jordan Tamang.JPG')} alt="Tsering Jordan Tamang" className="pic" />
+                        <p className="name">Tsering Jordan Tamang</p>
                     </div>
                 </div>
             </div>
@@ -165,4 +240,4 @@ const One = () => {
     );
 };
 
-export default One;
+export default Two;
