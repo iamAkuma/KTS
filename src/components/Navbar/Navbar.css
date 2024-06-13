@@ -6,6 +6,7 @@
 .navbar {
   padding-top: 20px; /* Increase the top padding of the navbar */
   padding-bottom: 20px; /* Increase the bottom padding of the navbar */
+  z-index: 9999;
 }
 
 .navbar-brand {

@@ -30,7 +30,7 @@
 }
 
 .loading-image {
-  width: 120px;
+  width: 150px;
   height: auto;
   animation: scale 1.5s ease-in-out infinite;
 }
