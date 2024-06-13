@@ -19,7 +19,7 @@ const ContactForm = () => {
 
         if (isSubmitting) return;
         if (submissionCount >= 4) {
-            toast.error('Form Submission Limit reached.');
+            toast.error('After this try, Form Submission Limit reached.');
             return;
         }
 
@@ -46,7 +46,7 @@ const ContactForm = () => {
         e.target.reset();
 
         if (submissionCount === 3) {
-            toast.error('You have reached the form submission limit.');
+            toast.error('After this, You have reached the form submission limit.');
         }
     };
 
@@ -113,6 +113,7 @@ const ContactForm = () => {
                             <label htmlFor="course">Which course are you interested in?</label>
                             <div className="select-wrapper">
                                 <select className="form-control" id="course" name="course" required>
+                                    <option>Select One</option>
                                     <option>Caregiver / Aged Care</option>
                                     <option>Barista</option>
                                     <option>Bartender</option>
