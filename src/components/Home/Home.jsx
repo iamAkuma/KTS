@@ -1,38 +1,54 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
-import Navbar from '../Navbar/Navbar'
-import About from '../About-Us/About'
-import Video from '../Video/Video'
-import WhyChoose from '../whyChoose/whyChoose'
-import Quote from '../Quote/Quote'
-import Footer from '../Footer/Footer'
-import Speciality from '../Speciality/Speciality'
-import Logo from '../Logo-Vid/Logo'
-import Objective from '../Objective/Objective'
-import Empower from '../Empower/Empower'
-import Cards from '../Cards/Cards'
-import ContactForm from '../ContactForm/ContactForm'
-import Scroll from '../Scroll/Scroll'
+import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
+import Navbar from '../Navbar/Navbar';
+import About from '../About-Us/About';
+import Video from '../Video/Video';
+import WhyChoose from '../whyChoose/whyChoose';
+import Quote from '../Quote/Quote';
+import Footer from '../Footer/Footer';
+import Speciality from '../Speciality/Speciality';
+import Logo from '../Logo-Vid/Logo';
+import Objective from '../Objective/Objective';
+import Empower from '../Empower/Empower';
+import Cards from '../Cards/Cards';
+import ContactForm from '../ContactForm/ContactForm';
+import Scroll from '../Scroll/Scroll';
+import LoadingScreen from '../LoadingScreen/LoadingScreen'; // Adjust path as necessary
 
 const Home = () => {
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 3000); // Adjust time in milliseconds (e.g., 3000 for 3 seconds)
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <>
-            <Helmet><title>Kathmandu Technical School – A Journey to Excellence.</title></Helmet>
-            <Navbar />
-            <Video />
-            <About />
-            <WhyChoose />
-            <Quote />
-            <Speciality />
-            <Logo />
-            <Objective />
-            <Empower />
-            <Cards />
-            <Scroll />
-            <ContactForm />
-            <Footer />
+            {isLoading && <LoadingScreen />}
+            {!isLoading && (
+                <>
+                    <Helmet><title>Kathmandu Technical School – A Journey to Excellence.</title></Helmet>
+                    <Navbar />
+                    <Video />
+                    <About />
+                    <WhyChoose />
+                    <Quote />
+                    <Speciality />
+                    <Logo />
+                    <Objective />
+                    <Empower />
+                    <Cards />
+                    <Scroll />
+                    <ContactForm />
+                    <Footer />
+                </>
+            )}
         </>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;
