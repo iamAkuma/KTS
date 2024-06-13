@@ -56,3 +56,27 @@
   height: 200px;
   width: auto;
 }
+
+.pic-gyanu {
+  object-fit: cover;
+  height: 200px;
+  width: auto;
+}
+
+.pic-jasmi {
+  object-fit: cover;
+  height: 200px;
+  width: auto;
+}
+
+.pic-sushma {
+  object-fit: cover;
+  height: 200px;
+  width: auto;
+}
+
+.pic-shanti {
+  object-fit: cover;
+  height: 200px;
+  width: 175px;
+}

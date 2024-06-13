@@ -14,7 +14,6 @@ const Two = () => {
             <div>
                 <h1 className='one-header'>2080/81</h1>
                 <div className="pic-container">
-                    {/* Existing names and images */}
                     <div className="pic-wrapper babita-shrestha">
                         <img src={require('../../img/Babita-Shrestha.jpeg')} alt="Babita Shrestha" className="pic" />
                         <p className="name">Babita Shrestha</p>
@@ -40,7 +39,7 @@ const Two = () => {
                         <p className="name">Dhana Kumari Khanal</p>
                     </div>
                     <div className="pic-wrapper gyanu-maya-tamang">
-                        <img src={require('../../img/Gyanu-Maya-Tamang-256x300.jpeg')} alt="Gyanu Maya Tamang" className="pic" />
+                        <img src={require('../../img/Gyanu-Maya-Tamang-256x300.jpeg')} alt="Gyanu Maya Tamang" className="pic-gyanu" />
                         <p className="name">Gyanu Maya Tamang</p>
                     </div>
                     <div className="pic-wrapper juna-dura">
@@ -155,11 +154,9 @@ const Two = () => {
                         <img src={require('../../img/Sheetal-Dura-287x300.jpg')} alt="Sheetal Dura" className="pic" />
                         <p class="name">Sheetal Dura</p>
                     </div>
-
-                    {/* New names and images */}
                     <div className="pic-wrapper doma">
                         <img src={require('../../img/Alumni-New/Doma.JPG')} alt="Doma" className="pic" />
-                        <p className="name">Doma</p>
+                        <p className="name">Doma Rajgarhia</p>
                     </div>
                     <div className="pic-wrapper ganga-gharti-magar">
                         <img src={require('../../img/Alumni-New/Ganga Gharti Magar.JPG')} alt="Ganga Gharti Magar" className="pic" />
@@ -170,7 +167,7 @@ const Two = () => {
                         <p className="name">Goma Gurung</p>
                     </div>
                     <div className="pic-wrapper jasmita-sunar-rasaili">
-                        <img src={require('../../img/Alumni-New/Jasmita Sunar Rasaili .jpeg')} alt="Jasmita Sunar Rasaili" className="pic" />
+                        <img src={require('../../img/Alumni-New/Jasmita Sunar Rasaili .jpeg')} alt="Jasmita Sunar Rasaili" className="pic-jasmi" />
                         <p className="name">Jasmita Sunar Rasaili</p>
                     </div>
                     <div className="pic-wrapper manisha-b-k">
@@ -214,7 +211,7 @@ const Two = () => {
                         <p className="name">Sarita Rai</p>
                     </div>
                     <div className="pic-wrapper shanti-tamang">
-                        <img src={require('../../img/Alumni-New/Shanti Tamang.JPG')} alt="Shanti Tamang" className="pic" />
+                        <img src={require('../../img/Alumni-New/Shanti Tamang.JPG')} alt="Shanti Tamang" className="pic-shanti" />
                         <p className="name">Shanti Tamang</p>
                     </div>
                     <div className="pic-wrapper sujata-bista">
@@ -222,7 +219,7 @@ const Two = () => {
                         <p className="name">Sujata Bista</p>
                     </div>
                     <div className="pic-wrapper sushma-thakuri">
-                        <img src={require('../../img/Alumni-New/Sushma Thakuri.jpeg')} alt="Sushma Thakuri" className="pic" />
+                        <img src={require('../../img/Alumni-New/Sushma Thakuri.jpeg')} alt="Sushma Thakuri" className="pic-sushma" />
                         <p className="name">Sushma Thakuri</p>
                     </div>
                     <div className="pic-wrapper tara-chauhan">
