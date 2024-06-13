@@ -17,6 +17,12 @@ const ContactForm = () => {
     const handleFormSubmit = (e) => {
         e.preventDefault();
 
+        const courseSelect = e.target.course;
+        if (courseSelect.value === "Select One") {
+            toast.error('Please select a valid course.');
+            return;
+        }
+
         if (isSubmitting) return;
         if (submissionCount >= 4) {
             toast.error('After this try, Form Submission Limit reached.');
@@ -113,13 +119,13 @@ const ContactForm = () => {
                             <label htmlFor="course">Which course are you interested in?</label>
                             <div className="select-wrapper">
                                 <select className="form-control" id="course" name="course" required>
-                                    <option>Select One</option>
-                                    <option>Caregiver / Aged Care</option>
-                                    <option>Barista</option>
-                                    <option>Bartender</option>
-                                    <option>Commercial Cook/Baker</option>
-                                    <option>Waiter/Waitress</option>
-                                    <option>Housekeeping Cleaner</option>
+                                    <option value="">Select One</option>
+                                    <option value="Caregiver / Aged Care">Caregiver / Aged Care</option>
+                                    <option value="Barista">Barista</option>
+                                    <option value="Bartender">Bartender</option>
+                                    <option value="Commercial Cook/Baker">Commercial Cook/Baker</option>
+                                    <option value="Waiter/Waitress">Waiter/Waitress</option>
+                                    <option value="Housekeeping Cleaner">Housekeeping Cleaner</option>
                                 </select>
                             </div>
                         </div>
