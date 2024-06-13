@@ -1,12 +1,17 @@
-// LoadingScreen.js
-
 import React from 'react';
-import './LoadingScreen.css'; // Add CSS for styling the loading screen
+import './LoadingScreen.css'; // Ensure the correct path to your CSS file
+import logo from '../../img/KTS-logo.png'; // Adjust path to your logo image
 
-const LoadingScreen = () => {
+const LoadingScreen = ({ isLoading }) => {
     return (
-        <div className="loading-screen">
-            <img src={require('../../img/KTS-logo.png')} alt="Loading..." className="loading-image" />
+        <div className={`loading-screen ${isLoading ? 'visible' : ''}`}>
+            <div className="loading-container">
+                <img
+                    src={logo}
+                    alt="Loading..."
+                    className="loading-image"
+                />
+            </div>
         </div>
     );
 };

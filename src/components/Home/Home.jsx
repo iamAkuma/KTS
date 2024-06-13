@@ -28,25 +28,23 @@ const Home = () => {
 
     return (
         <>
-            {isLoading && <LoadingScreen />}
-            {!isLoading && (
-                <>
-                    <Helmet><title>Kathmandu Technical School – A Journey to Excellence.</title></Helmet>
-                    <Navbar />
-                    <Video />
-                    <About />
-                    <WhyChoose />
-                    <Quote />
-                    <Speciality />
-                    <Logo />
-                    <Objective />
-                    <Empower />
-                    <Cards />
-                    <Scroll />
-                    <ContactForm />
-                    <Footer />
-                </>
-            )}
+            <Helmet><title>Kathmandu Technical School – A Journey to Excellence.</title></Helmet>
+            <LoadingScreen isLoading={isLoading} />
+            <Navbar />
+            <div style={{ visibility: isLoading ? 'hidden' : 'visible' }}>
+                <Video />
+                <About />
+                <WhyChoose />
+                <Quote />
+                <Speciality />
+                <Logo />
+                <Objective />
+                <Empower />
+                <Cards />
+                <Scroll />
+                <ContactForm />
+                <Footer />
+            </div>
         </>
     );
 };

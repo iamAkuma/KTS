@@ -1,19 +1,48 @@
 /* LoadingScreen.css */
 
 .loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+  overflow: hidden; /* Ensure no scrollbars during loading */
+  opacity: 0; /* Initially hide loading screen */
+  visibility: hidden; /* Initially hide loading screen */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+
+.loading-screen.visible {
+  opacity: 1; /* Show loading screen */
+  visibility: visible; /* Show loading screen */
+}
+
+.loading-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  z-index: 9999; /* Ensure it's above other content */
+  justify-content: center;
+  height: 100%;
 }
 
 .loading-image {
-  width: 100px; /* Adjust size as needed */
+  width: 80px;
   height: auto;
+  animation: scale 1.5s ease-in-out infinite;
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
