@@ -4,7 +4,8 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import LoadingScreen from '../LoadingScreen/LoadingScreen'; // Adjust path as necessary
 import './Blogs.css'; // Adjust path as necessary
-import BlogCard from './BlogCard.jsx'
+import BlogCard from './BlogCard.jsx';
+
 const Blogs = () => {
     const [isLoading, setIsLoading] = useState(true);
 
@@ -25,7 +26,7 @@ const Blogs = () => {
                     <title>Blogs - Kathmandu Technical School</title>
                 </Helmet>
 
-                <div>
+                <div className="container">
                     <h1 className='text-center'>KTS Blogs</h1>
                     <div className="row">
                         <div className="col-md-4">
@@ -35,9 +36,6 @@ const Blogs = () => {
                                 description="Taking a caregiver course is becoming increasingly important in today’s world due to the growing demand..."
                             />
                         </div>
-                        {/* Add more BlogCard components as needed */}
-                    </div>
-                    <div className="row">
                         <div className="col-md-4">
                             <BlogCard
                                 image={require('../../img/Caregiver.jpg')}
@@ -45,9 +43,6 @@ const Blogs = () => {
                                 description="Taking a caregiver course is becoming increasingly important in today’s world due to the growing demand..."
                             />
                         </div>
-                        {/* Add more BlogCard components as needed */}
-                    </div>
-                    <div className="row">
                         <div className="col-md-4">
                             <BlogCard
                                 image={require('../../img/Caregiver.jpg')}
@@ -55,9 +50,8 @@ const Blogs = () => {
                                 description="Taking a caregiver course is becoming increasingly important in today’s world due to the growing demand..."
                             />
                         </div>
-                        {/* Add more BlogCard components as needed */}
                     </div>
-                    {/* Add your blog content here */}
+                    {/* Add more rows with three BlogCard components as needed */}
                 </div>
                 <Footer />
             </div>

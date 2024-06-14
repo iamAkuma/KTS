@@ -9,3 +9,8 @@
   visibility: hidden;
   pointer-events: none; /* Prevent interaction during loading */
 }
+
+.blog-header {
+  font-weight: bolder;
+  color: #2b3991;
+}
