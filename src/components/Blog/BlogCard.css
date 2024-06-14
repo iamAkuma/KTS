@@ -1,0 +1,30 @@
+/* BlogCard.css */
+.blog-card {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.blog-card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.blog-card .card-body {
+  background-color: #1e3a8a; /* Dark blue background */
+  color: white;
+}
+
+.blog-card .card-title {
+  font-weight: bold;
+}
+
+.blog-card .btn-primary {
+  background-color: #f59e0b; /* Orange button */
+  border: none;
+  font-weight: bold;
+}
+
+.blog-card .btn-primary:hover {
+  background-color: #d97706; /* Darker orange on hover */
+}
