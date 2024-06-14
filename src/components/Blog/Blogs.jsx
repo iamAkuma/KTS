@@ -27,7 +27,7 @@ const Blogs = () => {
                 </Helmet>
 
                 <div className="container">
-                    <h1 className='text-center'>KTS Blogs</h1>
+                    <h1 className='kts-blogs'>KTS BLOGS</h1>
                     <div className="row">
                         <div className="col-md-4">
                             <BlogCard

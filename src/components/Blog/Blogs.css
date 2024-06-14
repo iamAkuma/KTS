@@ -10,7 +10,7 @@
   pointer-events: none; /* Prevent interaction during loading */
 }
 
-.blog-header {
+.kts-blogs {
   font-weight: bolder;
   color: #2b3991;
 }
