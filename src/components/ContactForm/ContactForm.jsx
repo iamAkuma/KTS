@@ -129,7 +129,7 @@ const ContactForm = () => {
                                 </select>
                             </div>
                         </div>
-                        <button type="submit" className="btn" disabled={isSubmitting || submissionCount >= 4}>
+                        <button type="submit" className="btn btn-primary" disabled={isSubmitting || submissionCount >= 4}>
                             {isSubmitting ? 'Submitting...' : 'Submit'}
                         </button>
                     </form>
