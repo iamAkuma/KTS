@@ -37,6 +37,26 @@ const Blogs = () => {
                         </div>
                         {/* Add more BlogCard components as needed */}
                     </div>
+                    <div className="row">
+                        <div className="col-md-4">
+                            <BlogCard
+                                image={require('../../img/Caregiver.jpg')}
+                                title="Why Caregiver Course in KTS?"
+                                description="Taking a caregiver course is becoming increasingly important in today’s world due to the growing demand..."
+                            />
+                        </div>
+                        {/* Add more BlogCard components as needed */}
+                    </div>
+                    <div className="row">
+                        <div className="col-md-4">
+                            <BlogCard
+                                image={require('../../img/Caregiver.jpg')}
+                                title="Why Caregiver Course in KTS?"
+                                description="Taking a caregiver course is becoming increasingly important in today’s world due to the growing demand..."
+                            />
+                        </div>
+                        {/* Add more BlogCard components as needed */}
+                    </div>
                     {/* Add your blog content here */}
                 </div>
                 <Footer />
