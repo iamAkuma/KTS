@@ -244,8 +244,8 @@ const Two = () => {
                         </div>
                     </div>
                 </div>
-                <Footer />
             </div>
+            <Footer />
         </>
     );
 };
