@@ -3,19 +3,10 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import { Helmet } from 'react-helmet';
 import './one.css';
-import LoadingScreen from '../LoadingScreen/LoadingScreen'
+import LoadingScreen from '../LoadingScreen/LoadingScreen';
 
 const One = () => {
-    const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 3000); // Adjust time in milliseconds (e.g., 3000 for 3 seconds)
-
-        return () => clearTimeout(timer);
-    }, []);
-    // Array of image details
     const pictures = [
         {
             src: require('../../img/Amita-Raut.jpg'),
@@ -59,6 +50,29 @@ const One = () => {
         }
     ];
 
+
+    const [isLoading, setIsLoading] = useState(true);
+    const [imageLoading, setImageLoading] = useState(pictures.map(() => true));
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 1500);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    const handleImageLoad = (index) => {
+        setImageLoading((prev) => {
+            const newImageLoading = [...prev];
+            newImageLoading[index] = false;
+            return newImageLoading;
+        });
+    };
+
+    // Array of image details
+
+
     return (
         <>
             <Navbar />
@@ -68,16 +82,27 @@ const One = () => {
                     <title>2079/80 - Kathmandu Technical School</title>
                 </Helmet>
                 <div>
-                    <h1 className='one-header'>
-                        2079/80
-                    </h1>
+                    <h1 className='one-header'>2079/80</h1>
                     {/* Image section */}
                     <div className="pic-container">
-                        {/* Map over the images array */}
                         {pictures.map((picture, index) => (
                             <div className="pic-wrapper" key={index}>
-                                <img src={picture.src} alt={picture.alt} className="pic" />
-                                <p className="name">{picture.name}</p>
+                                {imageLoading[index] ? (
+                                    <>
+                                        <div className="skeleton"></div>
+                                        <div className="skeleton-text"></div>
+                                    </>
+                                ) : (
+                                    <>
+                                        <img
+                                            src={picture.src}
+                                            alt={picture.alt}
+                                            className="image"
+                                            onLoad={() => handleImageLoad(index)}
+                                        />
+                                        <p className="name">{picture.name}</p>
+                                    </>
+                                )}
                             </div>
                         ))}
                     </div>

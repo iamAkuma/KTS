@@ -11,7 +11,7 @@ const Blogs = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 3000); // Adjust time in milliseconds (e.g., 3000 for 3 seconds)
+        }, 1500); // Adjust time in milliseconds (e.g., 3000 for 3 seconds)
 
         return () => clearTimeout(timer);
     }, []);
