@@ -4,8 +4,8 @@ import './Empower.css';
 const MissionVision = () => {
     return (
         <div className="container text-center my-5">
-            <h1 className="mb-2">EMPOWERING YOUTH</h1>
-            <h1 className="mb-5">EMPOWERING NATION</h1>
+            <h1 className="mb-2 empower">EMPOWERING YOUTH</h1>
+            <h1 className="mb-5 empower">EMPOWERING NATION</h1>
 
             <div className="row">
                 <div className="col-md-3 col-sm-6 mb-4">

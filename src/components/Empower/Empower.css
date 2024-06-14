@@ -40,3 +40,7 @@
   width: 50%; /* Set width of divider */
   margin: 0.5rem auto; /* Center the divider */
 }
+
+.empower {
+  font-weight: bolder;
+}

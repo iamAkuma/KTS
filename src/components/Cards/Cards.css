@@ -5,6 +5,7 @@
 .course-header {
   text-align: center; /* Center align the header */
   margin-bottom: 2rem; /* Add margin at the bottom for spacing */
+  font-weight: bolder;
 }
 
 .caregiver-tabs-container {

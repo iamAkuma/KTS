@@ -7,7 +7,7 @@ import { faCoffee, faHandHoldingHeart, faHandsHelping, faCocktail } from '@forta
 const Tabs = () => {
     return (
         <div className="caregiver-tabs-container">
-            <h1 className='course-header'>Current Courses</h1> {/* Use h1 and center styling in JSX */}
+            <h1 className='course-header'>CURRENT COURSES</h1> {/* Use h1 and center styling in JSX */}
             <div className="tabs-wrapper">
                 <div className="tab caregiver-tab">
                     <div className="tab-header text-white">

@@ -73,12 +73,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bolder;
 }
 
 .scrolling .skill {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
 }
 
 .timeline-content h4 {
