@@ -27,7 +27,6 @@ const Courses = () => {
                 </Helmet>
                 <div className='course-container'>
                     <h1 className='course-header'>Our Courses</h1>
-                    {/* Add more content here */}
                 </div>
                 <Footer />
             </div>
