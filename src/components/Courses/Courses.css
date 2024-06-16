@@ -9,3 +9,12 @@
   visibility: hidden;
   pointer-events: none; /* Prevent interaction during loading */
 }
+
+body {
+  background-image: url("../../img/course-bg.jpg");
+  height: 100vh;
+}
+
+.course-container {
+  height: 100vh;
+}
