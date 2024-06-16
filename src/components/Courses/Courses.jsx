@@ -44,6 +44,9 @@ const Courses = () => {
                 <div className='course-container'>
                     <h1 className='course-header'>Our Courses</h1>
                     <div className="row">
+                        <div className="card-header">
+                            Caregiver / Aged Care Courses
+                        </div>
                         {cardsData.map((card, index) => (
                             <CardComponent
                                 key={index}
