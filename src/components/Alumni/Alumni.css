@@ -19,7 +19,7 @@ body {
 .alumni-header {
   margin: 20px 0;
   font-weight: bold;
-  font-size: 2em;
+  font-size: xx-large;
   color: #2b3991;
 }
 
@@ -30,6 +30,7 @@ body {
 }
 
 .year-section li {
+  font-size: x-large;
   margin: 5px;
   padding: 10px 10px;
   color: #2b3991;
