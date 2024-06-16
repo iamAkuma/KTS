@@ -26,7 +26,7 @@ const Courses = () => {
                     <title>Courses - Kathmandu Technical School</title>
                 </Helmet>
                 <div className='course-container'>
-                    <h1 className='text-center'>Our Courses</h1>
+                    <h1 className='course-header'>Our Courses</h1>
                     {/* Add more content here */}
                 </div>
                 <Footer />

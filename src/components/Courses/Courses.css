@@ -15,6 +15,12 @@ body {
   height: 100vh;
 }
 
+.course-header {
+  color: white;
+  font-weight: bolder;
+  font-size: 4.5rem;
+}
+
 .course-container {
   height: 100vh;
 }
