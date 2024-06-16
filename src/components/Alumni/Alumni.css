@@ -1,0 +1,46 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.alumni-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.alumni-header {
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 2em;
+  color: #2b3991;
+}
+
+.year-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.year-section li {
+  margin: 5px;
+  padding: 10px 10px;
+  color: #2b3991;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seventy {
+  text-decoration: none;
+}
+
+.eighty {
+  text-decoration: none;
+}

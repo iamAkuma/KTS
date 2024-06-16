@@ -55,7 +55,7 @@ const Footer = () => {
                 </div>
                 <nav className="d-flex justify-content-center mb-4">
                     <Link className="navi-link mx-3 footer-navi-link" to="/">Home</Link>
-                    <Link className="navi-link mx-3 footer-navi-link" to="/">Alumni</Link>
+                    <Link className="navi-link mx-3 footer-navi-link" to="/alumni">Alumni</Link>
                     <Link className="navi-link mx-3 footer-navi-link" to="/courses">Courses</Link>
                     <Link className="navi-link mx-3 footer-navi-link" to="/blog">Blog</Link>
                     <Link className="navi-link mx-3 footer-navi-link" to="/contact">Contact</Link>
