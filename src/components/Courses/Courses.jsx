@@ -78,7 +78,7 @@ const Courses = () => {
                     <h1 className='course-header'>Our Courses</h1>
 
                     <h3 className='course-sub'>Caregiver / Aged Care Courses</h3>
-                    <div className="row">
+                    <div className="rows">
                         {caregiverCourses.map((card, index) => (
                             <CardComponent
                                 key={index}
