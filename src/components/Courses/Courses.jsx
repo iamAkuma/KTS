@@ -41,7 +41,7 @@ const Courses = () => {
                 <Helmet>
                     <title>Courses - Kathmandu Technical School</title>
                 </Helmet>
-                <div className='course-container'>
+                <div className='courses-page'> {/* Add this class */}
                     <h1 className='course-header'>Our Courses</h1>
                     <div className="row">
                         <div className="card-header">

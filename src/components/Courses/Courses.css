@@ -10,15 +10,16 @@
   pointer-events: none; /* Prevent interaction during loading */
 }
 
-body {
+.courses-page {
   position: relative;
   /* Keeping the image properties here for proper positioning */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 100vh; /* Ensure it covers the full viewport height */
 }
 
-body::before {
+.courses-page::before {
   content: "";
   position: absolute;
   top: 0;
