@@ -14,7 +14,6 @@ import image5 from '../../img/bartenderr.jpg';
 import image6 from '../../img/waiter.jpg';
 import image7 from '../../img/house.jpg';
 
-
 const Courses = () => {
     const [isLoading, setIsLoading] = useState(true);
 
@@ -26,7 +25,7 @@ const Courses = () => {
         return () => clearTimeout(timer);
     }, []);
 
-    const cardsData = [
+    const caregiverCourses = [
         {
             image: image1,
             title: 'Caregiver / Aged Care Courses',
@@ -36,29 +35,32 @@ const Courses = () => {
             image: image2,
             title: 'Certificate III in Individual Support (Ageing and Disability)',
             description: 'This course boosts skills in providing personalized care to the elderly in community and residential settings, addressing aging and disability-related needs with high-quality support and compassion.'
-        },
+        }
+    ];
+
+    const hospitalityCourses = [
         {
-            image: image3,// Replace with actual paths
+            image: image3,
             title: 'Barista',
             description: 'Learn the art of making perfect coffee.'
         },
         {
-            image: image4, // Replace with actual paths
+            image: image4,
             title: 'Commercial Cook / Baker',
             description: 'Become a skilled commercial cook or baker.'
         },
         {
-            image: image5, // Replace with actual paths
+            image: image5,
             title: 'Bartender',
             description: 'Master the skills of bartending.'
         },
         {
-            image: image6, // Replace with actual paths
+            image: image6,
             title: 'Waiter / Waitress',
             description: 'Train to be an efficient waiter or waitress.'
         },
         {
-            image: image7, // Replace with actual paths
+            image: image7,
             title: 'Housekeeping Cleaner',
             description: 'Learn professional housekeeping skills.'
         }
@@ -72,11 +74,24 @@ const Courses = () => {
                 <Helmet>
                     <title>Courses - Kathmandu Technical School</title>
                 </Helmet>
-                <div className='courses-page'> {/* Add this class */}
+                <div className='courses-page'>
                     <h1 className='course-header'>Our Courses</h1>
-                    <h3 className='course-sub'>Caregiver / Aged Care</h3>
+
+                    <h3 className='course-sub'>Caregiver / Aged Care Courses</h3>
                     <div className="row">
-                        {cardsData.map((card, index) => (
+                        {caregiverCourses.map((card, index) => (
+                            <CardComponent
+                                key={index}
+                                image={card.image}
+                                title={card.title}
+                                description={card.description}
+                            />
+                        ))}
+                    </div>
+
+                    <h3 className='course-sub'>Hospitality Courses</h3>
+                    <div className="row">
+                        {hospitalityCourses.map((card, index) => (
                             <CardComponent
                                 key={index}
                                 image={card.image}
