@@ -75,40 +75,29 @@ const Courses = () => {
                     <title>Courses - Kathmandu Technical School</title>
                 </Helmet>
                 <div className='courses-page'>
-                    <h1 className='courses-header'>Our Courses</h1>
+                    <h1 className='course-header'>Our Courses</h1>
 
-                    <h3 className='courses-sub'>Caregiver / Aged Care Courses</h3>
-                    <div className="courses-rows">
-                        {caregiverCourses.map((board, index) => (
-                            <div key={index} className="courses-col-md-6">
+                    <h3 className='course-sub'>Caregiver / Aged Care Courses</h3>
+                    <div className="course-rows">
+                        {caregiverCourses.map((course, index) => (
+                            <div key={index} className="course-col">
                                 <CourseCard
-                                    image={board.image}
-                                    title={board.title}
-                                    description={board.description}
+                                    image={course.image}
+                                    title={course.title}
+                                    description={course.description}
                                 />
                             </div>
                         ))}
                     </div>
 
-                    <h3 className='courses-sub'>Hospitality Courses</h3>
-                    <div className="courses-rows">
-                        {hospitalityCourses.slice(0, 3).map((board, index) => (
-                            <div key={index} className="courses-col-md-4">
+                    <h3 className='course-sub'>Hospitality Courses</h3>
+                    <div className="course-rows">
+                        {hospitalityCourses.map((course, index) => (
+                            <div key={index} className="course-col">
                                 <CourseCard
-                                    image={board.image}
-                                    title={board.title}
-                                    description={board.description}
-                                />
-                            </div>
-                        ))}
-                    </div>
-                    <div className="courses-rows">
-                        {hospitalityCourses.slice(3).map((board, index) => (
-                            <div key={index} className="courses-col-md-6">
-                                <CourseCard
-                                    image={board.image}
-                                    title={board.title}
-                                    description={board.description}
+                                    image={course.image}
+                                    title={course.title}
+                                    description={course.description}
                                 />
                             </div>
                         ))}
