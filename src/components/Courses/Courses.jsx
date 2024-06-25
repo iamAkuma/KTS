@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import LoadingScreen from '../LoadingScreen/LoadingScreen'; // Adjust path as necessary
-import CardComponent from './CourseCard'; // Adjust path as necessary
+import CourseCard from './CourseCard'; // Adjust path as necessary
 import './Courses.css'; // Adjust path as necessary
 
 import image1 from '../../img/Caregiver.jpg';  // Update the paths to your images
@@ -79,25 +79,38 @@ const Courses = () => {
 
                     <h3 className='courses-sub'>Caregiver / Aged Care Courses</h3>
                     <div className="courses-rows">
-                        {caregiverCourses.map((card, index) => (
-                            <CardComponent
-                                key={index}
-                                image={card.image}
-                                title={card.title}
-                                description={card.description}
-                            />
+                        {caregiverCourses.map((board, index) => (
+                            <div key={index} className="courses-col-md-6">
+                                <CourseCard
+                                    image={board.image}
+                                    title={board.title}
+                                    description={board.description}
+                                />
+                            </div>
                         ))}
                     </div>
 
                     <h3 className='courses-sub'>Hospitality Courses</h3>
                     <div className="courses-rows">
-                        {hospitalityCourses.map((card, index) => (
-                            <CardComponent
-                                key={index}
-                                image={card.image}
-                                title={card.title}
-                                description={card.description}
-                            />
+                        {hospitalityCourses.slice(0, 3).map((board, index) => (
+                            <div key={index} className="courses-col-md-4">
+                                <CourseCard
+                                    image={board.image}
+                                    title={board.title}
+                                    description={board.description}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                    <div className="courses-rows">
+                        {hospitalityCourses.slice(3).map((board, index) => (
+                            <div key={index} className="courses-col-md-6">
+                                <CourseCard
+                                    image={board.image}
+                                    title={board.title}
+                                    description={board.description}
+                                />
+                            </div>
                         ))}
                     </div>
                 </div>
