@@ -18,7 +18,7 @@
   padding: 20px; /* Add padding to ensure content is not flush with the edges */
 }
 
-.course-header {
+.courses-header {
   color: white;
   font-weight: bolder;
   font-size: 4.5rem;
@@ -26,7 +26,7 @@
   margin-top: 20px;
 }
 
-.course-sub {
+.courses-sub {
   color: white;
   font-weight: bold;
   font-size: 2.5rem;
@@ -34,32 +34,32 @@
   margin: 40px 0 20px;
 }
 
-.rows {
+.courses-rows {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
-.col-md-6 {
+.courses-col-md-6 {
   flex: 1 1 30%; /* Adjust the width as needed */
   display: flex;
   justify-content: center;
 }
 
-.cards {
+.courses-cards {
   width: 100%;
   margin-bottom: 20px;
 }
 
-.card-img-top {
+.courses-card-img-top {
   height: 250px;
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
-.card-img-top::after {
+.courses-card-img-top::after {
   content: "";
   position: absolute;
   top: 0;
@@ -70,7 +70,7 @@
   filter: brightness(0.5);
 }
 
-.card-body {
+.courses-card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,19 +79,19 @@
   text-align: center;
 }
 
-.card-body h5 {
+.courses-card-body h5 {
   font-weight: bold;
 }
 
-.card-body p {
+.courses-card-body p {
   margin-bottom: 20px;
 }
 
-.bg-primary {
+.courses-bg-primary {
   background-color: #2b3991 !important;
 }
 
-.btn-light {
+.courses-btn-light {
   color: #2b3991;
   background-color: #fea92c;
   color: white;
@@ -100,7 +100,7 @@
 }
 
 @media (max-width: 768px) {
-  .col-md-6 {
+  .courses-col-md-6 {
     flex: 1 1 100%;
   }
 }
