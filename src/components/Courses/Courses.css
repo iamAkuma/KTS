@@ -48,15 +48,15 @@
 }
 
 .courses-col-md-6 {
-  flex: 1 1 45%; /* Adjust the width as needed */
+  flex: 1 1 49%; /* Adjust the width as needed */
 }
 
 .courses-col-md-4 {
-  flex: 1 1 28%; /* Adjust the width as needed */
+  flex: 1 1 30%; /* Adjust the width as needed */
 }
 
 .courses-board {
-  width: 100%;
+  width: 50%s;
   margin-bottom: 20px;
 }
 
