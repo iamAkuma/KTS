@@ -1,14 +1,14 @@
 import React from 'react';
 import './Empower.css';
 
-const MissionVision = () => {
+const Empower = () => {
     return (
         <div className="container text-center my-5">
             <h1 className="mb-2 empower">EMPOWERING YOUTH</h1>
             <h1 className="mb-5 empower">EMPOWERING NATION</h1>
 
             <div className="row">
-                <div className="col-md-3 col-sm-6 mb-4">
+                <div className="col-lg-3 col-md-6 mb-4">
                     <div className="card p-3 h-100">
                         <div className="card-body">
                             <div className="icon mb-3">
@@ -22,7 +22,7 @@ const MissionVision = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3 col-sm-6 mb-4">
+                <div className="col-lg-3 col-md-6 mb-4">
                     <div className="card p-3 h-100">
                         <div className="card-body">
                             <div className="icon mb-3">
@@ -36,7 +36,7 @@ const MissionVision = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3 col-sm-6 mb-4">
+                <div className="col-lg-3 col-md-6 mb-4">
                     <div className="card p-3 h-100">
                         <div className="card-body">
                             <div className="icon mb-3">
@@ -50,7 +50,7 @@ const MissionVision = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3 col-sm-6 mb-4">
+                <div className="col-lg-3 col-md-6 mb-4">
                     <div className="card p-3 h-100">
                         <div className="card-body">
                             <div className="icon mb-3">
@@ -74,4 +74,4 @@ const MissionVision = () => {
     );
 };
 
-export default MissionVision;
+export default Empower;

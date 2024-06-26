@@ -108,3 +108,18 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 576px) {
+  .tabs-wrapper {
+    flex-direction: column; /* Stack tabs vertically on smaller screens */
+  }
+
+  .caregiver-tab {
+    width: 100%; /* Ensure each tab takes full width */
+    max-width: none; /* Remove max-width restriction */
+  }
+
+  .caregiver-tab:last-child {
+    margin-bottom: 0; /* Remove bottom margin from the last tab */
+  }
+}

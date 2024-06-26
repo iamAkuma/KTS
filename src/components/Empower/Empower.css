@@ -3,7 +3,7 @@
   color: white; /* White text */
   border: none; /* Remove border */
   border-radius: 15px; /* Rounded corners */
-  margin-bottom: 10px; /* Space between cards */
+  margin-bottom: 20px; /* Increased space between cards */
   min-height: 450px; /* Set a minimum height */
   transition: background-color 0.3s ease; /* Smooth transition */
 }
