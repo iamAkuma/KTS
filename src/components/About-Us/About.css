@@ -1,52 +1,100 @@
+/* Base styles */
 .about-us-container {
   background-color: rgba(0, 0, 0, 0); /* transparent background */
   color: rgb(118, 118, 127); /* text color */
   font-family: "Poppins", sans-serif; /* font family */
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  max-width: 100%; /* Prevent container from exceeding screen width */
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .about-us-heading {
-  font-family: "Poppins", sans-serif; /* Ensure the font family is correct */
+  font-family: "Poppins", sans-serif;
   font-weight: 800; /* Make the text very bold */
-  font-size: 3rem; /* Make the text size larger */
-  color: #000000; /* Optional: Set the text color */
-  padding-left: 255px;
+  font-size: 2rem; /* Base font size */
+  color: #000000;
+  padding-left: 0; /* Remove padding for smaller screens */
+  text-align: center; /* Center the heading text */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 100%; /* Ensure it doesn't exceed container width */
 }
 
 .image-line-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%; /* Ensure it doesn't exceed container width */
+  box-sizing: border-box;
 }
 
 .image-line-wrapper .line {
-  width: 100%; /* Line is set to take the full width of its container */
+  width: 100%; /* Line takes the full width of its container */
   height: 2px;
   background-color: #2b3991; /* Line color */
   margin-bottom: 35px; /* Space between the line and the image */
+  box-sizing: border-box;
 }
 
 .img-fluid {
   margin-bottom: 20px;
   max-width: 100%; /* Ensures the image is responsive */
   height: auto; /* Maintains the aspect ratio of the image */
+  box-sizing: border-box;
 }
 
 .about-us-container h2 {
   font-weight: bold;
-  color: black; /* color for the heading */
+  color: black; /* Color for the heading */
   margin-bottom: 20px;
+  text-align: center; /* Center the h2 text */
+  box-sizing: border-box;
+  width: 100%; /* Ensure it doesn't exceed container width */
 }
 
 .about-us-container p {
-  font-size: 18px;
-  line-height: 2;
+  font-size: 16px;
+  line-height: 1.6;
   margin-bottom: 20px;
   font-weight: 400;
   text-align: justify;
+  box-sizing: border-box;
+  width: 100%; /* Ensure it doesn't exceed container width */
 }
 
+/* Media Queries for responsiveness */
+
+/* Mobile L (425px and up) */
+@media (min-width: 425px) {
+  .about-us-heading {
+    font-size: 2.2rem; /* Slightly larger text for Mobile L */
+  }
+}
+
+/* Tablet (768px and up) */
 @media (min-width: 768px) {
-  .about-us-container .header {
-    width: 100%; /* Ensures the header and line take up the same width as the image */
+  .about-us-heading {
+    font-size: 2.5rem; /* Larger text for medium screens */
+    text-align: left; /* Align text to the left for larger screens */
+    padding-left: 20px; /* Add some padding for larger screens */
+  }
+
+  .about-us-container p {
+    font-size: 18px;
+    line-height: 2;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  .about-us-heading {
+    font-size: 3rem; /* Larger text for large screens */
+    padding-left: 255px; /* Restore padding for large screens */
+  }
+
+  .about-us-container {
+    max-width: 1200px; /* Limit the width for better readability on large screens */
+    margin: auto; /* Center the container */
   }
 }

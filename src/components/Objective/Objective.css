@@ -9,6 +9,7 @@
   background-size: cover;
   color: white;
   padding: 40px;
+  min-height: 300px; /* Ensure minimum height */
 }
 
 .objective-section {
@@ -27,7 +28,7 @@
 .objective-section .overlay p,
 .what-we-do-section .overlay ul,
 .what-we-do-section .overlay li {
-  color: white; /* Ensures all text inside the overlay is white */
+  color: white;
 }
 
 h2 {
@@ -50,4 +51,45 @@ h2 {
   content: "•";
   color: #fca311;
   padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .objective-section,
+  .what-we-do-section {
+    padding: 20px;
+  }
+
+  .objective-section h2,
+  .what-we-do-section h2 {
+    font-size: 24px; /* Adjust font size for tablets */
+  }
+
+  .overlay p,
+  .overlay ul,
+  .overlay li {
+    font-size: 16px; /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .objective-section,
+  .what-we-do-section {
+    padding: 10px;
+    min-height: 250px; /* Adjust minimum height for mobile */
+  }
+
+  .objective-section h2,
+  .what-we-do-section h2 {
+    font-size: 20px; /* Adjust font size for mobile devices */
+  }
+
+  .overlay p,
+  .overlay ul,
+  .overlay li {
+    font-size: 14px; /* Adjust font size for mobile devices */
+  }
+
+  .row {
+    flex-direction: column; /* Stack sections vertically on mobile */
+  }
 }

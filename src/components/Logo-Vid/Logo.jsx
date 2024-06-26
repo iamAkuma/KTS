@@ -1,18 +1,16 @@
-import React, { useState } from 'react';
-import ReactPlayer from 'react-player'; // Import ReactPlayer
-import { useInView } from 'react-intersection-observer'; // Import Intersection Observer hook
-import './Logo.css'; // Import the CSS file
+import React, { useState, useEffect } from 'react';
+import ReactPlayer from 'react-player';
+import { useInView } from 'react-intersection-observer';
+import './Logo.css';
 
 const LogoAnimation = () => {
-    const [isPlaying, setIsPlaying] = useState(false); // State to control playback
+    const [isPlaying, setIsPlaying] = useState(false);
     const { ref, inView } = useInView({
-        /* Optional options */
-        threshold: 0.5, // Adjust this value to control when the video should start playing (0.5 means 50% in view)
-        triggerOnce: false // Keep checking the visibility
+        threshold: 0.5,
+        triggerOnce: false
     });
 
-    // Update playback state when visibility changes
-    React.useEffect(() => {
+    useEffect(() => {
         if (inView) {
             setIsPlaying(true);
         } else {
@@ -20,17 +18,18 @@ const LogoAnimation = () => {
         }
     }, [inView]);
 
-    const videoUrl = require('../../vid/LOGO-ANIMATION.mp4'); // Assuming video is in the same folder
+    const videoUrl = require('../../vid/LOGO-ANIMATION.mp4');
 
     return (
         <div ref={ref} className="logo-animation-container">
             <ReactPlayer
                 url={videoUrl}
-                playing={isPlaying} // Control playback based on state
-                loop={true} // Set loop to true for continuous playback
-                muted={true} // Set muted to true for silent playback
+                playing={isPlaying}
+                loop
+                muted
                 width="100%"
                 height="100%"
+                className="logo-animation-video"
             />
         </div>
     );
