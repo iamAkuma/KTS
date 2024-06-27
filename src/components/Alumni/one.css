@@ -1,6 +1,7 @@
 /* Container for the images */
 .pic-container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   margin-top: 20px;
   opacity: 1;
@@ -16,6 +17,7 @@
 
 /* Wrapper for each image */
 .pic-wrapper {
+  flex: 1 1 100%; /* Full width for mobile by default */
   text-align: center;
   padding: 10px;
 }
@@ -72,21 +74,16 @@
 
 /* Media Queries */
 
-/* Mobile (default) */
-.pic-container {
-  grid-template-columns: 1fr;
-}
-
-/* Tablets */
+/* Tablets (600px and up) */
 @media (min-width: 600px) {
-  .pic-container {
-    grid-template-columns: repeat(4, 1fr);
+  .pic-wrapper {
+    flex: 1 1 22%; /* Four images per row with some space */
   }
 }
 
-/* Desktops */
+/* Desktops (992px and up) */
 @media (min-width: 992px) {
-  .pic-container {
-    grid-template-columns: repeat(4, 1fr);
+  .pic-wrapper {
+    flex: 1 1 22%; /* Four images per row */
   }
 }
