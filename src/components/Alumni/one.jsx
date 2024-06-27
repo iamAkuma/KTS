@@ -3,7 +3,7 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import { Helmet } from 'react-helmet';
 import './one.css';
-import LoadingScreen from '../LoadingScreen/LoadingScreen'
+import LoadingScreen from '../LoadingScreen/LoadingScreen';
 
 const One = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -11,11 +11,11 @@ const One = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 1500); // Adjust time in milliseconds (e.g., 3000 for 3 seconds)
+        }, 1500);
 
         return () => clearTimeout(timer);
     }, []);
-    // Array of image details
+
     const pictures = [
         {
             src: require('../../img/Amita-Raut.jpg'),
@@ -71,9 +71,7 @@ const One = () => {
                     <h1 className='one-header'>
                         2079/80
                     </h1>
-                    {/* Image section */}
                     <div className="pic-container">
-                        {/* Map over the images array */}
                         {pictures.map((picture, index) => (
                             <div className="pic-wrapper" key={index}>
                                 <img src={picture.src} alt={picture.alt} className="pic" />
@@ -84,7 +82,6 @@ const One = () => {
                 </div>
             </div>
             <Footer />
-
         </>
     );
 };
