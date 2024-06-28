@@ -45,33 +45,33 @@ const Courses = () => {
             image: image3,
             title: 'Barista',
             description: 'Learn the art of making perfect coffee.',
-            link: ''
+            link: '/barista'
         },
         {
             image: image4,
             title: 'Commercial Cook / Baker',
             description: 'Become a skilled commercial cook or baker.',
-            link: ''
+            link: '/commercial-cook'
         },
         {
             image: image5,
             title: 'Bartender',
             description: 'Master the skills of bartending.',
-            link: ''
+            link: '/bartender'
 
         },
         {
             image: image6,
             title: 'Waiter / Waitress',
             description: 'Train to be an efficient waiter or waitress.',
-            link: ''
+            link: '/waiter'
 
         },
         {
             image: image7,
             title: 'Housekeeping Cleaner',
             description: 'Learn professional housekeeping skills.',
-            link: ''
+            link: '/housekeeping'
 
         }
     ];

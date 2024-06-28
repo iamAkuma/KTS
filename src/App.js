@@ -10,7 +10,13 @@ import Two from './components/Alumni/two'
 import ErrorPage from './components/Error/Error'
 import Alumni from './components/Alumni/Alumni';
 import Caregiver from './components/Caregiver/Caregiver';
-import Certificate from './components/Certificate/Certificate'
+import Certificate from './components/Certificate/Certificate';
+import Barista from './components/Barista/Barista';
+import Cook from './components/Cook/Cook.jsx';
+import Bartender from './components/Bartender/Bartender.jsx';
+import Waiter from './components/Waiter/Waiter.jsx';
+import Housekeeping from './components/Housekeeping/Housekeeping.jsx';
+
 
 const App = () => {
   return (
@@ -25,6 +31,13 @@ const App = () => {
         <Route path="/2080-81" element={<Two />} />
         <Route path="/caregiver" element={<Caregiver />} />
         <Route path="/individual-support" element={<Certificate />} />
+        <Route path="/barista" element={<Barista />} />
+        <Route path="/commercial-cook" element={<Cook />} />
+        <Route path="/bartender" element={<Bartender />} />
+        <Route path="/waiter" element={<Waiter />} />
+        <Route path="/housekeeping" element={<Housekeeping />} />
+
+
         <Route path='*' element={<ErrorPage />} />
       </Routes>
     </Router>
