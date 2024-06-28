@@ -25,10 +25,9 @@
 }
 
 .photo {
-  width: 100px; /* Default width for images */
-  height: 100px; /* Set height to match width to maintain aspect ratio */
-  margin-right: 10px; /* Adjust gap between images */
   object-fit: cover;
+  height: 200px;
+  width: auto;
 }
 
 .name {
@@ -73,8 +72,9 @@
   }
 
   .photo {
-    width: 80px; /* Smaller image size for tablets */
-    height: 80px;
+    object-fit: cover;
+    height: 200px;
+    width: auto;
   }
 }
 
@@ -84,7 +84,8 @@
   }
 
   .photo {
-    width: 60px; /* Smaller image size for mobile */
-    height: 60px;
+    object-fit: cover;
+    height: 200px;
+    width: auto;
   }
 }
