@@ -29,12 +29,14 @@ const Courses = () => {
         {
             image: image1,
             title: 'Caregiver / Aged Care Courses',
-            description: 'Caregiver training is designed to produce competent human resources equipped with knowledge, skills, and attitudes related to the caregiving occupation.'
+            description: 'Caregiver training is designed to produce competent human resources equipped with knowledge, skills, and attitudes related to the caregiving occupation.',
+            link: '/caregiver'
         },
         {
             image: image2,
             title: 'Certificate III in Individual Support (Ageing and Disability)',
-            description: 'This course boosts skills in providing personalized care to the elderly in community and residential settings, addressing aging and disability-related needs with high-quality support and compassion.'
+            description: 'This course boosts skills in providing personalized care to the elderly in community and residential settings, addressing aging and disability-related needs with high-quality support and compassion.',
+            link: ''
         }
     ];
 
@@ -42,27 +44,35 @@ const Courses = () => {
         {
             image: image3,
             title: 'Barista',
-            description: 'Learn the art of making perfect coffee.'
+            description: 'Learn the art of making perfect coffee.',
+            link: ''
         },
         {
             image: image4,
             title: 'Commercial Cook / Baker',
-            description: 'Become a skilled commercial cook or baker.'
+            description: 'Become a skilled commercial cook or baker.',
+            link: ''
         },
         {
             image: image5,
             title: 'Bartender',
-            description: 'Master the skills of bartending.'
+            description: 'Master the skills of bartending.',
+            link: ''
+
         },
         {
             image: image6,
             title: 'Waiter / Waitress',
-            description: 'Train to be an efficient waiter or waitress.'
+            description: 'Train to be an efficient waiter or waitress.',
+            link: ''
+
         },
         {
             image: image7,
             title: 'Housekeeping Cleaner',
-            description: 'Learn professional housekeeping skills.'
+            description: 'Learn professional housekeeping skills.',
+            link: ''
+
         }
     ];
 
@@ -85,6 +95,8 @@ const Courses = () => {
                                     image={course.image}
                                     title={course.title}
                                     description={course.description}
+                                    link={course.link}
+
                                 />
                             </div>
                         ))}
@@ -98,6 +110,8 @@ const Courses = () => {
                                     image={course.image}
                                     title={course.title}
                                     description={course.description}
+                                    link={course.link}
+
                                 />
                             </div>
                         ))}
