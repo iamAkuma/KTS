@@ -97,7 +97,7 @@
   background-color: #fea92c;
   color: white;
   display: flex;
-  align-content: center;
+  align-content: center !important;
 }
 
 @media (max-width: 768px) {
