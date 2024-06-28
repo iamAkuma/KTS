@@ -36,7 +36,7 @@ const Courses = () => {
             image: image2,
             title: 'Certificate III in Individual Support (Ageing and Disability)',
             description: 'This course boosts skills in providing personalized care to the elderly in community and residential settings, addressing aging and disability-related needs with high-quality support and compassion.',
-            link: ''
+            link: '/individual-support'
         }
     ];
 

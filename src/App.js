@@ -10,6 +10,7 @@ import Two from './components/Alumni/two'
 import ErrorPage from './components/Error/Error'
 import Alumni from './components/Alumni/Alumni';
 import Caregiver from './components/Caregiver/Caregiver';
+import Certificate from './components/Certificate/Certificate'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/2079-80" element={<One />} />
         <Route path="/2080-81" element={<Two />} />
         <Route path="/caregiver" element={<Caregiver />} />
+        <Route path="/individual-support" element={<Certificate />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
     </Router>
