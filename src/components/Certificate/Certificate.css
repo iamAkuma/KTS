@@ -1,0 +1,57 @@
+.unique-course-container {
+  padding: 20px;
+  background-color: white;
+}
+
+.unique-course-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.unique-course-details {
+  padding: 20px;
+}
+
+.unique-course-details h1 {
+  font-size: 2rem;
+  color: #2b3991;
+  margin-bottom: 20px;
+}
+
+.unique-course-description {
+  font-size: 1.2rem;
+  color: #2b3991;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 20px; /* Added padding to give space for quotes */
+}
+
+.unique-course-description::before,
+.unique-course-description::after {
+  content: "“";
+  font-size: 2rem;
+  color: #2b3991;
+  position: absolute;
+}
+
+.unique-course-description::before {
+  left: 0;
+  top: -10px;
+}
+
+.unique-course-description::after {
+  content: "”"; /* Corrected the closing quote */
+  right: -10px;
+  bottom: -10px;
+}
+
+.btn-primary {
+  background-color: #2b3991;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #1e286e;
+}
