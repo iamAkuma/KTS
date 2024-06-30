@@ -22,7 +22,7 @@ function Caregiver() {
                             <p className="unique-caregiver-course-description">
                                 Devoting yourself to the service and welfare of others is a wonderful act, that's why I chose to become a Caregiver.                            </p>
                         </div>
-                        <Button href={pdfFile} variant="primary" size="lg">Download Course Details</Button>
+                        <Button href={pdfFile} variant="primary" size="lg" className="thichne-kura">Download Course Details</Button>
                     </Col>
                     <Col>
                         <div>

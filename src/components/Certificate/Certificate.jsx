@@ -22,7 +22,7 @@ function Certificate() {
                                 This course enhances your abilities in offering both physical and emotional aid to the elderly, focusing on care provision in community and residential environments.
                             </p>
                         </div>
-                        <Button href={pdfFile} variant="primary" size="lg">Download Course Details</Button>
+                        <Button href={pdfFile} variant="primary" size="lg" className="thichne-kura">Download Course Details</Button>
                     </Col>
                     <Col>
                         <div>

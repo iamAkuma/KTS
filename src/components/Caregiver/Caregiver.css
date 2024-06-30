@@ -37,18 +37,9 @@
   color: #2b3991;
   text-align: justify;
 }
-
-.btn-primary {
+.thichne-kura {
   background-color: #2b3991;
-  border: none;
-  margin-top: 20px;
-  margin-left: 3px;
 }
-
-.btn-primary:hover {
-  background-color: #1e286e;
-}
-
 .underline {
   width: 300px;
   height: 7px;
