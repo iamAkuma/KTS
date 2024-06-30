@@ -1,6 +1,6 @@
 .unique-course-container {
   padding: 20px;
-  background-color: white;
+  background-color: #f9f9f9;
 }
 
 .unique-course-image img {
@@ -62,4 +62,13 @@
   height: 7px;
   background-color: #fea92c;
   margin: -10px 0 20px 5px; /* Adjust margins as needed */
+}
+
+.certificate {
+  color: black;
+  background-color: #f9f9f9;
+  line-height: 2;
+  margin-top: 15px;
+  margin-bottom: 1px;
+  text-align: justify;
 }
