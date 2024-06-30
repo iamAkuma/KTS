@@ -19,6 +19,7 @@
   font-weight: bolder;
   color: #2b3991;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .quote-container {
@@ -34,8 +35,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   color: #2b3991;
-  width: 70%; /* Adjust the width as needed */
-  padding: 0 2rem; /* Increase padding for better spacing */
+  text-align: justify;
 }
 
 .unique-quote-icon-left,
@@ -50,6 +50,7 @@
   background-color: #2b3991;
   border: none;
   margin-top: 20px;
+  margin-left: 3px;
 }
 
 .btn-primary:hover {
