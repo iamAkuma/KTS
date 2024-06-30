@@ -12,7 +12,7 @@ function Caregiver() {
             <Container fluid className="unique-caregiver-course-container">
                 <Row className="align-items-center">
                     <Col md={6} className="unique-caregiver-course-image">
-                        <img src={require('../../img/Cert3.jpeg')} alt="Course" className="img-fluid" />
+                        <img src={require('../../img/Caregiver.jpg')} alt="Course" className="img-fluid" />
                     </Col>
                     <Col md={6} className="unique-caregiver-course-details">
                         <h1>Caregiver
