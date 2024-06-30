@@ -16,6 +16,7 @@ function Certificate() {
                     </Col>
                     <Col md={6} className="unique-course-details">
                         <h1>Certificate III in Individual Support (Ageing and Disability)</h1>
+                        <div className="underline"></div>
                         <p className="unique-course-description">
                             <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon" />
                             This course enhances your abilities in offering both physical and emotional aid to the elderly, focusing on care provision in community and residential environments.

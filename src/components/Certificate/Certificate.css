@@ -50,3 +50,12 @@
   vertical-align: middle; /* Align icons vertically with text */
   margin: 0 5px; /* Added margin to space the icons from the text */
 }
+
+.underline {
+  width: 300px;
+  height: 7px;
+  background-color: #fea92c;
+  margin-top: -10px; /* Adjust based on the spacing you need */
+  margin-bottom: 20px; /* Added margin-bottom for spacing */
+  margin-left: 5px;
+}
