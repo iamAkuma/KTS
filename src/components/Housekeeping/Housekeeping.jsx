@@ -17,7 +17,8 @@ function Housekeeping() {
                         <div className="underline"></div>
                         <div>
                             <p className="unique-caregiver-course-description">
-                                The Housekeeping/Cleaner Training Program provides instruction in cleaning techniques and maintaining hygiene standards for various settings. </p>                        </div>
+                                The Housekeeping/Cleaner Training Program provides instruction in cleaning techniques and maintaining hygiene standards for various settings. </p>
+                        </div>
                     </Col>
                     <Col>
                         <div>
