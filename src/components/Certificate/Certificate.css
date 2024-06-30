@@ -21,52 +21,44 @@
   margin-bottom: 20px;
 }
 
+.quote-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .unique-course-description {
   font-size: 1.2rem;
   font-weight: 600;
   color: #2b3991;
-  margin-bottom: 20px;
-  position: relative;
-  padding-left: 20px; /* Added padding to give space for quotes */
+  width: 70%; /* Adjust the width as needed */
+  padding: 0 2rem; /* Increase padding for better spacing */
 }
 
-.unique-course-description::before {
-  left: 0;
-  top: -10px;
+.unique-quote-icon-left,
+.unique-quote-icon-right {
+  position: absolute;
+  font-size: 4rem; /* Adjust font size to your preference */
+  color: #2b3991;
+  margin: 1 2rem;
 }
 
 .btn-primary {
   background-color: #2b3991;
   border: none;
+  margin-top: 20px;
 }
 
 .btn-primary:hover {
   background-color: #1e286e;
 }
 
-.unique-quote-icon-left {
-  font-size: 4rem; /* Adjust font size */
-  color: #2b3991;
-  margin-right: 100px; /* Added margin to space the icon from the text */
-}
-
-.unique-quote-icon-right {
-  font-size: 4rem; /* Adjust font size */
-  color: #2b3991;
-  margin-left: 10px; /* Added margin to space the icon from the text */
-}
-
-.unique-quote-text {
-  font-size: 1.2rem;
-  color: #2b3991;
-  text-align: center;
-}
-
 .underline {
   width: 300px;
   height: 7px;
   background-color: #fea92c;
-  margin-top: -10px; /* Adjust based on the spacing you need */
-  margin-bottom: 20px; /* Added margin-bottom for spacing */
-  margin-left: 5px;
+  margin: -10px 0 20px 5px; /* Adjust margins as needed */
 }

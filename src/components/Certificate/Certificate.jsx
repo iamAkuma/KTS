@@ -4,6 +4,7 @@ import './Certificate.css';
 import Navbar from '../Navbar/Navbar';
 import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import pdfFile from '../../img/Certificate-III-in-Individual-Support-Ageing-and-Disability_112023_Inno-1.pdf'
 
 function Certificate() {
     return (
@@ -20,13 +21,11 @@ function Certificate() {
                         <div>
                             <p className="unique-course-description">
                                 <FontAwesomeIcon icon={faQuoteLeft} className="unique-quote-icon-left" />
-                                <span className="unique-quote-text">
-                                    This course enhances your abilities in offering both physical and emotional aid to the elderly, focusing on care provision in community and residential environments.
-                                </span>
+                                This course enhances your abilities in offering both physical and emotional aid to the elderly, focusing on care provision in community and residential environments.
                                 <FontAwesomeIcon icon={faQuoteRight} className="unique-quote-icon-right" />
                             </p>
                         </div>
-                        <Button href="#" variant="primary" size="lg">Download Course Details</Button>
+                        <Button href={pdfFile} variant="primary" size="lg">Download Course Details</Button>
                     </Col>
                 </Row>
             </Container>
