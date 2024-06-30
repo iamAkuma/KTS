@@ -1,0 +1,66 @@
+.unique-caregiver-course-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.unique-caregiver-course-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.unique-caregiver-course-details {
+  padding: 20px;
+}
+
+.unique-caregiver-course-details h1 {
+  font-size: 75px;
+  font-weight: bolder;
+  color: #2b3991;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.quote-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.unique-caregiver-course-description {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2b3991;
+  text-align: justify;
+}
+
+.btn-primary {
+  background-color: #2b3991;
+  border: none;
+  margin-top: 20px;
+  margin-left: 3px;
+}
+
+.btn-primary:hover {
+  background-color: #1e286e;
+}
+
+.underline {
+  width: 300px;
+  height: 7px;
+  background-color: #fea92c;
+  margin: -10px 0 20px 5px; /* Adjust margins as needed */
+}
+
+.certificate {
+  color: black;
+  background-color: #f9f9f9;
+  line-height: 2;
+  margin-top: 15px;
+  margin-bottom: 1px;
+  text-align: justify;
+}
