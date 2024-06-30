@@ -3,11 +3,11 @@ import React from 'react';
 import './Cards.css'; // Update the CSS file name
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faHandHoldingHeart, faHandsHelping, faCocktail } from '@fortawesome/free-solid-svg-icons';
-
+import { Link } from 'react-router-dom'
 const Tabs = () => {
     return (
         <div className="caregiver-tabs-container">
-            <h1 className='course-header'>CURRENT COURSES</h1> {/* Use h1 and center styling in JSX */}
+            <h1 className='card-header'>CURRENT COURSES</h1> {/* Use h1 and center styling in JSX */}
             <div className="tabs-wrapper">
                 <div className="tab caregiver-tab">
                     <div className="tab-header text-white">
@@ -18,7 +18,7 @@ const Tabs = () => {
                     </div>
                     <div className="image-container">
                         <img src={require('../../img/Caregiver.jpg')} className="tab-img-top img-fluid" alt="Caregivers" />
-                        <button className="btn btn-primary btn-lg">Learn More</button>
+                        <Link to="caregiver" className="btn btn-primary btn-lg">Learn More</Link>
                     </div>
                 </div>
                 <div className="tab caregiver-tab">
@@ -30,7 +30,7 @@ const Tabs = () => {
                     </div>
                     <div className="image-container">
                         <img src={require('../../img/Barista.jpg')} className="tab-img-top img-fluid" alt="Barista" />
-                        <button className="btn btn-primary btn-lg">Learn More</button>
+                        <Link to="/barista" className="btn btn-primary btn-lg">Learn More</Link>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@ const Tabs = () => {
                     </div>
                     <div className="image-container">
                         <img src={require('../../img/Cert.jpg')} className="tab-img-top img-fluid" alt="Caregivers" />
-                        <button className="btn btn-primary btn-lg">Learn More</button>
+                        <Link to="individual-support" className="btn btn-primary btn-lg">Learn More</Link>
                     </div>
                 </div>
                 <div className="tab caregiver-tab">
@@ -57,7 +57,7 @@ const Tabs = () => {
                     </div>
                     <div className="image-container">
                         <img src={require('../../img/Bartender.jpg')} className="tab-img-top img-fluid" alt="Bartender" />
-                        <button className="btn btn-primary btn-lg">Learn More</button>
+                        <Link to="bartender" className="btn btn-primary btn-lg">Learn More</Link>
                     </div>
                 </div>
             </div>
