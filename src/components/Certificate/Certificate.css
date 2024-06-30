@@ -44,11 +44,22 @@
   background-color: #1e286e;
 }
 
-.quote-icon {
-  font-size: 4rem; /* Increased font size for larger quotes */
+.unique-quote-icon-left {
+  font-size: 4rem; /* Adjust font size */
   color: #2b3991;
-  vertical-align: middle; /* Align icons vertically with text */
-  margin: 0 5px; /* Added margin to space the icons from the text */
+  margin-right: 100px; /* Added margin to space the icon from the text */
+}
+
+.unique-quote-icon-right {
+  font-size: 4rem; /* Adjust font size */
+  color: #2b3991;
+  margin-left: 10px; /* Added margin to space the icon from the text */
+}
+
+.unique-quote-text {
+  font-size: 1.2rem;
+  color: #2b3991;
+  text-align: center;
 }
 
 .underline {

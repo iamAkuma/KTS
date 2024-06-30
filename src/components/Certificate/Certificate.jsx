@@ -17,11 +17,15 @@ function Certificate() {
                     <Col md={6} className="unique-course-details">
                         <h1>Certificate III in Individual Support (Ageing and Disability)</h1>
                         <div className="underline"></div>
-                        <p className="unique-course-description">
-                            <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon" />
-                            This course enhances your abilities in offering both physical and emotional aid to the elderly, focusing on care provision in community and residential environments.
-                            <FontAwesomeIcon icon={faQuoteRight} className="quote-icon" />
-                        </p>
+                        <div>
+                            <p className="unique-course-description">
+                                <FontAwesomeIcon icon={faQuoteLeft} className="unique-quote-icon-left" />
+                                <span className="unique-quote-text">
+                                    This course enhances your abilities in offering both physical and emotional aid to the elderly, focusing on care provision in community and residential environments.
+                                </span>
+                                <FontAwesomeIcon icon={faQuoteRight} className="unique-quote-icon-right" />
+                            </p>
+                        </div>
                         <Button href="#" variant="primary" size="lg">Download Course Details</Button>
                     </Col>
                 </Row>
