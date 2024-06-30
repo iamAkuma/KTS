@@ -15,13 +15,15 @@
 }
 
 .unique-course-details h1 {
-  font-size: 2rem;
+  font-size: 75px;
+  font-weight: bolder;
   color: #2b3991;
   margin-bottom: 20px;
 }
 
 .unique-course-description {
   font-size: 1.2rem;
+  font-weight: 600;
   color: #2b3991;
   margin-bottom: 20px;
   position: relative;
