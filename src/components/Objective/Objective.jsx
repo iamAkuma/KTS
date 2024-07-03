@@ -1,21 +1,21 @@
 // src/ObjectiveAndWhatWeDo.js
 import React from 'react';
-import './Objective.css';
+import styles from './ObjectiveAndWhatWeDo.module.css';
 
 const Objective = () => {
     return (
-        <div className="container">
+        <div className={`container my-5 ${styles.container}`}>
             <div className="row">
                 {/* Objective Section */}
-                <div className="col-md-6 objective-section">
-                    <div className="overlay">
+                <div className={`col-md-6 ${styles.objectiveSection}`}>
+                    <div className={styles.overlay}>
                         <h2>Objective</h2>
-                        <p>At KTS we strive to provide skills advancement course to youth that prepares them for employability in both national and global labor markets.</p>
+                        <p>At KTS we strive to provide skills advancement courses to youth that prepares them for employability in both national and global labor markets.</p>
                     </div>
                 </div>
                 {/* What We Do Section */}
-                <div className="col-md-6 what-we-do-section">
-                    <div className="overlay">
+                <div className={`col-md-6 ${styles.whatWeDoSection}`}>
+                    <div className={styles.overlay}>
                         <h2>What We Do</h2>
                         <ul>
                             <li>Conduct Training Need Assessment (TNA) for potential employment opportunities</li>
