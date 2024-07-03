@@ -15,3 +15,16 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  .logo-animation-container {
+    height: 75vh; /* Adjust height for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-animation-container {
+    width: auto;
+    height: 150px; /* Adjust height for mobile devices */
+  }
+}
