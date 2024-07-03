@@ -15,7 +15,11 @@ const Navbar = () => {
                 <img src={logo} alt="KTS Logo" />
             </Link>
             <button className="navbar-toggler" type="button" onClick={toggleNavbar}>
-                <span className="navbar-toggler-icon"></span>
+                <div className={`custom-toggler ${isOpen ? 'open' : ''}`}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </button>
             <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
                 <ul className="navbar-nav mx-auto">
