@@ -92,7 +92,7 @@
   opacity: 0.8;
 }
 .unique-copyright p {
-  font-size: 25px;
+  font-size: 15px;
 }
 .unique-name {
   color: #2b3991;
@@ -154,7 +154,7 @@
     padding: 10px; /* Adjust padding for smaller screens */
   }
   .unique-copyright p {
-    font-size: 20px;
+    font-size: 15px;
   }
   .unique-name {
     color: #2b3991;
@@ -216,5 +216,9 @@
   .unique-name {
     color: #2b3991;
     text-decoration: none;
+  }
+
+  .unique-location {
+    font-size: 19px;
   }
 }
