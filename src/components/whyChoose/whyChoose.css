@@ -76,6 +76,11 @@
   .why-us-heading {
     font-size: 2.2rem;
   }
+
+  .why-choose-us p {
+    font-size: 18px;
+    line-height: 2;
+  }
 }
 
 /* Tablet (768px and up) */
@@ -86,6 +91,11 @@
   }
 
   .whyChoose-container p {
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  .why-choose-us p {
     font-size: 18px;
     line-height: 2;
   }
@@ -102,6 +112,11 @@
     max-width: 1200px;
     margin: auto;
   }
+
+  .why-choose-us p {
+    font-size: 18px;
+    line-height: 2;
+  }
 }
 
 /* Additional styles for the icon text */
@@ -114,6 +129,11 @@
 @media (min-width: 768px) {
   .whyChoose-container h5 {
     font-size: 18px;
+  }
+
+  .why-choose-us p {
+    font-size: 18px;
+    line-height: 2;
   }
 }
 

@@ -66,9 +66,14 @@
 /* Media Queries for responsiveness */
 
 /* Mobile L (425px and up) */
-@media (min-width: 425px) {
+@media (min-width: 424px) {
   .about-us-heading {
     font-size: 2.2rem; /* Slightly larger text for Mobile L */
+  }
+
+  .about-us-container p {
+    font-size: 18px;
+    line-height: 2;
   }
 }
 
@@ -96,5 +101,10 @@
   .about-us-container {
     max-width: 1200px; /* Limit the width for better readability on large screens */
     margin: auto; /* Center the container */
+  }
+
+  .about-us-container p {
+    font-size: 18px;
+    line-height: 3;
   }
 }

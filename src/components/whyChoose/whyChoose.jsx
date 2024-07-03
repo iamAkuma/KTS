@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={6} className="d-flex flex-column justify-content-center">
+                    <Col md={6} className="d-flex flex-column justify-content-center why-choose-us">
                         <p>At KTS, we offer quality and in-demand courses that equip you with sought-after skills. We improve your learning experience by focusing on competency-based learning. We provide you with the opportunity to master the skills you need to move ahead in your career.</p>
                         <p>The emphasis is on demonstrating profound understanding through application. Each student's learning experience is personalized by our trainers and teachers, who make sure that you have complete mastery of the course before graduating.</p>
                     </Col>
