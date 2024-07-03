@@ -107,3 +107,45 @@ form h2 {
 .form-group select {
   width: 50%;
 }
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  .contact-info {
+    border-right: none; /* Remove right border on smaller screens */
+    padding-right: 0; /* Remove padding on smaller screens */
+  }
+
+  .contact-form-container .row {
+    flex-direction: column; /* Stack columns vertically on smaller screens */
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 100%; /* Make input and select elements full width */
+  }
+
+  .select-wrapper {
+    width: 100%; /* Make select wrapper full width */
+  }
+
+  .btn {
+    width: 100%; /* Make button full width */
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-info {
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+  }
+
+  .form-group label {
+    font-size: 1rem; /* Adjust label font size on smaller screens */
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 6px; /* Adjust padding for smaller screens */
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}
