@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause, faVolumeMute, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
-import Video from '../../vid/LOGO-ANIMATION.mp4';
+import Video from '../../vid/Homepage.mp4';
 import './Video.css';
 
 const Videos = () => {
