@@ -15,7 +15,7 @@ h3 {
   text-align: left;
 }
 
-p {
+.unique-speciality p {
   color: #76767f; /* RGB(118, 118, 127) */
   font-family: "Poppins", sans-serif;
   font-size: 18px;
