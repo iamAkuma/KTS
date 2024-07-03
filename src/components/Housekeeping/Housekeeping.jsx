@@ -7,16 +7,16 @@ function Housekeeping() {
     return (
         <>
             <Navbar />
-            <Container fluid className="unique-caregiver-course-container">
+            <Container fluid className="unique-course-container">
                 <Row className="align-items-center">
-                    <Col md={6} className="unique-caregiver-course-image">
+                    <Col md={6} className="unique-course-image">
                         <img src={require('../../img/house.jpg')} alt="Course" className="img-fluid" />
                     </Col>
-                    <Col md={6} className="unique-caregiver-course-details">
+                    <Col md={6} className="unique-course-details">
                         <h1>Housekeeping</h1>
                         <div className="underline"></div>
                         <div>
-                            <p className="unique-caregiver-course-description">
+                            <p className="unique-course-description">
                                 The Housekeeping/Cleaner Training Program provides instruction in cleaning techniques and maintaining hygiene standards for various settings. </p>
                         </div>
                     </Col>

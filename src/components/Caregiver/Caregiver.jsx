@@ -9,17 +9,17 @@ function Caregiver() {
     return (
         <>
             <Navbar />
-            <Container fluid className="unique-caregiver-course-container">
+            <Container fluid className="unique-course-container">
                 <Row className="align-items-center">
-                    <Col md={6} className="unique-caregiver-course-image">
+                    <Col md={6} className="unique-course-image">
                         <img src={require('../../img/Caregiver.jpg')} alt="Course" className="img-fluid" />
                     </Col>
-                    <Col md={6} className="unique-caregiver-course-details">
+                    <Col md={6} className="unique-course-details">
                         <h1>Caregiver
                             Course</h1>
                         <div className="underline"></div>
                         <div>
-                            <p className="unique-caregiver-course-description">
+                            <p className="unique-course-description">
                                 Devoting yourself to the service and welfare of others is a wonderful act, that's why I chose to become a Caregiver.                            </p>
                         </div>
                         <Button href={pdfFile} variant="primary" size="lg" className="thichne-kura">Download Course Details</Button>

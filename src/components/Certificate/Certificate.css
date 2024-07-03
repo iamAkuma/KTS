@@ -61,3 +61,93 @@
   margin-bottom: 1px;
   text-align: justify;
 }
+
+@media (max-width: 992px) {
+  .unique-course-details h1 {
+    font-size: 50px;
+  }
+
+  .unique-course-description {
+    font-size: 1rem;
+  }
+
+  .underline {
+    width: 330px;
+    height: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .unique-course-details h1 {
+    font-size: 40px;
+  }
+
+  .unique-course-description {
+    font-size: 0.9rem;
+  }
+
+  .underline {
+    width: 320px;
+    height: 4px;
+  }
+}
+
+@media (max-width: 576px) {
+  .unique-course-details h1 {
+    font-size: 50px;
+  }
+
+  .unique-course-description {
+    font-size: 1rem;
+  }
+
+  .underline {
+    width: 330px;
+    height: 4px;
+  }
+}
+
+@media (max-width: 425px) {
+  .unique-course-details h1 {
+    font-size: 50px;
+  }
+
+  .unique-course-description {
+    font-size: 1rem;
+  }
+
+  .underline {
+    width: 290px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 375px) {
+  .unique-course-details h1 {
+    font-size: 20px;
+  }
+
+  .unique-course-description {
+    font-size: 0.6rem;
+  }
+
+  .underline {
+    width: 225px;
+    height: 2px;
+  }
+}
+
+@media (max-width: 320px) {
+  .unique-course-details h1 {
+    font-size: 40px;
+  }
+
+  .unique-course-description {
+    font-size: 1rem;
+  }
+
+  .underline {
+    width: 225px;
+    height: 2px;
+  }
+}
