@@ -8,10 +8,13 @@ const WhyChooseUs = () => {
     return (
         <div className="whyChoose-container">
             <Container className="my-5">
-                <div className="whyChoose-line-wrapper">
-                    <h2 className="why-us-heading">WHY CHOOSE US</h2>
-                    {/* <div className="line"></div> */}
-                </div>
+                <Row>
+                    <Col className="col-12">
+                        <div className="whyChoose-line-wrapper">
+                            <h2 className="why-us-heading">WHY CHOOSE US</h2>
+                        </div>
+                    </Col>
+                </Row>
                 <Row>
                     <Col md={6} className="d-flex flex-column justify-content-center">
                         <p>At KTS, we offer quality and in-demand courses that equip you with sought-after skills. We improve your learning experience by focusing on competency-based learning. We provide you with the opportunity to master the skills you need to move ahead in your career.</p>
