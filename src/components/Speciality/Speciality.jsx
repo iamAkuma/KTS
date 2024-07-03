@@ -1,5 +1,5 @@
 import React from 'react';
-import './Speciality.css'
+import './Speciality.css';
 
 const OurSpeciality = () => {
     return (
@@ -33,8 +33,10 @@ const OurSpeciality = () => {
                     </p>
                 </div>
                 <div className="col-md-6">
-                    <img src={require('../../img/garden.jpeg')} alt="Outdoor Scene" className="img-fluid" />
-                    <img src={require('../../img/group.jpg')} alt="Industry Experts" className="img-fluid" />
+                    <div className="speciality-images">
+                        <img src={require('../../img/garden.jpeg')} alt="Outdoor Scene" className="img-fluid mb-4" />
+                        <img src={require('../../img/group.jpg')} alt="Industry Experts" className="img-fluid" />
+                    </div>
                 </div>
             </div>
         </div>
