@@ -4,11 +4,15 @@ import './Certificate.css';
 import Navbar from '../Navbar/Navbar';
 import pdfFile from '../../img/Certificate-III-in-Individual-Support-Ageing-and-Disability_112023_Inno-1.pdf'
 import Footer from '../Footer/Footer'
+import { Helmet } from 'react-helmet';
 
 function Certificate() {
     return (
         <>
             <Navbar />
+            <Helmet>
+                <title>Certificate III in Individual Support - KTS</title>
+            </Helmet>
             <Container fluid className="unique-course-container">
                 <Row className="align-items-center">
                     <Col md={6} className="unique-course-image">

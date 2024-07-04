@@ -4,11 +4,15 @@ import './Caregiver.css';
 import Navbar from '../Navbar/Navbar';
 import pdfFile from '../../img/Caregiver-Course-2079.pdf'
 import Footer from '../Footer/Footer'
+import { Helmet } from 'react-helmet';
 
 function Caregiver() {
     return (
         <>
             <Navbar />
+            <Helmet>
+                <title>Caregiver Course - KTS</title>
+            </Helmet>
             <Container fluid className="unique-course-container">
                 <Row className="align-items-center">
                     <Col md={6} className="unique-course-image">
