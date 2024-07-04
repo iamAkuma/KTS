@@ -3,11 +3,15 @@ import { Container, Row, Col } from 'react-bootstrap';
 import './Bartender.css';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer'
+import { Helmet } from 'react-helmet';
 
 function Bartender() {
     return (
         <>
             <Navbar />
+            <Helmet>
+                <title>Bartender - KTS</title>
+            </Helmet>
             <Container fluid className="unique-caregiver-course-container">
                 <Row className="align-items-center">
                     <Col md={6} className="unique-caregiver-course-image">
