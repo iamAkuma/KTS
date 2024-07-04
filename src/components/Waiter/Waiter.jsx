@@ -2,11 +2,15 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer'
+import { Helmet } from 'react-helmet';
 
 function Housekeeping() {
     return (
         <>
             <Navbar />
+            <Helmet>
+                <title>Waiter - KTS</title>
+            </Helmet>
             <Container fluid className="unique-course-container">
                 <Row className="align-items-center">
                     <Col md={6} className="unique-course-image">
