@@ -1,0 +1,9 @@
+.news-heading {
+  background-color: #4747d7;
+  height: 40vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+}
