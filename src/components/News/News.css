@@ -10,13 +10,14 @@
 
 .news-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   margin: 20px;
 }
 
 .news-item {
   text-align: center;
-  max-width: 45%;
+  margin: 20px;
 }
 
 #news-img-one {
