@@ -21,7 +21,7 @@ const accordionItems = [
         content: 'Caregivers are trained to provide appropriate nutrition based on the needs of their care recipients. This includes meal planning, dietary restrictions, and ensuring that individuals under their care receive balanced and nourishing meals.',
     },
     {
-        title: 'Emergency and First Aid',
+        title: 'Emergency and First Aid  ',
         content: 'Caregivers are trained to provide appropriate nutrition based on the needs of their care recipients. This includes meal planning, dietary restrictions, and ensuring that individuals under their care receive balanced and nourishing meals.',
     },
     {

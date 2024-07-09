@@ -14,7 +14,7 @@
 }
 
 .custom-accordion-header {
-  background: #f7f7f7;
+  background: #2b3991;
   border: none;
   width: 100%;
   text-align: left;
@@ -25,7 +25,7 @@
   justify-content: space-between;
   font-size: 18px;
   font-weight: bolder;
-  color: black;
+  color: white;
 }
 
 .custom-accordion-body {
@@ -47,11 +47,12 @@
 .custom-accordion-header:after {
   content: "+";
   font-size: 20px;
-  color: #333;
+  color: white;
   transition: transform 0.3s ease;
 }
 
 .custom-accordion-item.active .custom-accordion-header:after {
   content: "-";
   transform: rotate(180deg);
+  color: white;
 }
