@@ -64,6 +64,53 @@ function Caregiver() {
             <Container className="mt-5">
                 <CustomAccordion items={accordionItems} />
             </Container>
+            <div className="row">
+                <div className="col-md-3 col-sm-6 mb-4">
+                    <div className="unique-card p-3 h-100">
+                        <div className="unique-card-body">
+                            <div className="icon mb-3">
+                            </div>
+                            <h1 className="unique-card-title">Why?</h1>
+                            <hr className="divider" />
+                            <div className="unique-card-text">
+                                <ul>
+                                    <li><b>Enhanced Skills:</b> Caregiver courses improve abilities in safety, hygiene, healthcare, and essential areas.</li>
+                                </ul>
+
+                                <ul>
+                                    <li>
+                                        <b>Improved Engagement:</b> Training fosters better understanding and empathy, enhancing effective caregiving.
+
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li>
+                                        <b>Career Advancement:</b> Opportunities for growth, including paid orientation and ongoing training, contribute to professional development.
+
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li>
+                                        <b>Positive Contribution:</b>  Caregivers contribute positively by fostering dignity and kindness in relationships.
+
+                                    </li>
+
+                                </ul>
+
+                                <ul>
+                                    <li>
+                                        Empowerment: Professional training empowers caregivers, boosting job satisfaction.
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
             <Footer />
         </>
     );
