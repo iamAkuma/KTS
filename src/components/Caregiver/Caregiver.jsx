@@ -73,7 +73,7 @@ function Caregiver() {
                             </div>
                             <h1 className="unique-card-title">Why?</h1>
                             <hr className="divider" />
-                            <div className="unique-card-text">
+                            <div className="custom-card-text">
                                 <ul>
                                     <li><b>Enhanced Skills:</b> <br />
                                         Caregiver courses improve abilities in safety, hygiene, healthcare, and essential areas.</li>
@@ -107,7 +107,7 @@ function Caregiver() {
                             </div>
                             <h1 className="unique-card-title">Who?</h1>
                             <hr className="divider" />
-                            <div className="unique-card-text">
+                            <div className="custom-card-text">
                                 <ul>
                                     <li><b>Target Group:</b> <br />
                                         Caregiver courses improve abilities in safety, hygiene, healthcare, and essential areas.</li>
@@ -148,7 +148,7 @@ function Caregiver() {
                             </div>
                             <h1 className="unique-card-title">How?</h1>
                             <hr className="divider" />
-                            <div className="unique-card-text">
+                            <div className="custom-card-text">
                                 <ul>
                                     <li><b>Course Structure:</b> <br />
                                         80% Practical Classes

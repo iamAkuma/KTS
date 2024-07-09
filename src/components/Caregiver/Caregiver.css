@@ -56,7 +56,11 @@
   text-align: justify;
 }
 
-.unique-card-text {
+.custom-card-text ul {
+  list-style-type: disc; /* Ensure bullet points (•) appear */
+}
+
+.custom-card-text {
   font-size: large;
-  line-height: 2;
+  text-align: center;
 }
