@@ -17,7 +17,7 @@
 .unique-caregiver-course-details h1 {
   font-size: 75px;
   font-weight: bolder;
-  color: #2b3991;
+  color: #313d87;
   margin-bottom: 20px;
   text-align: left;
 }
@@ -34,11 +34,11 @@
 .unique-caregiver-course-description {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #2b3991;
+  color: #313d87;
   text-align: justify;
 }
 .thichne-kura {
-  background-color: #2b3991;
+  background-color: #313d87;
 }
 .underline {
   width: 300px;
@@ -54,4 +54,9 @@
   margin-top: 15px;
   margin-bottom: 1px;
   text-align: justify;
+}
+
+.unique-card-text {
+  font-size: large;
+  line-height: 2;
 }
