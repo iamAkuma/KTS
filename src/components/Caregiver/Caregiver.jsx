@@ -18,15 +18,15 @@ const accordionItems = [
     },
     {
         title: 'Nutrition',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        content: 'Caregivers are trained to provide appropriate nutrition based on the needs of their care recipients. This includes meal planning, dietary restrictions, and ensuring that individuals under their care receive balanced and nourishing meals.',
     },
     {
         title: 'Emergency and First Aid',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        content: 'Caregivers are trained to provide appropriate nutrition based on the needs of their care recipients. This includes meal planning, dietary restrictions, and ensuring that individuals under their care receive balanced and nourishing meals.',
     },
     {
         title: 'Hygienic Care',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        content: 'This involves training in personal care and hygiene practices for care recipients. Caregivers learn how to assist with activities of daily living, maintain personal cleanliness, and ensure the dignity and comfort of those under their care.',
     },
 ];
 
