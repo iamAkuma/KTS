@@ -1,0 +1,57 @@
+/* src/components/CustomAccordion/CustomAccordion.css */
+.custom-accordion {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.custom-accordion-item {
+  border-top: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+.custom-accordion-item:first-of-type {
+  border-top: none;
+}
+
+.custom-accordion-header {
+  background: #f7f7f7;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.custom-accordion-body {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  font-size: 14px;
+  color: #666;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.custom-accordion-item.active .custom-accordion-body {
+  max-height: 1000px; /* Adjust this value to accommodate your maximum expected content height */
+  transition: max-height 0.3s ease;
+}
+
+.custom-accordion-header:after {
+  content: "+";
+  font-size: 20px;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.custom-accordion-item.active .custom-accordion-header:after {
+  content: "-";
+  transform: rotate(180deg);
+}
