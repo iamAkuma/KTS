@@ -71,6 +71,11 @@
   color: black; /* Change color on hover */
 }
 
+.unique-name {
+  text-decoration: none;
+  color: #2b3991;
+}
+
 /* Styles for "Scroll to Top" button */
 .scroll-to-top {
   position: fixed;

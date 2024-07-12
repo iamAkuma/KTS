@@ -66,7 +66,7 @@ const Footer = () => {
                 </div>
                 <div className="unique-copyright">
                     <p>Copyright © {new Date().getFullYear()} <b>
-                        <Link to="/home" className='unique-name'>Kathmandu Technical School</Link>
+                        <Link to="#" className='unique-name'>Kathmandu Technical School</Link>
                     </b></p>
                 </div>
             </div>
