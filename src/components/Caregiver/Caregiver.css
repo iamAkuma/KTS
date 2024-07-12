@@ -37,9 +37,11 @@
   color: #313d87;
   text-align: justify;
 }
+
 .thichne-kura {
   background-color: #313d87;
 }
+
 .underline {
   width: 300px;
   height: 7px;
@@ -57,10 +59,20 @@
 }
 
 .custom-card-text ul {
-  list-style-type: none; /* Ensure bullet points (•) appear */
+  list-style-type: disc; /* Ensure bullet points (•) appear */
+  padding-left: 20px; /* Indent the list */
+  margin: 0; /* Remove margin to align bullets vertically */
+}
+
+.custom-card-text li {
+  margin-bottom: 10px; /* Add some space between list items */
+  padding-left: 0; /* Remove additional padding to align bullets */
+  text-align: left; /* Align text to the left */
 }
 
 .custom-card-text {
   font-size: large;
-  text-align: center;
+  text-align: left;
+  line-height: 2;
+  padding-left: 35px;
 }
