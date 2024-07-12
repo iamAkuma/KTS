@@ -60,6 +60,8 @@ const Footer = () => {
                         <Link className="navi-link mx-3 footer-navi-link" to="/courses">Courses</Link>
                         <Link className="navi-link mx-3 footer-navi-link" to="/blog">Blog</Link>
                         <Link className="navi-link mx-3 footer-navi-link" to="/contact">Contact</Link>
+                        <Link className="navi-link mx-3 footer-navi-link" to="/news">News</Link>
+
                     </nav>
                 </div>
                 <div className="unique-copyright">

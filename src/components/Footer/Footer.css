@@ -60,7 +60,6 @@
 }
 
 /* Styles for copyright and link at the bottom */
-
 .footer-link {
   text-decoration: none; /* Remove underline */
   color: #2b3991; /* Text color for footer link */
@@ -91,29 +90,6 @@
 .scroll-to-top:hover {
   opacity: 0.8;
 }
-.unique-copyright p {
-  font-size: 15px;
-}
-.unique-name {
-  color: #2b3991;
-  text-decoration: none;
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
-}
 
 .scroll-to-top svg {
   width: 40px;
@@ -126,6 +102,7 @@
   text-align: center; /* Center text horizontally */
 }
 
+/* Adjust bottom margin for contact details */
 .contact-details .fs-5 {
   margin-bottom: 15px; /* Adjust as needed for bottom gaps */
 }
@@ -153,13 +130,6 @@
   .container {
     padding: 10px; /* Adjust padding for smaller screens */
   }
-  .unique-copyright p {
-    font-size: 15px;
-  }
-  .unique-name {
-    color: #2b3991;
-    text-decoration: none;
-  }
 }
 
 @media (max-width: 576px) {
@@ -180,21 +150,15 @@
   .container {
     padding: 5px; /* Further adjust padding for very small screens */
   }
-  .unique-copyright p {
-    font-size: 14px;
-  }
-  .unique-name {
-    color: #2b3991;
-    text-decoration: none;
-  }
 }
-@media (max-width: 320px) {
+
+@media (max-width: 375px) {
   .footer {
     padding: 3px;
   }
 
   .contact-details {
-    margin-bottom: 10px; /* Further adjust margin for smaller screens */
+    margin-bottom: 10px; /* Further adjust margin for very small screens */
   }
 
   .fs-5 {
@@ -210,15 +174,20 @@
   .container {
     padding: 3px; /* Further adjust padding for very small screens */
   }
-  .unique-copyright p {
-    font-size: 12px;
-  }
-  .unique-name {
-    color: #2b3991;
-    text-decoration: none;
+}
+
+@media (max-width: 320px) {
+  .fs-5 {
+    font-size: 0.5rem; /* Further adjust font size for the smallest screens */
+    margin-bottom: 2px; /* Further adjust margin for the smallest screens */
   }
 
-  .unique-location {
-    font-size: 19px;
+  .navi-link {
+    font-size: 0.5rem; /* Further adjust font size for the smallest screens */
+    margin: 0 1px; /* Further adjust margin for the smallest screens */
+  }
+
+  .container {
+    padding: 3px; /* Further adjust padding for the smallest screens */
   }
 }
