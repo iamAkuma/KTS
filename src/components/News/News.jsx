@@ -3,11 +3,16 @@ import Navbar from '../Navbar/Navbar';
 import './News.css';
 import image1 from '../../img/news-1.png';
 import image2 from '../../img/news-2.png';
-
+import { Helmet } from 'react-helmet'
 const News = () => {
     return (
         <>
             <Navbar />
+            <Helmet>
+                <title>
+                    News - Kathmandu Technical School
+                </title>
+            </Helmet>
             <h1 className='news-heading'>News / Articles</h1>
             <div className='news-container'>
                 <div className='news-item'>
