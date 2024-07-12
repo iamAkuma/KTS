@@ -21,7 +21,7 @@ const accordionItems = [
         content: 'Caregivers are trained to provide appropriate nutrition based on the needs of their care recipients. This includes meal planning, dietary restrictions, and ensuring that individuals under their care receive balanced and nourishing meals.',
     },
     {
-        title: 'Emergency and First Aid  ',
+        title: 'Emergency and First Aid',
         content: 'Caregivers are trained to provide appropriate nutrition based on the needs of their care recipients. This includes meal planning, dietary restrictions, and ensuring that individuals under their care receive balanced and nourishing meals.',
     },
     {
@@ -74,26 +74,23 @@ function Caregiver() {
                             <h1 className="unique-card-title">Why?</h1>
                             <hr className="divider" />
                             <div className="custom-card-text">
-                                <ul>
-                                    <li><b>Enhanced Skills:</b> <br />
-                                        Caregiver courses improve abilities in safety, hygiene, healthcare, and essential areas.</li>
-                                </ul>
-                                <ul>
-                                    <li><b>Improved Engagement:</b> <br />
-                                        Training fosters better understanding and empathy, enhancing effective caregiving.</li>
-                                </ul>
-                                <ul>
-                                    <li><b>Career Advancement:</b> <br />
-                                        Opportunities for growth, including paid orientation and ongoing training, contribute to professional development.</li>
-                                </ul>
-                                <ul>
-                                    <li><b>Positive Contribution:</b> <br />
-                                        Caregivers contribute positively by fostering dignity and kindness in relationships.</li>
-                                </ul>
-                                <ul>
-                                    <li><b>Empowerment:</b> <br />
-                                        Professional training empowers caregivers, boosting job satisfaction.</li>
-                                </ul>
+
+                                <li><b>Enhanced Skills:</b> <br />
+                                    Caregiver courses improve abilities in safety, hygiene, healthcare, and essential areas.</li>
+
+                                <li><b>Improved Engagement:</b> <br />
+                                    Training fosters better understanding and empathy, enhancing effective caregiving.</li>
+
+                                <li><b>Career Advancement:</b> <br />
+                                    Opportunities for growth, including paid orientation and ongoing training, contribute to professional development.</li>
+
+                                <li><b>Positive Contribution:</b> <br />
+                                    Caregivers contribute positively by fostering dignity and kindness in relationships.</li>
+
+
+                                <li><b>Empowerment:</b> <br />
+                                    Professional training empowers caregivers, boosting job satisfaction.</li>
+
                             </div>
                         </div>
                     </div>
@@ -108,33 +105,20 @@ function Caregiver() {
                             <h1 className="unique-card-title">Who?</h1>
                             <hr className="divider" />
                             <div className="custom-card-text">
-                                <ul>
-                                    <li><b>Target Group:</b> <br />
-                                        Caregiver courses improve abilities in safety, hygiene, healthcare, and essential areas.</li>
-                                </ul>
-                                <ul>
-                                    <li><b>Focus of Interest:
 
-                                    </b> <br />
-                                        Planning for abroad studies                                    </li>
-                                    <li>
-                                        Seeking opportunities for foreign employment
-                                    </li>
-                                    <li>
-                                        Aspiring to work in the caregiving sector
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li><b>Entrepreneurial Aspirations:</b> <br />
-                                        Establishing daycare centers
-                                    </li>
-                                    <li>
-                                        Creating senior citizen support homes
-                                    </li>
-                                    <li>
-                                        Venturing into the establishment of rehabilitation centers and similar enterprises
-                                    </li>
-                                </ul>
+                                <li><b>Target Group:</b> <br />
+                                    Caregiver courses improve abilities in safety, hygiene, healthcare, and essential areas.</li>
+
+                                <li><b>Focus of Interest:</b> <br />
+                                    Planning for abroad studies</li>
+                                <li>Seeking opportunities for foreign employment</li>
+                                <li>Aspiring to work in the caregiving sector</li>
+
+                                <li><b>Entrepreneurial Aspirations:</b> <br />
+                                    Establishing daycare centers</li>
+                                <li>Creating senior citizen support homes</li>
+                                <li>Venturing into the establishment of rehabilitation centers and similar enterprises</li>
+
                             </div>
                         </div>
                     </div>
@@ -149,32 +133,23 @@ function Caregiver() {
                             <h1 className="unique-card-title">How?</h1>
                             <hr className="divider" />
                             <div className="custom-card-text">
-                                <ul>
-                                    <li><b>Course Structure:</b> <br />
-                                        80% Practical Classes
-                                    </li>
-                                    <li>
-                                        20% Theory Classes
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li><b>Enriching Experience:</b> <br />
-                                        Work with Patients in Care Homes: Gain practical experience, developing empathy and communication skills by working directly with patients in care homes.                                        </li>
-                                </ul>
+
+                                <li><b>Course Structure:</b> <br />
+                                    80% Practical Classes</li>
+                                <li>20% Theory Classes</li>
+
+
+                                <li><b>Enriching Experience:</b> <br />
+                                    Work with Patients in Care Homes: Gain practical experience, developing empathy and communication skills by working directly with patients in care homes.</li>
+
                                 <li><b>Access to High-Quality Equipment:</b> <br />
-                                    Utilize state-of-the-art medical equipment during training to confidently handle caregiving scenarios.
-                                </li>
+                                    Utilize state-of-the-art medical equipment during training to confidently handle caregiving scenarios.</li>
                                 <li><b>Standard-Grade Medical Equipment:</b> <br />
-                                    Familiarize yourself with industry-standard tools, essential for delivering quality care.
-                                </li>
+                                    Familiarize yourself with industry-standard tools, essential for delivering quality care.</li>
                             </div>
                         </div>
                     </div>
                 </Col>
-
-
-                {/* Repeat the above Col component for each card */}
-
             </Row>
             <Footer />
         </>
