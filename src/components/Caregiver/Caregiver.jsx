@@ -75,21 +75,18 @@ function Caregiver() {
                             <hr className="divider" />
                             <div className="custom-card-text">
 
+
                                 <li><b>Enhanced Skills:</b> <br />
                                     Caregiver courses improve abilities in safety, hygiene, healthcare, and essential areas.</li>
-
                                 <li><b>Improved Engagement:</b> <br />
                                     Training fosters better understanding and empathy, enhancing effective caregiving.</li>
-
                                 <li><b>Career Advancement:</b> <br />
                                     Opportunities for growth, including paid orientation and ongoing training, contribute to professional development.</li>
-
                                 <li><b>Positive Contribution:</b> <br />
                                     Caregivers contribute positively by fostering dignity and kindness in relationships.</li>
-
-
                                 <li><b>Empowerment:</b> <br />
                                     Professional training empowers caregivers, boosting job satisfaction.</li>
+
 
                             </div>
                         </div>
@@ -106,16 +103,16 @@ function Caregiver() {
                             <hr className="divider" />
                             <div className="custom-card-text">
 
-                                <li><b>Target Group:</b> <br />
-                                    Caregiver courses improve abilities in safety, hygiene, healthcare, and essential areas.</li>
+                                <b>Target Group:</b> <br />
+                                <li> Caregiver courses improve abilities in safety, hygiene, healthcare, and essential areas.</li>
 
-                                <li><b>Focus of Interest:</b> <br />
-                                    Planning for abroad studies</li>
+                                <b>Focus of Interest:</b> <br />
+                                <li> Planning for abroad studies</li>
                                 <li>Seeking opportunities for foreign employment</li>
                                 <li>Aspiring to work in the caregiving sector</li>
 
-                                <li><b>Entrepreneurial Aspirations:</b> <br />
-                                    Establishing daycare centers</li>
+                                <b>Entrepreneurial Aspirations:</b> <br />
+                                <li>Establishing daycare centers</li>
                                 <li>Creating senior citizen support homes</li>
                                 <li>Venturing into the establishment of rehabilitation centers and similar enterprises</li>
 
@@ -134,18 +131,18 @@ function Caregiver() {
                             <hr className="divider" />
                             <div className="custom-card-text">
 
-                                <li><b>Course Structure:</b> <br />
-                                    80% Practical Classes</li>
+                                <b>Course Structure:</b> <br />
+                                <li>  80% Practical Classes</li>
                                 <li>20% Theory Classes</li>
 
 
-                                <li><b>Enriching Experience:</b> <br />
-                                    Work with Patients in Care Homes: Gain practical experience, developing empathy and communication skills by working directly with patients in care homes.</li>
+                                <b>Enriching Experience:</b> <br />
+                                <li>  Work with Patients in Care Homes: Gain practical experience, developing empathy and communication skills by working directly with patients in care homes.</li>
 
-                                <li><b>Access to High-Quality Equipment:</b> <br />
-                                    Utilize state-of-the-art medical equipment during training to confidently handle caregiving scenarios.</li>
-                                <li><b>Standard-Grade Medical Equipment:</b> <br />
-                                    Familiarize yourself with industry-standard tools, essential for delivering quality care.</li>
+                                <b>Access to High-Quality Equipment:</b> <br />
+                                <li> Utilize state-of-the-art medical equipment during training to confidently handle caregiving scenarios.</li>
+                                <b>Standard-Grade Medical Equipment:</b> <br />
+                                <li>Familiarize yourself with industry-standard tools, essential for delivering quality care.</li>
                             </div>
                         </div>
                     </div>

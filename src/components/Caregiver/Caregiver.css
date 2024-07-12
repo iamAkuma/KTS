@@ -57,7 +57,7 @@
 }
 
 .custom-card-text ul {
-  list-style-type: disc; /* Ensure bullet points (•) appear */
+  list-style-type: none; /* Ensure bullet points (•) appear */
 }
 
 .custom-card-text {
