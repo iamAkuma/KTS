@@ -8,6 +8,10 @@ const News = () => {
     return (
         <>
             <Navbar />
+            <br />
+            <br />
+            <br />
+            <br />
             <Helmet>
                 <title>
                     News - Kathmandu Technical School

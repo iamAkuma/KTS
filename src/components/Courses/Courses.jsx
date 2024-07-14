@@ -79,6 +79,11 @@ const Courses = () => {
     return (
         <>
             <Navbar />
+            <br />
+            <br />
+            <br />
+            <br />
+
             <LoadingScreen isLoading={isLoading} />
             <div className={`courses-container ${isLoading ? 'hidden' : 'visible'}`}>
                 <Helmet>

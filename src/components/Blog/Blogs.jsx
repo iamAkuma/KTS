@@ -20,6 +20,10 @@ const Blogs = () => {
     return (
         <>
             <Navbar />
+            <br />
+            <br />
+            <br />
+            <br />
             <LoadingScreen isLoading={isLoading} />
             <div className={`blogs-container ${isLoading ? 'hidden' : 'visible'}`}>
                 <Helmet>

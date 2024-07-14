@@ -20,6 +20,11 @@ const Two = () => {
     return (
         <>
             <Navbar />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             <LoadingScreen isLoading={isLoading} />
             <div className={`photo-container ${isLoading ? 'hidden' : 'visible'}`}>
                 <Helmet>

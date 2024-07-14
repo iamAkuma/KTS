@@ -20,6 +20,11 @@ const Alumni = () => {
     return (
         <>
             <Navbar />
+            <br />
+            <br />
+            <br />
+            <br />
+
             <LoadingScreen isLoading={isLoading} />
             <div className={`alumni-container ${isLoading ? 'hidden' : 'visible'}`}>
                 <Helmet>

@@ -8,6 +8,10 @@ function Housekeeping() {
     return (
         <>
             <Navbar />
+            <br />
+            <br />
+            <br />
+            <br />
             <Helmet>
                 <title>Housekeeping - KTS</title>
             </Helmet>

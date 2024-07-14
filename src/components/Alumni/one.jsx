@@ -62,6 +62,11 @@ const One = () => {
     return (
         <>
             <Navbar />
+            <br />
+            <br />
+            <br />
+            <br />
+
             <LoadingScreen isLoading={isLoading} />
             <div className={`pic-container ${isLoading ? 'hidden' : 'visible'}`}>
                 <Helmet>

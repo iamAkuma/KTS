@@ -31,6 +31,11 @@ const Home = () => {
             <Helmet><title>Kathmandu Technical School – A Journey to Excellence.</title></Helmet>
             <LoadingScreen isLoading={isLoading} />
             <Navbar />
+            <br />
+            <br />
+            <br />
+            <br />
+
             <div style={{ visibility: isLoading ? 'hidden' : 'visible' }}>
                 <Video />
                 <About />
