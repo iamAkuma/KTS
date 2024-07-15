@@ -131,6 +131,7 @@
   }
 
   .custom-toggler {
+    margin-right: 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
