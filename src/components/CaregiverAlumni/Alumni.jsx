@@ -28,10 +28,10 @@ const Alumni = () => {
             <LoadingScreen isLoading={isLoading} />
             <div className={`alumni-container ${isLoading ? 'hidden' : 'visible'}`}>
                 <Helmet>
-                    <title>Alumni - Kathmandu Technical School</title>
+                    <title>Caregiver Alumni - Kathmandu Technical School</title>
                 </Helmet>
                 <div className='alumni-section'>
-                    <h1 className='alumni-header'>ALUMNI</h1>
+                    <h1 className='alumni-header'>CAREGIVER ALUMNI</h1>
                     <div className='year-section'>
                         <ul>
                             <Link className='seventy' to="/2079-80">
