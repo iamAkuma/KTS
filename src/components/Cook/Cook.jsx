@@ -8,6 +8,10 @@ function Cook() {
     return (
         <>
             <Navbar />
+            <br />
+            <br />
+            <br />
+            <br />
             <Helmet>
                 <title>Commercial Cook / Baker - KTS</title>
             </Helmet>

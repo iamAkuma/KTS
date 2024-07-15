@@ -8,6 +8,10 @@ function Bartender() {
     return (
         <>
             <Navbar />
+            <br />
+            <br />
+            <br />
+            <br />
             <Helmet>
                 <title>Barista - KTS</title>
             </Helmet>
