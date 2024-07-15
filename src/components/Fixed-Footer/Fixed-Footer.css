@@ -2,10 +2,9 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #fff;
   display: flex;
   justify-content: space-around;
-  padding: 3px 0;
+  padding: 0px 0;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -15,10 +14,17 @@
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
-  color: #000;
+  color: #fff;
   text-decoration: none;
+  background-color: #2b3991;
+  border-right: 2px solid #000; /* Add a vertical border */
+}
+
+.course-option:last-child {
+  border-right: none; /* Remove the border from the last item */
 }
 
 .course-option:hover {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
+  color: black;
 }
