@@ -25,7 +25,6 @@ const BaristaAlumni = () => {
             <br />
             <br />
             <br />
-
             <LoadingScreen isLoading={isLoading} />
             <div className={`alumni-container ${isLoading ? 'hidden' : 'visible'}`}>
                 <Helmet>
