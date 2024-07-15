@@ -14,6 +14,7 @@ import Cards from '../Cards/Cards';
 import ContactForm from '../ContactForm/ContactForm';
 import Scroll from '../Scroll/Scroll';
 import LoadingScreen from '../LoadingScreen/LoadingScreen'; // Adjust path as necessary
+import FixedFooter from '../Fixed-Footer/Fixed-Footer'
 
 const Home = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -48,6 +49,7 @@ const Home = () => {
                 <Cards />
                 <Scroll />
                 <ContactForm />
+                <FixedFooter />
                 <Footer />
             </div>
         </>
