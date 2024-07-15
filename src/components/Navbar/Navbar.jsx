@@ -26,6 +26,9 @@ const Navbar = () => {
                     <li className="nav-item">
                         <Link className="nav-link" to="/" onClick={toggleNavbar}>Home</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/courses" onClick={toggleNavbar}>Courses</Link>
+                    </li>
                     <li className="nav-item dropdown">
                         <Link className="nav-link dropdown-toggle" to="/alumni" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Alumni
@@ -39,9 +42,7 @@ const Navbar = () => {
 
                         </div>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/courses" onClick={toggleNavbar}>Courses</Link>
-                    </li>
+
                     <li className="nav-item">
                         <Link className="nav-link" to="/blog" onClick={toggleNavbar}>Blog</Link>
                     </li>
