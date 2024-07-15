@@ -5,8 +5,8 @@ const FixedFooter = () => {
         <div className="fixed-footer">
             <div className="course-option">Caregiver</div>
             <div className="course-option">Barista</div>
-            <div className="course-option">Bartender</div>
-            <div className="course-option">Certificate III</div>
+            <div className="course-option">Bakery</div>
+            <div className="course-option">Certificate III in Individual Support</div>
         </div>
     );
 }

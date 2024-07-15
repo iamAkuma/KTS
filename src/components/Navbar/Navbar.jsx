@@ -31,8 +31,12 @@ const Navbar = () => {
                             Alumni
                         </Link>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <Link className="dropdown-item" to="/2079-80" onClick={toggleNavbar}>2079/80</Link>
-                            <Link className="dropdown-item" to="/2080-81" onClick={toggleNavbar}>2080/81</Link>
+                            <Link className="dropdown-item" to="/caregiver-alumni" onClick={toggleNavbar}>Caregiver</Link>
+                            <Link className="dropdown-item" to="/individual-support-alumni" onClick={toggleNavbar}>Certificate III in Individual Support</Link>
+                            <Link className="dropdown-item" to="/barista-alumni" onClick={toggleNavbar}>Barista</Link>
+                            <Link className="dropdown-item" to="/bakery-alumni" onClick={toggleNavbar}>Bakery</Link>
+
+
                         </div>
                     </li>
                     <li className="nav-item">
