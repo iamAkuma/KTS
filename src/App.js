@@ -18,6 +18,8 @@ import Waiter from './components/Waiter/Waiter.jsx';
 import Housekeeping from './components/Housekeeping/Housekeeping.jsx';
 import News from './components/News/News.jsx'
 import IndividualSupportAlumni from './components/IndividualSupportAlumni/individualSupport.jsx'
+import BakeryAlumni from './components/bakeryAlumni/bakeryAlumni.jsx'
+import BaristaAlumni from './components/BaristaAlumni/baristaAlumni.jsx'
 
 const App = () => {
   return (
@@ -29,6 +31,8 @@ const App = () => {
         <Route path="/courses" element={<Courses />} />
         <Route path="/caregiver-alumni" element={<CaregiverAlumni />} />
         <Route path="/individual-support-alumni" element={<IndividualSupportAlumni />} />
+        <Route path="/bakery-alumni" element={<BakeryAlumni />} />
+        <Route path="/barista-alumni" element={<BaristaAlumni />} />
         <Route path="/news" element={<News />} />
         <Route path="/2079-80" element={<One />} />
         <Route path="/2080-81" element={<Two />} />
