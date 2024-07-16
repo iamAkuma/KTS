@@ -34,6 +34,10 @@ function Caregiver() {
     return (
         <>
             <Navbar />
+            <br />
+            <br />
+            <br />
+            <br />
             <Helmet>
                 <title>Caregiver Course - KTS</title>
             </Helmet>

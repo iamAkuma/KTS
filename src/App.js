@@ -20,6 +20,7 @@ import News from './components/News/News.jsx'
 import IndividualSupportAlumni from './components/IndividualSupportAlumni/individualSupport.jsx'
 import BakeryAlumni from './components/bakeryAlumni/bakeryAlumni.jsx'
 import BaristaAlumni from './components/BaristaAlumni/baristaAlumni.jsx'
+import Alumni from './components/Alumni/Alumni.jsx'
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="/alumni" element={<Alumni />} />
         <Route path="/caregiver-alumni" element={<CaregiverAlumni />} />
         <Route path="/individual-support-alumni" element={<IndividualSupportAlumni />} />
         <Route path="/bakery-alumni" element={<BakeryAlumni />} />
