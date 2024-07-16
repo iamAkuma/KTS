@@ -35,16 +35,16 @@ const Alumni = () => {
                     <h1 className='alumni-header'>ALUMNI LIST</h1>
                     <div className='year-section'>
                         <ul>
-                            <Link className='seventy' to="/caregiver">
+                            <Link className='seventy' to="/caregiver-alumni">
                                 <li>Caregiver</li>
                             </Link>
-                            <Link className='eighty' to="/barista">
+                            <Link className='eighty' to="/barista-alumni">
                                 <li>Barista</li>
                             </Link>
-                            <Link className='eighty' to="/individual-support">
+                            <Link className='eighty' to="/individual-support-alumni">
                                 <li>Certificate III in Individual Support</li>
                             </Link>
-                            <Link className='eighty' to="/commercial-cook">
+                            <Link className='eighty' to="/bakery-alumni">
                                 <li>Bakery</li>
                             </Link>
                             {/* Add more years as needed */}
