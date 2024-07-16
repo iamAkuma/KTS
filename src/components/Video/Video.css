@@ -47,8 +47,52 @@
   justify-content: center;
 }
 
-@media (max-width: 576px) {
-  .video-container {
-    display: none;
+/* Media Queries for Responsiveness */
+
+/* For screens with a width of 475px or less */
+@media (max-width: 475px) {
+  .video {
+    object-fit: cover;
+  }
+
+  .controls {
+    top: auto;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* For screens with a width between 320px and 375px */
+@media (max-width: 375px) {
+  .video {
+    object-fit: cover;
+  }
+
+  .controls {
+    top: auto;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* For screens with a width of 320px or less */
+@media (max-width: 320px) {
+  .video {
+    object-fit: cover;
+  }
+
+  .controls {
+    top: auto;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    visibility: visible;
   }
 }
