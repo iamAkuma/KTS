@@ -91,10 +91,6 @@
 @media (min-width: 768px) {
   .why-us-heading {
     font-size: 2.5rem;
-    padding-left: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .whyChoose-container p {
@@ -111,9 +107,6 @@
 @media (max-width: 320px) {
   .why-us-heading {
     font-size: 2.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .why-choose-us p {
