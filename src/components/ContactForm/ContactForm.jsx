@@ -9,10 +9,28 @@ const ContactForm = () => {
     const [submissionCount, setSubmissionCount] = useState(
         parseInt(localStorage.getItem('submissionCount')) || 0
     );
+    const [isFormEnabled, setIsFormEnabled] = useState(true);
 
     useEffect(() => {
         localStorage.setItem('submissionCount', submissionCount.toString());
     }, [submissionCount]);
+
+    useEffect(() => {
+        const lastSubmissionTime = localStorage.getItem('lastSubmissionTime');
+        if (lastSubmissionTime) {
+            const currentTime = new Date().getTime();
+            const timeDifference = currentTime - lastSubmissionTime;
+            const hoursPassed = timeDifference / (1000 * 60 * 60);
+
+            if (hoursPassed >= 24) {
+                setSubmissionCount(0);
+                localStorage.setItem('submissionCount', '0');
+                setIsFormEnabled(true);
+            } else {
+                setIsFormEnabled(false);
+            }
+        }
+    }, []);
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
@@ -25,7 +43,7 @@ const ContactForm = () => {
 
         if (isSubmitting) return;
         if (submissionCount >= 4) {
-            toast.error('After this try, Form Submission Limit reached.');
+            toast.error('Form submission limit reached. Please try again after 24 hours.');
             return;
         }
 
@@ -35,11 +53,16 @@ const ContactForm = () => {
             'service_xyplnzm',
             'template_myd22wa',
             e.target,
-            'zhX0LYJ5Mw8E_BjfL')
+            'zhX0LYJ5Mw8E_BjfL'
+        )
             .then((result) => {
                 console.log(result.text);
                 toast.success('Message sent successfully!');
                 setSubmissionCount(submissionCount + 1);
+                if (submissionCount + 1 >= 4) {
+                    localStorage.setItem('lastSubmissionTime', new Date().getTime().toString());
+                    setIsFormEnabled(false);
+                }
             })
             .catch((error) => {
                 console.log(error.text);
@@ -50,10 +73,6 @@ const ContactForm = () => {
             });
 
         e.target.reset();
-
-        if (submissionCount === 3) {
-            toast.error('After this, You have reached the form submission limit.');
-        }
     };
 
     const handleTelephoneChange = (e) => {
@@ -129,7 +148,7 @@ const ContactForm = () => {
                                 </select>
                             </div>
                         </div>
-                        <button type="submit" className="btn btn-primary" disabled={isSubmitting || submissionCount >= 4}>
+                        <button type="submit" className="btn btn-primary" disabled={isSubmitting || submissionCount >= 4 || !isFormEnabled}>
                             {isSubmitting ? 'Submitting...' : 'Submit'}
                         </button>
                     </form>
