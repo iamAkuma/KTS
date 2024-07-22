@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Blog from './components/Blog/Blogs';
@@ -21,13 +21,18 @@ import IndividualSupportAlumni from './components/IndividualSupportAlumni/indivi
 import BakeryAlumni from './components/bakeryAlumni/bakeryAlumni.jsx'
 import BaristaAlumni from './components/BaristaAlumni/baristaAlumni.jsx'
 import Alumni from './components/Alumni/Alumni.jsx'
+import AdminPanel from './components/AdminPanel/AdminPanel.jsx'
+import { isAuthenticated } from '../src/utils/auth.js';
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route
+          path="/admin"
+          element={isAuthenticated() ? <AdminPanel /> : <Navigate to="/login" />}
+        />        <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/alumni" element={<Alumni />} />

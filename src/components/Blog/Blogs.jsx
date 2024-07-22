@@ -1,20 +1,23 @@
+// Blogs.jsx
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import LoadingScreen from '../LoadingScreen/LoadingScreen'; // Adjust path as necessary
-import './Blogs.css'; // Adjust path as necessary
+import LoadingScreen from '../LoadingScreen/LoadingScreen';
 import BlogCard from './BlogCard.jsx';
+import './Blogs.css';
 
 const Blogs = () => {
     const [isLoading, setIsLoading] = useState(true);
+    const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
+        const loadBlogs = () => {
+            const storedBlogs = JSON.parse(localStorage.getItem('blogs')) || [];
+            setBlogs(storedBlogs);
             setIsLoading(false);
-        }, 1500); // Adjust time in milliseconds (e.g., 3000 for 3 seconds)
-
-        return () => clearTimeout(timer);
+        };
+        loadBlogs();
     }, []);
 
     return (
@@ -33,29 +36,16 @@ const Blogs = () => {
                 <div className="container">
                     <h1 className='kts-blogs'>KTS BLOGS</h1>
                     <div className="row">
-                        <div className="col-md-4">
-                            <BlogCard
-                                image={require('../../img/Caregiver.jpg')}
-                                title="Why Caregiver Course in KTS?"
-                                description="Taking a caregiver course is becoming increasingly important in today’s world due to the growing demand..."
-                            />
-                        </div>
-                        <div className="col-md-4">
-                            <BlogCard
-                                image={require('../../img/Caregiver.jpg')}
-                                title="Why Caregiver Course in KTS?"
-                                description="Taking a caregiver course is becoming increasingly important in today’s world due to the growing demand..."
-                            />
-                        </div>
-                        <div className="col-md-4">
-                            <BlogCard
-                                image={require('../../img/Caregiver.jpg')}
-                                title="Why Caregiver Course in KTS?"
-                                description="Taking a caregiver course is becoming increasingly important in today’s world due to the growing demand..."
-                            />
-                        </div>
+                        {blogs.map(blog => (
+                            <div className="col-md-4" key={blog.id}>
+                                <BlogCard
+                                    image={blog.image}
+                                    title={blog.title}
+                                    description={blog.description}
+                                />
+                            </div>
+                        ))}
                     </div>
-                    {/* Add more rows with three BlogCard components as needed */}
                 </div>
                 <Footer />
             </div>
