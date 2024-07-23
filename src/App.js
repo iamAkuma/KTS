@@ -1,5 +1,5 @@
 // App.js
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
@@ -22,14 +22,16 @@ import BakeryAlumni from './components/bakeryAlumni/bakeryAlumni.jsx'
 import BaristaAlumni from './components/BaristaAlumni/baristaAlumni.jsx'
 import Alumni from './components/Alumni/Alumni.jsx'
 import AdminPanel from './components/AdminPanel/AdminPanel.jsx'
-// import { isAuthenticated } from '../src/utils/auth.js';
+import Login from './components/Login/Login.jsx'
 
 const App = () => {
+  const [loggedIn, setLoggedIn] = useState(false);
+
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/admin" element={<AdminPanel />} />
+        <Route path="/admin" element={loggedIn ? <AdminPanel /> : <Login setLoggedIn={setLoggedIn} />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/courses" element={<Courses />} />
