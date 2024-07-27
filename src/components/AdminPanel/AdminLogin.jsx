@@ -1,7 +1,7 @@
 // components/Login/Login.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './AdminLogin.css'; // Create a CSS file for styling if needed
+import './AdminLogin.css'; // Ensure this file exists for styling
 
 const Login = () => {
     const [username, setUsername] = useState('');
@@ -14,7 +14,7 @@ const Login = () => {
         const correctPassword = 'admin'; // Replace with your desired password
 
         if (username === correctUsername && password === correctPassword) {
-            localStorage.setItem('authenticated', true);
+            localStorage.setItem('authenticated', 'true'); // Ensure value is a string
             navigate('/admin');
         } else {
             alert('Incorrect username or password');

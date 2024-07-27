@@ -25,7 +25,7 @@ import AdminPanel from './components/AdminPanel/AdminPanel.jsx';
 import Login from './components/Login/Login.jsx';
 
 const PrivateRoute = ({ children }) => {
-  const isAuthenticated = localStorage.getItem('authenticated');
+  const isAuthenticated = localStorage.getItem('authenticated') === 'true';
   return isAuthenticated ? children : <Navigate to="/login" />;
 };
 
