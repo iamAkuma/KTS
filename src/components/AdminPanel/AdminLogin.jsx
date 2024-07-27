@@ -9,12 +9,12 @@ const Login = () => {
     const navigate = useNavigate();
 
     const handleLogin = (e) => {
-        e.preventDefault();
+        e.preventDefault(); // Prevents the default form submission
         const correctUsername = 'admin'; // Replace with your desired username
         const correctPassword = 'admin'; // Replace with your desired password
 
-        if (username === correctUsername && password === correctPassword) {
-            localStorage.setItem('authenticated', 'true'); // Ensure value is a string
+        if (username.trim() === correctUsername && password.trim() === correctPassword) {
+            localStorage.setItem('authenticated', 'true');
             navigate('/admin');
         } else {
             alert('Incorrect username or password');
@@ -23,7 +23,7 @@ const Login = () => {
 
     return (
         <div className="login-container">
-            <form onSubmit={handleLogin}>
+            <form onSubmit={handleLogin}> {/* Ensure form tags are used correctly */}
                 <h2>Login</h2>
                 <input
                     type="text"
