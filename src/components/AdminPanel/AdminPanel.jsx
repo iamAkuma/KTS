@@ -62,10 +62,11 @@ const AdminPanel = () => {
             <br />
             <br />
             <br />
+            <h2 className='admin-heading'>Admin Panel</h2>
+            <br />
             <div className="admin-panel">
-                <h2>Admin Panel</h2>
                 <div className="add-blog-form">
-                    <h3>Add New Blog</h3>
+                    <h3 className='admin-sub'>Add New Blog</h3>
                     <input
                         type="text"
                         name="title"

@@ -1,12 +1,22 @@
 /* AdminPanel.css */
 
+.admin-heading {
+  text-align: center;
+  color: #2b3991;
+  font-weight: bolder;
+}
+
+.admin-sub {
+  text-align: center;
+}
+
 .admin-panel {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Add Blog Form Styles */
