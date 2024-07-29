@@ -83,13 +83,14 @@ const AdminPanel = () => {
                     <input
                         type="file"
                         name="image"
+                        placeholder='Add Image'
                         accept="image/*"
                         onChange={handleImageChange}
                     />
                     <button onClick={handleAddBlog}>Add Blog</button>
                 </div>
                 <div className="blog-list">
-                    <h3>Existing Blogs</h3>
+                    <h3 className='admin-sub'>Existing Blogs</h3>
                     {blogs.map(blog => (
                         <div key={blog.id} className="blog-item">
                             <img src={blog.image} alt={blog.title} />

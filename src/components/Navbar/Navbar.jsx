@@ -49,9 +49,9 @@ const Navbar = () => {
                     <li className="nav-item">
                         <Link className="nav-link" to="/contact" onClick={toggleNavbar}>Contact</Link>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <Link className="nav-link" to="/news" onClick={toggleNavbar}>News</Link>
-                    </li>
+                    </li> */}
                 </ul>
                 <div className="social-icons">
                     <a href="https://www.facebook.com/kathmandutechnicalschool" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook fa-lg"></i></a>
