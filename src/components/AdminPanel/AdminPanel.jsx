@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './AdminPanel.css';
+import Navbar from '../Navbar/Navbar'
 
 const AdminPanel = () => {
     const [blogs, setBlogs] = useState([]);
@@ -54,45 +55,54 @@ const AdminPanel = () => {
     };
 
     return (
-        <div className="admin-panel">
-            <h2>Admin Panel</h2>
-            <div className="add-blog-form">
-                <h3>Add New Blog</h3>
-                <input
-                    type="text"
-                    name="title"
-                    placeholder="Title"
-                    value={newBlog.title}
-                    onChange={handleInputChange}
-                />
-                <textarea
-                    name="description"
-                    placeholder="Description"
-                    value={newBlog.description}
-                    onChange={handleInputChange}
-                />
-                <input
-                    type="file"
-                    name="image"
-                    accept="image/*"
-                    onChange={handleImageChange}
-                />
-                <button onClick={handleAddBlog}>Add Blog</button>
-            </div>
-            <div className="blog-list">
-                <h3>Existing Blogs</h3>
-                {blogs.map(blog => (
-                    <div key={blog.id} className="blog-item">
-                        <img src={blog.image} alt={blog.title} />
-                        <div>
-                            <h4>{blog.title}</h4>
-                            <p>{truncateDescription(blog.description, 100)}</p>
+        <>
+            <Navbar />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div className="admin-panel">
+                <h2>Admin Panel</h2>
+                <div className="add-blog-form">
+                    <h3>Add New Blog</h3>
+                    <input
+                        type="text"
+                        name="title"
+                        placeholder="Title"
+                        value={newBlog.title}
+                        onChange={handleInputChange}
+                    />
+                    <textarea
+                        name="description"
+                        placeholder="Description"
+                        value={newBlog.description}
+                        onChange={handleInputChange}
+                    />
+                    <input
+                        type="file"
+                        name="image"
+                        accept="image/*"
+                        onChange={handleImageChange}
+                    />
+                    <button onClick={handleAddBlog}>Add Blog</button>
+                </div>
+                <div className="blog-list">
+                    <h3>Existing Blogs</h3>
+                    {blogs.map(blog => (
+                        <div key={blog.id} className="blog-item">
+                            <img src={blog.image} alt={blog.title} />
+                            <div>
+                                <h4>{blog.title}</h4>
+                                <p>{truncateDescription(blog.description, 100)}</p>
+                            </div>
+                            <button onClick={() => handleDeleteBlog(blog.id)}>Delete</button>
                         </div>
-                        <button onClick={() => handleDeleteBlog(blog.id)}>Delete</button>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
+
     );
 };
 

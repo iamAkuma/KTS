@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Blog from './components/Blog/Blogs';
@@ -22,12 +22,12 @@ import BakeryAlumni from './components/bakeryAlumni/bakeryAlumni.jsx';
 import BaristaAlumni from './components/BaristaAlumni/baristaAlumni.jsx';
 import Alumni from './components/Alumni/Alumni.jsx';
 import AdminPanel from './components/AdminPanel/AdminPanel.jsx';
-import Login from './components/Login/Login.jsx';
+import Login from './components/AdminPanel/AdminLogin.jsx';
 
-// const PrivateRoute = ({ children }) => {
-//   const isAuthenticated = localStorage.getItem('authenticated') === 'true';
-//   return isAuthenticated ? children : <Navigate to="/login" />;
-// };
+const PrivateRoute = ({ children }) => {
+  const isAuthenticated = localStorage.getItem('authenticated') === 'true';
+  return isAuthenticated ? children : <Navigate to="/login" />;
+};
 
 const App = () => {
   return (
@@ -38,9 +38,9 @@ const App = () => {
         <Route
           path="/admin"
           element={
-
-            <AdminPanel />
-
+            <PrivateRoute>
+              <AdminPanel />
+            </PrivateRoute>
           }
         />
         {/* Other routes */}

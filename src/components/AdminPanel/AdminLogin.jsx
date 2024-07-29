@@ -24,7 +24,7 @@ const Login = () => {
     return (
         <div className="login-container">
             <form onSubmit={handleLogin}> {/* Ensure form tags are used correctly */}
-                <h2>Login</h2>
+                <h2>Admin Login</h2>
                 <input
                     type="text"
                     placeholder="Username"
@@ -37,7 +37,8 @@ const Login = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                <button type="submit">Admin Login</button>
+                <button type="submit">Login</button>
+                <a href="/">Home</a>
             </form>
         </div>
     );
