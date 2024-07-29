@@ -9,12 +9,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2,
-h3 {
-  text-align: center;
-  color: #333;
-}
-
 /* Add Blog Form Styles */
 .add-blog-form {
   margin-bottom: 40px;

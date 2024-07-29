@@ -16,7 +16,10 @@ import Scroll from '../Scroll/Scroll';
 import LoadingScreen from '../LoadingScreen/LoadingScreen'; // Adjust path as necessary
 import FixedFooter from '../Fixed-Footer/Fixed-Footer'
 
-const Home = () => {
+const Home = ({ onNavigate }) => {
+    useEffect(() => {
+        onNavigate();
+    }, [onNavigate]);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {

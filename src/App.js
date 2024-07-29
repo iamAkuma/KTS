@@ -30,10 +30,13 @@ const PrivateRoute = ({ children }) => {
 };
 
 const App = () => {
+  const handleHomeNavigation = () => {
+    localStorage.removeItem('authenticated');
+  };
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home onNavigate={handleHomeNavigation} />} />
         <Route path="/login" element={<Login />} />
         <Route
           path="/admin"

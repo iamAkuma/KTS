@@ -1,12 +1,17 @@
-/* Centering the container on the page */
-body {
+/* Ensure the .page-wrapper fills the entire viewport */
+.page-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   height: 100vh;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff; /* Light background color for better contrast */
+  background-color: #f0f0f0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-container {
@@ -14,17 +19,16 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 50px;
-  background-color: #ffffff; /* White background for the container */
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  width: 500px;
-  margin: 0 auto;
+  width: 400px;
   text-align: center;
 }
 
 .login-container h2 {
   margin-bottom: 20px;
-  color: #1e3a8a; /* Matching the button color for consistency */
+  color: #1e3a8a;
 }
 
 .login-container input {
@@ -34,6 +38,29 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-container input {
+  padding-right: 40px; /* Space for the eye icon */
+}
+
+.eye-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #1e3a8a;
+}
+
+.eye-button svg {
+  width: 20px;
+  height: 20px;
 }
 
 .login-container button {
@@ -51,9 +78,20 @@ body {
   background-color: #1a2b6d;
 }
 
-/* Optional: Adding a subtle transition effect */
+.home-link {
+  margin-top: 20px;
+  color: #1e3a8a;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
 .login-container input,
-.login-container button {
+.login-container button,
+.home-link {
   transition: all 0.3s ease;
 }
 
@@ -62,7 +100,8 @@ body {
   outline: none;
 }
 
-.login-container button:focus {
+.login-container button:focus,
+.home-link:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(30, 58, 138, 0.5);
 }
